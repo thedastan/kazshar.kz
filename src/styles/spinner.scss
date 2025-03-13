@@ -1,0 +1,36 @@
+.spinner {
+	width: 96px;
+	height: 96px;
+	display: grid;
+}
+
+.spinner::before,
+.spinner::after {
+	content: '';
+	grid-area: 1/1;
+	background:
+		var(--c) 50% 0,
+		var(--c) 50% 100%,
+		var(--c) 100% 50%,
+		var(--c) 0 50%;
+	background-size: 19.4px 19.4px;
+	background-repeat: no-repeat;
+	animation: spinner-3hs4a3 1s infinite;
+}
+
+.spinner::before {
+	--c: radial-gradient(farthest-side, #ef5906 92%, #0000);
+	margin: 4.5px;
+	background-size: 13px 13px;
+	animation-timing-function: linear;
+}
+
+.spinner::after {
+	--c: radial-gradient(farthest-side, #ef5906 92%, #0000);
+}
+
+@keyframes spinner-3hs4a3 {
+	100% {
+		transform: rotate(0.5turn);
+	}
+}
