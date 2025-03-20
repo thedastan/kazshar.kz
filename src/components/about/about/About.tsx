@@ -7,15 +7,15 @@ const About = () => {
 	return (
 		<div>
 			<div className="container">
-				<div className="py-20">
-					<div className="flex">
+				<div className=" pb-20 md:pb-0 py-0 md:py-20">
+					<div className="flex md:flex-row flex-col">
 						<div className="w-full flex justify-center items-center h-[500px]  ">
-							<div className="p-14">
-								<h1 className="text-[30px] font-[700]">
+							<div className="md:p-14 p-0">
+								<h1 className="md:text-[30px] text-[20px] font-[700]">
 									История нашего завода
 								</h1>
 								<div className="flex items-center mt-4 gap-4">
-									<div className="w-4 h-[220px] bg-[#ff2828]" />
+									<div className="w-4 md:h-[220px]  md:flex hidden h-[320px] bg-[#ff2828]" />
 									<p className="text-[18px] text-[#575757] font-[400] ">
 										Наш завод был основан в 2024 году с целью создания
 										высококачественной продукции для металлургической и
@@ -27,19 +27,19 @@ const About = () => {
 								</div>
 							</div>
 						</div>
-						<div data-aos="fade-up" className=" relative w-full h-[500px]">
+						<div data-aos="fade-up" className=" relative w-full h-[300px] md:h-[500px]">
 							<Image fill objectFit="cover" src={img1} alt="img" />
 						</div>
 					</div>
-					<div className="flex">
-						<div data-aos="fade-up" className=" relative w-full h-[500px]">
+					<div className="flex md:flex-row flex-col-reverse">
+						<div data-aos="fade-up" className=" relative w-full h-[300px] md:h-[500px]">
 							<Image  fill objectFit="cover" src={img2} alt="img" />
 						</div>
 						<div className="w-full flex justify-center items-center h-[500px]  ">
-							<div className="p-14">
-								<h1 className="text-[30px] font-[700]">О нашей задаче</h1>
+							<div className="md:p-14 p-0">
+								<h1 className="md:text-[30px] text-[20px]  font-[700]">О нашей задаче</h1>
 								<div className="flex items-center mt-4 gap-4">
-									<div className="w-4 h-[220px] bg-[#ff2828]" />
+									<div className="w-4 md:flex hidden md:h-[220px] h-[220px] bg-[#ff2828]" />
 									<p className="text-[18px] text-[#575757] font-[400] ">
 										С самого начала мы поставили перед собой задачу обеспечить
 										рынок качественной продукцией, соответствующей мировым
@@ -58,12 +58,12 @@ const About = () => {
 
 			<div className=" bg-[#1d1d1d] py-20">
 				<div className="container">
-					<div className="flex gap-6 items-center">
-						<div id="abouts" className=" relative w-[70%] h-[400px] overflow-hidden rounded-[4px]">
+					<div className="md:flex block gap-6 items-center">
+						<div id="abouts" className="   relative w-full md:w-[70%] md:h-[400px] h-[300px] overflow-hidden rounded-[4px]">
 							{/* <Image fill objectFit="cover" src={img1} alt="img" /> */}
 						</div>
 						<div className="w-full flex flex-col gap-4">
-							<h1 className="text-[40px]  font-[700] text-white">Сегодня</h1>
+							<h1 className="md:text-[40px] mt-4 md:mt-0 text-[26px]  font-[700] text-white">Сегодня</h1>
 							<h4 className="text-[18px]  font-[500] text-white">
 								Сегодня наш завод оснащен современным оборудованием и
 								высокотехнологичными производственными линиями. Мы гордимся

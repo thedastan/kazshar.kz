@@ -6,12 +6,12 @@ const Certificate = () => {
     <div className=" bg-[#1d1d1d] py-10">
 			<div className="container">
 
-      <h1 className="text-[40px] pb-10 font-[700] text-white text-center">Сертификаты и лицензии</h1>
-				<div className="flex gap-4">
-					<div className=" relative w-full h-[360px] overflow-hidden rounded-[4px]">
+      <h1 className="md:text-[40px] text-[26px] pb-10 font-[700] text-white text-center">Сертификаты и лицензии</h1>
+				<div className="md:flex block gap-4">
+					<div className=" relative w-full md:h-[360px] h-[200px] overflow-hidden rounded-[4px]">
 						<Image fill objectFit="cover" src={certificate} alt="img" />
 					</div>
-          <div className=" relative w-full h-[360px] overflow-hidden rounded-[4px]">
+          <div className=" relative w-full md:h-[360px] h-[200px] overflow-hidden md:mt-0 mt-4 rounded-[4px]">
 						<Image fill objectFit="cover" src={certificate} alt="img" />
 					</div>
 				</div>

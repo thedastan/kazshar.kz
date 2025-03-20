@@ -32,25 +32,26 @@ const Control = () => {
 		<div className="py-10">
 			<div className="container">
 				<h1 className="text-[30px] text-center font-[700]">Контроль качеств</h1>
-				<div className="grid grid-cols-1 justify-center mt-20 items-start gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2">
+				<div className="grid grid-cols-1 justify-center mt-20 items-start gap-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
 					{data.map((el, index) => (
 						<div
 							key={index}
-							
-              style={{
-                transition: "0.5s",
-              }}
-							className="flex group hover:bg-[#ff2828] h-[240px] p-6 justify-start items-center gap-4" >
+							style={{
+								transition: "0.5s",
+							}}
+							className="flex flex-col lg:flex-row group hover:bg-[#ff2828] md:minH-[320px] minH-[360px] h-full p-6 justify-start items-start md:items-start lg:items-center gap-4">
 							<h1
 								id="text_bg"
 								className="text-[160px] leading-[130px]   font-[900]  ">
 								{el.num}
 							</h1>
-							<div >
-								<h2 className="text-[30px] group-hover:text-white leading-[34px] font-[700] text-[#ff2828]">
+							<div>
+								<h2 className="md:text-[30px] text-[22px] group-hover:text-white leading-[34px] font-[700] text-[#ff2828]">
 									{el.title}
 								</h2>
-								<p className="text-gray-500 mt-2 group-hover:text-white text-[18px]">{el.desc}</p>
+								<p className="text-gray-500 mt-2 group-hover:text-white text-[18px]">
+									{el.desc}
+								</p>
 							</div>
 						</div>
 					))}

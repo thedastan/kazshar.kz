@@ -1,14 +1,12 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-
-import img1 from "@/assets/img4.jpg";
-import img2 from "@/assets/img5.jpg";
-import img3 from "@/assets/img6.jpg";
+import img1 from "@/assets/img1.jpg";
+import img2 from "@/assets/img2.jpg";
+import img3 from "@/assets/img3.jpg";
 import img4 from "@/assets/img1.jpg";
 import img5 from "@/assets/img2.jpg";
 import img6 from "@/assets/img3.jpg";
-
 
 const News = () => {
 	const [modal, setModal] = useState<number | null>(null);
@@ -63,8 +61,8 @@ const News = () => {
 	return (
 		<div className="py-10 bg-[#1d1d1d] relative">
 			<div className="container">
-				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
-					{data.map((el,index) => (
+				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+					{data.map((el, index) => (
 						<div
 							key={el.id}
 							data-aos="fade-up"
@@ -100,9 +98,9 @@ const News = () => {
 					className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
 					onClick={() => setModal(null)}>
 					<div
-						className="bg-[#303030] p-6 rounded-lg  w-[800px] relative"
+						className="bg-[#303030] p-6 rounded-lg w-full  md:w-[800px] relative"
 						onClick={(e) => e.stopPropagation()}>
-						<div className="flex gap-4">
+						<div className="flex md:flex-row flex-col gap-4">
 							<div className="w-full h-[300px] relative overflow-hidden rounded-[10px]">
 								<Image fill objectFit="cover" src={item.img} alt="img" />
 							</div>

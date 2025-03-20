@@ -1,3 +1,5 @@
+import { links_products } from "@/components/navbar/data";
+import Link from "next/link";
 import React from "react";
 
 const Heroforged = () => {
@@ -17,11 +19,35 @@ const Heroforged = () => {
 				</video>
 			</div>
 
-			<div className="flex px-16 bg-[#000000b0] gap-20 absolute top-0 left-0 w-[100%] h-[500px] justify-center items-center flex-col">
+			<div className="flex px-[20px] md:px-16 bg-[#000000b0] gap-20 absolute top-0 left-0 w-[100%] h-[500px] justify-center items-center flex-col">
 				<div className="">
-					<h1 className="text-[54px] text-[#ffffff8f] font-[700] w-[760px] leading-[70px] text-center">
+					<h1 className="md:text-[54px] text-[30px] text-[#ffffff8f] font-[700] w-full md:w-[760px] md:leading-[70px] leading-[50px] text-center">
 						Кованые мелющие шары
 					</h1>
+				</div>
+			</div>
+
+			<div className="w-[140px] h-full hover:bg-[#ff2828] hover:w-[200px] bg-[#000000cc] absolute flex justify-center items-center right-0 top-0" 
+			style={{
+				transition:"0.5s"
+			}}>
+				<div className="flex flex-col md:flex-row   justify-center items-center  h-full w-full gap-6">
+					{links_products.slice(1, 2).map((el, index) => (
+						<Link key={index} className="w-full" href={el.path}>
+							<div
+								style={{
+									transition: "0.5s",
+								}}
+								className=" bg-transparent w-full   py-6 p-4 ">
+								<div className="flex text-start flex-col   items-start justify-center  w-full gap-4">
+									<h1 className="text-white w-[150px] mt-4 text-start text-[18px] font-[600] ">
+										{el.title}
+									</h1>
+									 
+								</div>
+							</div>
+						</Link>
+					))}
 				</div>
 			</div>
 		</div>

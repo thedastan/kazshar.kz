@@ -1,7 +1,7 @@
 "use client";
-import img1 from "@/assets/img4.jpg";
-import img2 from "@/assets/img5.jpg";
-import img3 from "@/assets/img6.jpg";
+import img1 from "@/assets/img1.jpg";
+import img2 from "@/assets/img2.jpg";
+import img3 from "@/assets/img3.jpg";
 import img4 from "@/assets/img1.jpg";
 import img5 from "@/assets/img2.jpg";
 import img6 from "@/assets/img3.jpg";
@@ -32,7 +32,7 @@ const Gallery = () => {
 	return (
 		<div className="py-20">
 			<div className="container">
-				<h1 className="text-[40px] pb-10 font-[700] text-center">
+				<h1 className="md:text-[40px] text-[26px] pb-10 font-[700] text-center">
 					Наша галерея
 				</h1>
 				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">

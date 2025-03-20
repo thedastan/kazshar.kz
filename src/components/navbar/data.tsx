@@ -1,5 +1,4 @@
-import { AiFillProduct } from "react-icons/ai"
-import { FaPhoneAlt } from "react-icons/fa"
+import { FaCircle, FaPhoneAlt } from "react-icons/fa"
 import { IoIosAddCircle, IoIosBookmarks } from "react-icons/io"
 import { IoHomeSharp } from "react-icons/io5"
 import { PiNewspaperFill } from "react-icons/pi"
@@ -13,12 +12,12 @@ export const links_nav = [
   {
     icon:<IoIosBookmarks />,
     title:"О компании",
-    path:"/about",
+    path:"z/about",
   },
   {
-    icon:<AiFillProduct />,
+    icon:<FaCircle />,
     title:"Продукция",
-    path:"/forged",
+    path:"/products",
   },
   {
     icon:<IoIosAddCircle />,

@@ -2,24 +2,24 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState, useEffect, useRef } from "react";
-import { links_nav, links_products } from "../data";
+import { links_nav } from "../data";
 import BurgerMenu from "./BurgerMenu";
 import { PHONE_NUMBER } from "@/constants/admin";
 import { CgMenuRight } from "react-icons/cg";
 import { FaPhoneAlt } from "react-icons/fa";
+
+import logo from "@/assets/logo.png";
+import Image from "next/image";
 
 const Header = () => {
 	const pathname = usePathname();
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isOpen, setIsOpen] = useState(false);
 	const menuRef = useRef<HTMLDivElement>(null);
+ 
+	console.log(isOpen);
+	
 
-	// Проверяем, находится ли текущий маршрут в списке продуктов
-	const isProductPage = links_products.some((product) =>
-		pathname.startsWith(product.path)
-	);
-
-	// Закрытие меню при клике вне его
 	useEffect(() => {
 		function handleClickOutside(event: MouseEvent) {
 			if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
@@ -32,12 +32,16 @@ const Header = () => {
 		};
 	}, []);
 
-	if (pathname === "/") {
+	if (pathname === "/" || pathname === "/products" || pathname === "/contact") {
 		return (
 			<div className="fixed z-10 w-full">
 				<div className="container">
-					<div className="py-1">
-						<h1 className="text-[40px] font-[800] text-[#ffffff8f]">КАЗШАР</h1>
+					<div className="py-4">
+						<h1 className="text-[40px] font-[800] text-[#ffffff8f]">
+							<Link href={"/"}>
+								<Image className=" w-[180px]" src={logo} alt="logo" />
+							</Link>
+						</h1>
 					</div>
 				</div>
 			</div>
@@ -50,43 +54,15 @@ const Header = () => {
 				<div className="container">
 					<div className="flex justify-between items-center w-full h-[74px]">
 						<div className="flex justify-start">
-							<Link href={"/"}>КАЗШАР</Link>
+							<Link href={"/"}>
+								<Image className="w-[180px]" src={logo} alt="logo" />
+							</Link>
 						</div>
 
 						<div className="hidden sm:flex justify-center gap-6 w-full">
 							{links_nav.map((el, index) => (
 								<div key={index} className="relative">
-									{el.path === "/forged" ? (
-										<div ref={menuRef}>
-											<button
-												onClick={() => setIsOpen(!isOpen)}
-												className={`font-normal text-[14px] uppercase ${
-													isProductPage
-														? "border-b-2 border-[#ff2828] text-[#ff2828]"
-														: ""
-												}`}>
-												Продукция
-											</button>
-											{isOpen && (
-												<div className="absolute top-10 left-0 z-10 bg-white rounded-lg shadow-md p-2 w-[250px]">
-													{links_products.map((product, i) => (
-														<Link
-															key={i}
-															href={product.path}
-															className={`block px-4 py-2 bg-transparent hover:bg-gray-100 ${
-																pathname === product.path
-																	? "bg-[#ff5656] text-white hover:bg-[#e02f2f]"
-																	: ""
-															}`}
-															onClick={() => setIsOpen(false)}>
-															{product.title}
-														</Link>
-													))}
-												</div>
-											)}
-										</div>
-									) : (
-										<Link
+									 	<Link
 											href={el.path}
 											className={`font-normal text-[14px] uppercase ${
 												pathname === el.path
@@ -95,7 +71,6 @@ const Header = () => {
 											}`}>
 											{el.title}
 										</Link>
-									)}
 								</div>
 							))}
 						</div>

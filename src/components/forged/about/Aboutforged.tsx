@@ -4,49 +4,27 @@ import Image from "next/image";
 const Aboutforged = () => {
 	return (
 		<div className="">
-			<div className="w-full flex ">
-				<div className="bg-[#ff2828] flex items-end py-8 px-20 mt-[-40px] justify-end relative w-full">
-					<h1 className="text-[18px] flex justify-end   text-[#ffffff] font-[500] w-[600px] p-6 leading-[26px] text-start">
+			<div className="md:w-full w-[320px] flex ">
+				<div className="bg-[#ff2828] flex flex-col items-start md:py-10 px-2 md:px-20 mt-[-40px] justify-start relative w-full">
+					<h1 className="text-[18px] flex justify-end   text-[#ffffff] font-[700] w-full md:w-[600px] p-6 leading-[26px] text-start">
 						Наши кованые шары производятся из высококачественных стальных
 						слитков методом горячей ковки, что обеспечивает их исключительную
-						прочность и долговечность. Благодаря высокой твердости и
-						износостойкости они выдерживают экстремальные нагрузки, минимизируя
-						износ и повышая эффективность помола. Оптимальная структура металла
-						гарантирует стабильные эксплуатационные характеристики, делая их
-						надежным выбором для различных отраслей – от горнодобывающей до
-						цементной промышленности.
+						прочность и долговечность.
 					</h1>
+					<p className="text-[16px] flex justify-start pb-6  text-[#d4d4d4] font-[500] w-full md:w-[500px] px-6 leading-[26px] text-start">
+						Благодаря высокой твердости и износостойкости они выдерживают
+						экстремальные нагрузки, минимизируя износ и повышая эффективность
+						помола. Оптимальная структура металла гарантирует стабильные
+						эксплуатационные характеристики, делая их надежным выбором для
+						различных отраслей – от горнодобывающей до цементной промышленности.
+					</p>
 				</div>
-				<div className="w-full" />
+				<div className="w-full md:flex hidden" />
 			</div>
-			<div className="w-full flex ">
-				<div className="w-full flex justify-end mt-10">
-					<div className="w-[640px] p-6">
-						<h3 className="text-2xl font-semibold mb-4">Используется в:</h3>
-						<ul className="text-lg text-gray-800 space-y-3">
-							<li className="flex items-center gap-4">
-								<span className="bg-[#ff2828]  w-4 h-1 "></span> Горнодобывающей
-								промышленности
-							</li>
-							<li className="flex items-center gap-4">
-								<span className="bg-[#ff2828]  w-4 h-1 "></span> Цементной
-								промышленности
-							</li>
-							<li className="flex items-center gap-4">
-								<span className="bg-[#ff2828]  w-4 h-1 "></span> Энергетике
-							</li>
-							<li className="flex items-center gap-4">
-								<span className="bg-[#ff2828]  w-4 h-1 "></span> Химической
-								промышленности
-							</li>
-							<li className="flex items-center gap-4">
-								<span className="bg-[#ff2828]  w-4 h-1 "></span> Металлургии
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div className="  flex items-end   mt-[-150px] justify-start relative w-full">
-					<div className="w-[600px] h-[450px] relative">
+			<div className="w-full flex  justify-end">
+				<div className="w-full md:flex hidden" />
+				<div className="  flex items-end  mt-0   md:mt-[-250px] justify-start relative w-full">
+					<div className="md:w-[600px] w-full mt-10 md:mt-0 h-[450px] relative">
 						<Image fill objectFit="cover" src={img} alt="img" />
 					</div>
 				</div>

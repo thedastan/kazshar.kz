@@ -11,7 +11,6 @@ const data = Array(6).fill({ img: img1 });
 const Equipment = () => {
 	useEffect(() => {
 		Fancybox.bind("[data-fancybox='gallery']", {
-			// Дополнительные настройки, если нужны
 		});
 		return () => {
 			Fancybox.destroy();
@@ -21,7 +20,7 @@ const Equipment = () => {
 	return (
 		<div className="py-20">
 			<div className="container">
-				<h1 className="text-[40px] pb-10 font-[700] text-center">
+				<h1 className="md:text-[40px] text-[30px] pb-10 font-[700] text-center">
 					Используемое оборудование
 				</h1>
 				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">

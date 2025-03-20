@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Allow: /about-company
+Allow: /catalog
+
+
+Sitemap: https://metallomir.kg/sitemap.xml
+
+
+

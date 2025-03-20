@@ -37,7 +37,7 @@ const CustomHead = () => {
 					property="og:image"
 					content="https://metallomir.kg/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.f55e7955.png&w=750&q=75"
 				/>
-				<meta property="og:url" content="https://metallomir.kg" />
+				<meta property="og:url" content="https://kashar.kz" />
 				<meta property="og:type" content="website" />
 			</Head>
 

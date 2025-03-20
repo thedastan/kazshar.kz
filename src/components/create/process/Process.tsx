@@ -40,13 +40,13 @@ const Process = () => {
 					<h1 className="text-[30px] text-center font-[700]">
 						Производственный процесс
 					</h1>
-					<p className="text-[18px] w-[600px] text-center text-[#575757] font-[400] ">
+					<p className="text-[18px] w-full md:w-[600px] text-center text-[#575757] font-[400] ">
 						Наш завод использует передовые технологии для производства
 						высококачественных изделий. Процесс включает несколько ключевых
 						этапов:
 					</p>
 				</div>
-				<div className="grid grid-cols-1 mt-20 justify-start items-start sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+				<div className="grid grid-cols-1 mt-20 justify-start items-start sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-4">
 					{data.map((el, index) => (
 						<div
 							key={index}
@@ -54,7 +54,7 @@ const Process = () => {
               style={{
                 transition: "0.5s",
               }}
-							className="flex group hover:bg-[#ff2828] p-6 h-[320px]  flex-col justify-start items-start gap-4">
+							className="flex group hover:bg-[#ff2828] p-6 md:minH-[320px] minH-[360px] h-full flex-col justify-start items-start gap-4">
 							<h1 id="text_bg" className="text-[160px] leading-[130px]   font-[900]  ">
 								{el.num}
 							</h1>

@@ -1,9 +1,10 @@
- import React from 'react';
+ import ContactComponents from '@/components/contact/ContactComponents';
+import React from 'react';
  
  const ContactPage = () => {
 	return (
 		<div>
-			ContactPage
+			 <ContactComponents/>
 		</div>
 	);
  };
