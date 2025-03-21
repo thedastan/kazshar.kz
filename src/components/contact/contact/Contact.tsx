@@ -3,14 +3,16 @@ import React, { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { FiMapPin, FiPhone } from "react-icons/fi";
 import { MdOutlineMailOutline } from "react-icons/md";
+import ContactRfc from "./ContactRfc";
+import ContactFeedback from "./ContactFeedback";
 
 const Contact = () => {
 	const [tab, setTab] = useState("form");
 	const [modal, setModal] = useState(false);
 	return (
 		<div>
-			<div className="flex flex-col md:flex-row   md:items-none h-[120vh] md:h-[100vh]">
-				<div className="bg-[rgb(199,18,18)] h-[100vh] px-[20px]  w-[100%] md:w-[700px] flex flex-col items-center">
+			<div className="flex flex-col md:flex-row   md:items-none h-full md:h-[100vh]">
+				<div className="bg-[rgb(199,18,18)] h-[700px] md:h-[100vh] px-[20px]  w-[100%] md:w-[700px] flex flex-col items-center">
 					<div className="w-[100%] flex justify-center mt-[100px]">
 						<h1 className="text-[22px] md:text-[32px] font-[600] text-white">
 							связаться с нами
@@ -39,45 +41,7 @@ const Contact = () => {
 					<div className="">
 						{tab === "form" ? (
 							<div className="">
-								<div className="flex items-start justify-center flex-col mt-[40px] gap-1   max-w-[350px] w-full">
-                  
-									<div className="flex text-white flex-col w-[100%] h-[100%]">
-										<p className="text-[16px] font-[400]">Name</p>
-										<input
-											className="w-[100%] h-[32px] px-2 text-[14px] text-[#383838] outline-none"
-											type="text"
-										/>
-									</div>
-									<div className="flex text-white flex-col w-[100%] h-[100%]">
-										<p className="text-[16px] font-[400]">Email</p>
-										<input
-											className="w-[100%] h-[32px] px-2 text-[14px] text-[#383838] outline-none"
-											type="text"
-										/>
-									</div>
-									<div className="flex text-white flex-col w-[100%] h-[100%]">
-										<p className="text-[16px] font-[400]">Object</p>
-										 <select className="w-[100%] h-[32px] px-2 text-[14px] bg-white text-[#383838] outline-none">
-                      <option>Кованые мелющие шары</option>
-                      <option>Литые мелющие шары</option>
-                      <option>Катаные мелющие шары</option>
-                     </select>
-									</div>
-									<div className="flex text-white flex-col w-[100%] h-[100%]">
-										<p className="text-[16px] font-[400]">message</p>
-										<input
-											className="w-[100%] h-[32px] px-2 text-[14px] text-[#383838] outline-none"
-											type="text"
-										/>
-									</div>
-									<div className="flex text-white flex-col w-[100%] h-[100%]">
-										<button
-											style={{ transition: "0.3s" }}
-											className="bg-[#c71212]  mt-4 w-full border-[1px] border-white hover:bg-white hover:text-[#c71212] text-[#fff] font-[600] h-[32px]">
-											отправить
-										</button>
-									</div>
-								</div>
+								<ContactFeedback />
 
 								<div className="flex items-center justify-center flex-col gap-1 max-w-[350px] w-full  mt-[40px]">
 									<div className="flex text-white flex-col items-center text-center w-[100%] h-[100%]">
@@ -140,12 +104,14 @@ const Contact = () => {
 					</div>
 				</div>
 
-				<div className="w-[100%] h-[400px] md:h-[100%]">
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.670015518191!2d74.58255517583908!3d42.87980860210758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389ec9ba3daadfbb%3A0x4e7a5fa037f5fd93!2sMotion%20Web%20IT%20academy!5e0!3m2!1sru!2skg!4v1742334835101!5m2!1sru!2skg"
-						width="100%"
-						height="100%"
-						loading="lazy"></iframe>
+				<div className="w-[100%] h-[600px] md:h-[100%]">
+					<div className="map">
+						<iframe
+							src="/map.html"
+							frameBorder="0"
+							scrolling="no"
+							title="Map on 2GIS"></iframe>
+					</div>
 				</div>
 			</div>
 			{modal && (
@@ -155,47 +121,7 @@ const Contact = () => {
 					<div
 						className="bg-[#c71212] p-10   rounded-lg w-full flex  justify-center md:w-[500px] relative"
 						onClick={(e) => e.stopPropagation()}>
-						<div className="flex flex-col items-center  gap-1   max-w-[350px] w-full">
-							<h1 className="text-[22px] md:text-[22px] font-[600] text-white flex text-center">
-              Запрос коммерческого предложения
-							</h1>
-							<div className="flex text-white flex-col w-[100%] h-[100%]">
-								<p className="text-[16px] font-[400]">Name</p>
-								<input
-									className="w-[100%] h-[32px] px-2 text-[14px] text-[#383838] outline-none"
-									type="text"
-								/>
-							</div>
-							<div className="flex text-white flex-col w-[100%] h-[100%]">
-								<p className="text-[16px] font-[400]">Email</p>
-								<input
-									className="w-[100%] h-[32px] px-2 text-[14px] text-[#383838] outline-none"
-									type="text"
-								/>
-							</div>
-							<div className="flex text-white flex-col w-[100%] h-[100%]">
-								<p className="text-[16px] font-[400]">Object</p>
-                <select className="w-[100%] h-[32px] px-2 text-[14px] bg-white text-[#383838] outline-none">
-                      <option>Кованые мелющие шары</option>
-                      <option>Литые мелющие шары</option>
-                      <option>Катаные мелющие шары</option>
-                     </select>
-							</div>
-							<div className="flex text-white flex-col w-[100%] h-[100%]">
-								<p className="text-[16px] font-[400]">message</p>
-								<input
-									className="w-[100%] h-[32px] px-2 text-[14px] text-[#383838] outline-none"
-									type="text"
-								/>
-							</div>
-							<div className="flex text-white flex-col w-[100%] h-[100%]">
-								<button
-									style={{ transition: "0.3s" }}
-									className="bg-[#c71212]  mt-4 w-full border-[1px] border-white hover:bg-white hover:text-[#c71212] text-[#fff] font-[600] h-[32px]">
-									отправить
-								</button>
-							</div>
-						</div>
+						<ContactRfc />
 					</div>
 				</div>
 			)}

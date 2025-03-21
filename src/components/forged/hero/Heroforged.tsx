@@ -1,6 +1,7 @@
 import { links_products } from "@/components/navbar/data";
 import Link from "next/link";
 import React from "react";
+import { CgArrowLongRight } from "react-icons/cg";
 
 const Heroforged = () => {
 	return (
@@ -43,6 +44,8 @@ const Heroforged = () => {
 									<h1 className="text-white w-[150px] mt-4 text-start text-[18px] font-[600] ">
 										{el.title}
 									</h1>
+																		<button style={{ transition: "0.3s" }} className="flex items-center justify-center gap-2 w-[110px] h-[40px] font-[600]  text-[#fff] border-[1px] border-[#fff] hover:bg-[#fff] hover:text-[#ff2828]"> Дальше<CgArrowLongRight/></button>
+									
 									 
 								</div>
 							</div>

@@ -1,27 +1,15 @@
 "use client";
-import img1 from "@/assets/img1.jpg";
-import img2 from "@/assets/img2.jpg";
-import img3 from "@/assets/img3.jpg";
-import img4 from "@/assets/img1.jpg";
-import img5 from "@/assets/img2.jpg";
-import img6 from "@/assets/img3.jpg";
 
 import Image from "next/image";
 import { useEffect } from "react";
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import Link from "next/link";
-
-const data = [
-	{ img: img4 },
-	{ img: img5 },
-	{ img: img6 },
-	{ img: img1 },
-	{ img: img2 },
-	{ img: img3 },
-]  
+import { useGetGalleryQuery } from "@/redux/api/cards";
 
 const Gallery = () => {
+	const { data } = useGetGalleryQuery();
+
 	useEffect(() => {
 		Fancybox.bind("[data-fancybox='gallery']", {});
 		return () => {
@@ -36,15 +24,15 @@ const Gallery = () => {
 					Наша галерея
 				</h1>
 				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
-					{data.map((el, index) => (
+					{data?.map((el, index) => (
 						<Link
 							key={index}
 							data-aos="fade-up"
 							data-aos-delay={index * 200}
-							href={el.img.src}
+							href={el.gallery_image}
 							data-fancybox="gallery"
 							className="relative w-full h-[340px] overflow-hidden rounded-[4px] block">
-							<Image fill className="object-cover" src={el.img} alt="img" />
+							<Image fill className="object-cover" src={el.gallery_image} alt="img" />
 						</Link>
 					))}
 				</div>

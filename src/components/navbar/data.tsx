@@ -12,7 +12,7 @@ export const links_nav = [
   {
     icon:<IoIosBookmarks />,
     title:"О компании",
-    path:"z/about",
+    path:"/about",
   },
   {
     icon:<FaCircle />,

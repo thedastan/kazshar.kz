@@ -1,17 +1,16 @@
 "use client";
-import img1 from "@/assets/about.jpg";
 import Image from "next/image";
 import { useEffect } from "react";
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
+import { useGetToolsQuery } from "@/redux/api/cards";
 import Link from "next/link";
 
-const data = Array(6).fill({ img: img1 });
-
 const Equipment = () => {
+	const { data } = useGetToolsQuery();
+
 	useEffect(() => {
-		Fancybox.bind("[data-fancybox='gallery']", {
-		});
+		Fancybox.bind("[data-fancybox='gallery']", {});
 		return () => {
 			Fancybox.destroy();
 		};
@@ -24,15 +23,21 @@ const Equipment = () => {
 					Используемое оборудование
 				</h1>
 				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
-					{data.map((el, index) => (
+					{data?.map((el, index) => (
 						<Link
 							key={index}
 							data-aos="fade-up"
-							data-aos-delay={index * 200}
-							href={el.img.src}
+							data-aos-delay={el.id * 200}
+							href={el.tools_image}
 							data-fancybox="gallery"
 							className="relative w-full h-[340px] overflow-hidden rounded-[4px] block">
-							<Image fill className="object-cover" src={el.img} alt="img" />
+							<h1>{el.id}</h1>
+							<Image
+								fill
+								className="object-cover"
+								src={el.tools_image}
+								alt="img"
+							/>
 						</Link>
 					))}
 				</div>
