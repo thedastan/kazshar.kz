@@ -1,24 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://metallomir.kg/</loc>
-    <lastmod>2024-12-14</lastmod>
+   <loc>https://kashar.kz/</loc>
+    <lastmod>2025-03-22</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://metallomir.kg/catalog</loc>
-    <lastmod>2024-12-14</lastmod>
+    <loc>https://kashar.kz/about</loc>
+    <lastmod>2025-03-22</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://metallomir.kg/about-company</loc>
-    <lastmod>2024-12-14</lastmod>
-    <priority>0.7</priority>
+    <loc>https://kashar.kz/products</loc>
+    <lastmod>2025-03-22</lastmod>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://metallomir.kg/table</loc>
-    <lastmod>2024-12-14</lastmod>
-    <priority>0.7</priority>
+     <loc>https://kashar.kz/forged</loc>
+    <lastmod>2025-03-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+   <loc>https://kashar.kz/cast</loc>
+    <lastmod>2025-03-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kashar.kz/rolled</loc>
+    <lastmod>2025-03-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kashar.kz/create</loc>
+    <lastmod>2025-03-22</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+     <loc>https://kashar.kz/news</loc>
+    <lastmod>2025-03-22</lastmod>
+    <priority>0.9</priority>
+  </url>
+   <url>
+     <loc>https://kashar.kz/contact</loc>
+    <lastmod>2025-03-22</lastmod>
+    <priority>0.8</priority>
   </url>
   
 </urlset>

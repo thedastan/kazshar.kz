@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Script from "next/script";
 import {
-	SEO_DESCRIPTION,
-	SEO_KEY_WORDS,
+	SEO_DESCRIPTION_EN,
+	SEO_KEY_WORDS_EN,
 	SITE_NAME,
 } from "@/constants/seo/seo.constants";
 import { THEME_COLOR } from "@/config/_variables.config";
@@ -24,9 +24,9 @@ const CustomHead = () => {
 					href="/icons/icon-192x192.png"
 				/>
 
-				<meta name="description" content={SEO_DESCRIPTION} />
+				<meta name="description" content={SEO_DESCRIPTION_EN} />
 				<meta property="og:title" content={SITE_NAME} />
-				<meta property="og:description" content={SEO_KEY_WORDS} />
+				<meta property="og:description" content={SEO_KEY_WORDS_EN} />
 
 				<meta
 					name="apple-mobile-web-app-status-bar-style"

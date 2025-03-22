@@ -4,15 +4,13 @@ import Head from "next/head";
 import React from "react";
 
 export const metadata: Metadata = {
-	title: "Сила определяется тем, что за ней скрывается.",
-	description:
-		"И каждая конструкция надежна настолько, насколько надежны ее структура и фундамент.",
+	title: "",
+	description: "",
 	robots: "index, follow",
-	authors: [{ name: "ОсОО Металломир" }],
+	authors: [{ name: "" }],
 	openGraph: {
-		title: "Металлопрокат в Бишкеке - Арматура, Трубы, Листы и Другое",
-		description:
-			"Металлопрокат в Бишкеке. Широкий ассортимент: арматура, оцинкованные листы, круглые и прямоугольные трубы, уголки, швеллер, катанка. Доставка по городу. Звоните!",
+		title: "",
+		description: "",
 
 		url: "https://kzmc.kg/media/uploads/images/listovoi_prokat1.jpg",
 		type: "website",

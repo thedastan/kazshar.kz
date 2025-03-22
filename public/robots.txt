@@ -1,10 +1,18 @@
 User-agent: *
 Allow: /
-Allow: /about-company
-Allow: /catalog
+Allow: /about
+Allow: /products
+Allow: /forged
+Allow: /cast
+Allow: /rolled
+Allow: /create
+Allow: /news
+Allow: /contact
 
 
-Sitemap: https://metallomir.kg/sitemap.xml
+
+
+Sitemap: https://kashar.kz/sitemap.xml
 
 
 

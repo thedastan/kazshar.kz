@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "@/styles/globals.scss";
 import {
-	SEO_DESCRIPTION,
+	SEO_DESCRIPTION_EN,
+	SEO_DESCRIPTION_KZ,
+	SEO_DESCRIPTION_RU,
 	SEO_IMAGE,
+	SEO_KEY_WORDS_EN,
+	SEO_KEY_WORDS_KZ,
+	SEO_KEY_WORDS_RU,
 	SITE_NAME,
 } from "@/constants/seo/seo.constants";
 import Providers from "./provider";
@@ -21,7 +26,9 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
 	title: SITE_NAME,
-	description: SEO_DESCRIPTION,
+	description: SEO_DESCRIPTION_EN || SEO_DESCRIPTION_RU || SEO_DESCRIPTION_KZ,
+	keywords: SEO_KEY_WORDS_EN || SEO_KEY_WORDS_RU || SEO_KEY_WORDS_KZ,
+
 	openGraph: {
 		url: SEO_IMAGE,
 	},
