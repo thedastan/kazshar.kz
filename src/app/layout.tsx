@@ -12,6 +12,8 @@ import {
 	SITE_NAME,
 } from "@/constants/seo/seo.constants";
 import Providers from "./provider";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 
 const geistSans = localFont({
 	src: "./fonts/GeistVF.woff",
@@ -34,16 +36,22 @@ export const metadata: Metadata = {
 	},
 };
 
-export default function RootLayout({
+export default async function RootLayout({
 	children,
+	params,
 }: Readonly<{
 	children: React.ReactNode;
+	params: Promise<{ locale: string }>;
 }>) {
+	const { locale } = await params;
+	const messages = await getMessages();
 	return (
-		<html lang="en">
+		<html lang={locale}>
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-				<Providers>{children}</Providers>
+				<NextIntlClientProvider messages={messages}>
+					<Providers>{children}</Providers>
+				</NextIntlClientProvider>
 			</body>
 		</html>
 	);

@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import {  usePathname } from "next/navigation";
 import React, { useState, useEffect, useRef } from "react";
 import { links_nav } from "../data";
 import BurgerMenu from "./BurgerMenu";
@@ -10,13 +10,15 @@ import { FaPhoneAlt } from "react-icons/fa";
 
 import logo from "@/assets/logo.png";
 import Image from "next/image";
+import Language from "./Language";
 
 const Header = () => {
 	const pathname = usePathname();
+
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isOpen, setIsOpen] = useState(false);
 	const menuRef = useRef<HTMLDivElement>(null);
- 
+
 	console.log(isOpen);
 	
 
@@ -42,6 +44,8 @@ const Header = () => {
 								<Image className=" w-[180px]" src={logo} alt="logo" />
 							</Link>
 						</h1>
+
+						<Language />
 					</div>
 				</div>
 			</div>
@@ -57,20 +61,24 @@ const Header = () => {
 							<Link href={"/"}>
 								<Image className="w-[180px]" src={logo} alt="logo" />
 							</Link>
+
+							<div>
+								<Language />
+							</div>
 						</div>
 
 						<div className="hidden sm:flex justify-center gap-6 w-full">
 							{links_nav.map((el, index) => (
 								<div key={index} className="relative">
-									 	<Link
-											href={el.path}
-											className={`font-normal text-[14px] uppercase ${
-												pathname === el.path
-													? "border-b-2 border-[#ff2828] text-[#ff2828]"
-													: ""
-											}`}>
-											{el.title}
-										</Link>
+									<Link
+										href={el.path}
+										className={`font-normal text-[14px] uppercase ${
+											pathname === el.path
+												? "border-b-2 border-[#ff2828] text-[#ff2828]"
+												: ""
+										}`}>
+										{el.title}
+									</Link>
 								</div>
 							))}
 						</div>

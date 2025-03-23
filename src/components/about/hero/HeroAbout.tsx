@@ -1,5 +1,7 @@
+import { useTranslations } from "next-intl";
 
 const HeroAbout = () => {
+	const t = useTranslations('HomePage');
 	return (
 		<div className="relative w-[100%] h-[500px]">
 			<div className="w-full h-[500px]">
@@ -19,7 +21,8 @@ const HeroAbout = () => {
 			<div className="flex px-16 bg-[#000000b0] gap-20 absolute top-0 left-0 w-[100%] h-[500px] justify-center items-center flex-col">
 				<div className="">
 					<h1 className="font-[700] md:text-[60px] text-[30px] text-white">
-						О компании
+						{/* О компании */}
+						{t('title')} 
 					</h1>
 				</div>
 			</div>
