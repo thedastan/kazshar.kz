@@ -21,7 +21,7 @@ const Contact = () => {
               {t("contact_title")}
             </h1>
           </div>
-          <div className="flex max-w-[274px] w-full">
+          <div className="flex max-w-[300px] w-full">
             <button
               className={`px-4 h-[40px] leading-[1] transition ${
                 tab === "form"
