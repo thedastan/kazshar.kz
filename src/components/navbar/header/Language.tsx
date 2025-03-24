@@ -33,7 +33,7 @@ const Language = () => {
         >
           <option value="ru">RU</option>
           <option value="en">EN</option>
-          <option value="kz">KZ</option>
+          <option value="kk">KZ</option>
         </select>
       </div>
     );
@@ -51,7 +51,7 @@ const Language = () => {
       >
         <option value="ru">RU</option>
         <option value="en">EN</option>
-        <option value="kz">KZ</option>
+        <option value="kk">KZ</option>
       </select>
     </div>
   );

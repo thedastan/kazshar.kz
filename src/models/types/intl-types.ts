@@ -1,5 +1,5 @@
 export enum EnumIntl {
-  KAZAK = "kz",
+  KAZAK = "kk",
   ENGLISH = "en",
   RUSSIAN = "ru",
 }
