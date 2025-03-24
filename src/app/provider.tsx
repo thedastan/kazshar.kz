@@ -7,19 +7,19 @@ import { FC, ReactNode } from "react";
 import { Provider } from "react-redux";
 
 interface LayoutPageProps {
-	children: ReactNode;
+  children: ReactNode;
 }
 
 const Providers: FC<LayoutPageProps> = ({ children }) => {
-	return (
-		<div>
-			<Provider store={store}>
-				<Header />
-				{children}
-				<Footer />
-			</Provider>
-		</div>
-	);
+  return (
+    <div>
+      <Provider store={store}>
+        <Header />
+        {children}
+        <Footer />
+      </Provider>
+    </div>
+  );
 };
 
 export default Providers;

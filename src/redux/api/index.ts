@@ -18,7 +18,6 @@ export const api = createApi({
   baseQuery: baseQueryExtended,
   refetchOnFocus: true,
   refetchOnReconnect: true,
-  tagTypes: ["cards","tools","gallery", "contact_us","rfc_proposal"],
+  tagTypes: ["cards", "tools", "gallery", "contact_us", "rfc_proposal"],
   endpoints: () => ({}),
 });
-
