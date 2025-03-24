@@ -5,6 +5,8 @@ import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
 import { useGetCardsQuery } from "@/redux/api/cards";
+import useTypedLocale from "@/hooks/useLocale";
+import { useTranslations } from "next-intl";
 
 const Skeleton = () => (
   <div className="flex flex-col gap-[5px]">
@@ -16,8 +18,12 @@ const Skeleton = () => (
 
 const News = () => {
   const [modal, setModal] = useState<number | null>(null);
+  const locale = useTypedLocale();
+  const t = useTranslations("News");
 
   const { data, isLoading } = useGetCardsQuery();
+
+  console.log(data, "new");
 
   const item = data?.find((el) => el.id === modal);
 
@@ -69,10 +75,14 @@ const News = () => {
                       onClick={() => setModal(el.id)}
                       className="text-white bg-[#ff2828] rounded-[5px] py-2 px-4 font-[400] text-[18px] flex items-center gap-1"
                     >
-                      подробнее
+                      {t("btn")}
                     </button>
                     <p className="font-[400] text-[18px] text-end text-[#c5c5c5]">
-                      {el.data_create}
+                      {new Date(el.data_create).toLocaleDateString(locale, {
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric",
+                      })}
                     </p>
                   </div>
                 </div>
@@ -108,7 +118,7 @@ const News = () => {
                     onClick={() => setModal(null)}
                     className="text-white cursor-pointer bg-[#ff2828] rounded-[5px] py-2 px-4 font-[400] text-[18px] flex items-center gap-1"
                   >
-                    закрыть
+                    {t("btn2")}
                   </button>
                 </div>
               </div>

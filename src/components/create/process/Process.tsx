@@ -57,8 +57,8 @@ const Process = () => {
               className="flex group hover:bg-[#ff2828] p-6 md:minH-[320px] minH-[360px] h-full flex-col justify-start items-start gap-4"
             >
               <h1
-                id="text_bg"
-                className="text-[160px] leading-[130px]   font-[900]  "
+                // id="text_bg"
+                className="text-[160px] leading-[130px]  group-hover:text-white font-[900]  text-[#616161]"
               >
                 {el.num}
               </h1>

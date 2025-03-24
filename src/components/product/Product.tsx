@@ -19,11 +19,6 @@ const Product = () => {
   const t = useTranslations("Product");
   const links = getLinksProducts(language);
 
-  //   "asorti": "Ассортимент продукции",
-  //   "about": "О нас",
-  //   "about_des": "История нашего завода",
-  //   "about_btn": "Подробнее"
-
   return (
     <div className="w-full h-screen overflow-hidden absolute top-0">
       <div

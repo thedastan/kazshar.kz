@@ -1,4 +1,4 @@
-import img from "@/assets/about.jpg";
+import img from "@/assets/Кованые.jpg";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 

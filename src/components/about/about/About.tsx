@@ -63,8 +63,9 @@ const About = () => {
               id="abouts"
               className="   relative w-full md:w-[70%] md:h-[400px] h-[300px] overflow-hidden rounded-[4px]"
             >
-              {/* <Image fill objectFit="cover" src={img1} alt="img" /> */}
+              <Image fill objectFit="cover" src={img1} alt="img" />
             </div>
+
             <div className="w-full flex flex-col gap-4">
               <h1 className="md:text-[40px] mt-4 md:mt-0 text-[26px]  font-[700] text-white">
                 {t("today")}

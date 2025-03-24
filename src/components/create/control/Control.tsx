@@ -45,8 +45,8 @@ const Control = () => {
               className="flex flex-col lg:flex-row group hover:bg-[#ff2828] md:minH-[320px] minH-[360px] h-full p-6 justify-start items-start md:items-start lg:items-center gap-4"
             >
               <h1
-                id="text_bg"
-                className="text-[160px] leading-[130px]   font-[900]  "
+                // id="text_bg"
+                className="text-[160px] leading-[130px] text-[#616161] group-hover:text-white  font-[900]  "
               >
                 {el.num}
               </h1>
