@@ -14,6 +14,7 @@ import {
 import Providers from "./provider";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
+import { Manrope } from "next/font/google";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -24,6 +25,12 @@ const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
+});
+
+const manrope = Manrope({
+  variable: "--font-manrope", // Добавляем переменную для использования в CSS
+  subsets: ["latin"],
+  weight: ["400", "500", "700"], // Выбираем нужные толщины (можно изменить)
 });
 
 export const metadata: Metadata = {
@@ -48,7 +55,7 @@ export default async function RootLayout({
   return (
     <html lang={locale}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${manrope.className} antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
           <Providers>{children}</Providers>

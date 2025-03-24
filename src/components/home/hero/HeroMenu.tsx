@@ -63,7 +63,7 @@ const HeroMenu = ({ isSidebarOpen }: HeroMenuProps) => {
       </div>
 
       <div className="bg-[#c71212] w-full p-2">
-        <Link className="w-full" href="/">
+        <Link className="w-full" href="/products">
           <div
             style={{
               transition: "0.1s",

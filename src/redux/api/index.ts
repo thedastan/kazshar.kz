@@ -4,13 +4,21 @@ import {
   fetchBaseQuery,
 } from "@reduxjs/toolkit/query/react";
 
-const baseQuery = fetchBaseQuery({
-  baseUrl: `${process.env.NEXT_PUBLIC_API}/ru/api/kashgar`,
-});
+const getLocaleFromPathname = () => {
+  if (typeof window !== "undefined") {
+    const match = window.location.pathname.match(/^\/(ru|en|kz)/);
+    return match ? match[1] : "ru";
+  }
+  return "ru"; // Фолбэк для SSR
+};
 
 const baseQueryExtended: BaseQueryFn = async (args, api, extraOptions) => {
-  const result = await baseQuery(args, api, extraOptions);
-  return result;
+  const locale = getLocaleFromPathname();
+  const baseQuery = fetchBaseQuery({
+    baseUrl: `${process.env.NEXT_PUBLIC_API}/${locale}/api/kashgar`,
+  });
+
+  return baseQuery(args, api, extraOptions);
 };
 
 export const api = createApi({

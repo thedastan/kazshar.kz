@@ -25,10 +25,11 @@
     "products_title3": "Rolled Grinding Balls",
     "products_des3": "Rolled grinding balls are made from steel rods on a ball-rolling mill.",
 
-    "learn": "explore the product range"
+    "learn": "Еxplore the product range"
   },
 
   "About": {
+    "title": "About KazShar",
     "histori": "History of our factory",
     "histori_description": "Our factory was founded in 2024 with the goal of producing high-quality products for the metallurgical and mining industries. We started as a small enterprise, but thanks to the implementation of modern technologies and the professionalism of our team, we have become one of the leading producers of grinding balls in Kazakhstan.",
     "task": "About our task",
@@ -48,6 +49,7 @@
     "about_btn": "Learn More"
   },
   "Create": {
+    "title": "High-Quality Metal Products Manufacturing",
     "production": "Production Process",
     "production_des": "Our factory utilizes advanced technologies to manufacture high-quality products. The process includes several key stages:",
     "production_des2": "The process is focused on efficiency and high quality, allowing us to meet the demands of even the most demanding clients.",
@@ -173,5 +175,11 @@
     "tab2_des2": "Impact toughness (J/cm²) ≥12",
 
     "tab3": "Chemical Composition"
+  },
+  "News": {
+    "title": "Latest Events in the Metallurgical Industry",
+    "des": "Latest news on production, prices, and innovations in the metal products sector.",
+    "btn": "Learn more",
+    "btn2": "Close"
   }
 }
