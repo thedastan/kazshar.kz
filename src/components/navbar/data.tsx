@@ -1,58 +1,113 @@
-import { FaCircle, FaPhoneAlt } from "react-icons/fa"
-import { IoIosAddCircle, IoIosBookmarks } from "react-icons/io"
-import { IoHomeSharp } from "react-icons/io5"
-import { PiNewspaperFill } from "react-icons/pi"
+// import { useTranslations } from "next-intl";
+// import { FaCircle, FaPhoneAlt } from "react-icons/fa";
+// import { IoIosAddCircle, IoIosBookmarks } from "react-icons/io";
+// import { IoHomeSharp } from "react-icons/io5";
+// import { PiNewspaperFill } from "react-icons/pi";
+// const t = useTranslations("HeroMenu");
 
-export const links_nav = [
-  {
-    icon:<IoHomeSharp />,
-    title:"Главная",
-    path:"/",
-  },
-  {
-    icon:<IoIosBookmarks />,
-    title:"О компании",
-    path:"/about",
-  },
-  {
-    icon:<FaCircle />,
-    title:"Продукция",
-    path:"/products",
-  },
-  {
-    icon:<IoIosAddCircle />,
-    title:"Производство",
-    path:"/create",
-  },
-  {
-    icon:<PiNewspaperFill />,
-    title:"Новости",
-    path:"/news",
-  },
-  {
-    icon:<FaPhoneAlt />,
-    title:"Контакты",
-    path:"/contact",
-  },
-]
+// export const links_nav = [
+//   {
+//     icon: <IoHomeSharp />,
+//     title: t("home"),
+//     path: "/",
+//   },
+//   {
+//     icon: <IoIosBookmarks />,
+//     title: t("about"),
+//     path: "/about",
+//   },
+//   {
+//     icon: <FaCircle />,
+//     title: t("products"),
+//     path: "/products",
+//   },
+//   {
+//     icon: <IoIosAddCircle />,
+//     title: t("create"),
+//     path: "/create",
+//   },
+//   {
+//     icon: <PiNewspaperFill />,
+//     title: t("news"),
+//     path: "/news",
+//   },
+//   {
+//     icon: <FaPhoneAlt />,
+//     title: t("contact"),
+//     path: "/contact",
+//   },
+// ];
 
-export const links_products = [
+// export const links_products = [
+//   {
+//     title: t("products_title"),
+//     desc: t("products_des"),
+//     path: "/forged",
+//   },
+//   {
+//     title: t("products_title2"),
+//     desc: t("products_des2"),
+//     path: "/cast",
+//   },
+//   {
+//     title: t("products_title3"),
+//     desc: t("products_des3"),
+//     path: "/rolled",
+//   },
+// ];
+
+import { FaCircle, FaPhoneAlt } from "react-icons/fa";
+import { IoIosAddCircle, IoIosBookmarks } from "react-icons/io";
+import { IoHomeSharp } from "react-icons/io5";
+import { PiNewspaperFill } from "react-icons/pi";
+
+export const getLinksNav = (t: (key: string) => string) => [
   {
-    title:"Кованые мелющие шары",
-    desc:"Кованые шары изготавливаются из стальных слитков с помощью кузнечного молота. ",
-    path:"/forged",
+    icon: <IoHomeSharp />,
+    title: t("home"),
+    path: "/",
   },
   {
-    title:"Литые мелющие шары",
-    desc:"Литые мелющие шары изготавливаются из высокохромистого, среднехромистого и низкохромистого чугуна.",
-    path:"/cast",
+    icon: <IoIosBookmarks />,
+    title: t("about"),
+    path: "/about",
   },
   {
-    title:"Катаные мелющие шары",
-    desc:"Катаные мелющие шары изготавливаются из стальных прутков шаропрокатного стана.",
-    path:"/rolled",
-  }
-  
-  
-]
- 
+    icon: <FaCircle />,
+    title: t("products"),
+    path: "/products",
+  },
+  {
+    icon: <IoIosAddCircle />,
+    title: t("create"),
+    path: "/create",
+  },
+  {
+    icon: <PiNewspaperFill />,
+    title: t("news"),
+    path: "/news",
+  },
+  {
+    icon: <FaPhoneAlt />,
+    title: t("contact"),
+    path: "/contact",
+  },
+];
+
+export const getLinksProducts = (t: (key: string) => string) => [
+  {
+    title: t("products_title"),
+    desc: t("products_des"),
+    path: "/forged",
+  },
+  {
+    title: t("products_title2"),
+    desc: t("products_des2"),
+    path: "/cast",
+  },
+  {
+    title: t("products_title3"),
+    desc: t("products_des3"),
+    path: "/rolled",
+  },
+];
