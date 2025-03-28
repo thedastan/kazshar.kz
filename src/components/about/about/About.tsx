@@ -11,7 +11,7 @@ const About = () => {
     <div>
       <div className="container">
         <div className=" pb-20 md:pb-0 py-0 md:py-20">
-          <div className="flex md:flex-row flex-col">
+          <div data-aos="fade-up" className="flex md:flex-row flex-col">
             <div className="w-full flex justify-center items-center h-[500px]  ">
               <div className="md:p-14 p-0">
                 <h1 className="md:text-[30px] text-[20px] font-[700]">
@@ -25,18 +25,12 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div
-              data-aos="fade-up"
-              className=" relative w-full h-[300px] md:h-[500px]"
-            >
+            <div className=" relative w-full h-[300px] md:h-[500px]">
               <Image fill objectFit="cover" src={img1} alt="img" />
             </div>
           </div>
-          <div className="flex md:flex-row flex-col-reverse">
-            <div
-              data-aos="fade-up"
-              className=" relative w-full h-[300px] md:h-[500px]"
-            >
+          <div data-aos="fade-up" className="flex md:flex-row flex-col-reverse">
+            <div className=" relative w-full h-[300px] md:h-[500px]">
               <Image fill objectFit="cover" src={img2} alt="img" />
             </div>
             <div className="w-full flex justify-center items-center h-[500px]  ">

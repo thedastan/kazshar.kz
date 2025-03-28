@@ -16,13 +16,24 @@ const Footer = () => {
   const isContactPage = pathname.startsWith(`/${locale}/contact`);
 
   if (isHomePage || isProductsPage || isContactPage) {
-    return <div className="hidden"></div>;
+    return (
+      <div>
+        <Link
+          href="https://wa.me/0708805080"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="whatsapp-button2"
+        >
+          <IoLogoWhatsapp />
+        </Link>
+      </div>
+    );
   }
 
   return (
     <div className="bg-[#000000]">
       <Link
-        href="https://wa.me/708805080"
+        href="https://wa.me/0708805080"
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-button"

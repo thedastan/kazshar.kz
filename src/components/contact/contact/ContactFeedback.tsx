@@ -1,7 +1,9 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { useContactUsMutation } from "@/redux/api/contact";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useTranslations } from "next-intl";
+import ContactRfc from "./ContactRfc";
 
 type ContactFormData = {
   id: number;
@@ -15,6 +17,7 @@ const ContactFeedback = () => {
   const { register, handleSubmit, reset } = useForm<ContactFormData>();
   const [contactData] = useContactUsMutation();
   const t = useTranslations("Contact");
+  const [modal, setModal] = useState(false);
 
   const onSubmit: SubmitHandler<ContactFormData> = async (data) => {
     try {
@@ -42,7 +45,7 @@ const ContactFeedback = () => {
     <div>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex items-start justify-center flex-col mt-[30px] gap-1   max-w-[350px] w-full"
+        className="flex items-start justify-center flex-col gap-1   max-w-[450px] w-full"
       >
         <div className="flex text-white flex-col w-[100%] h-[100%]">
           <p className="text-[16px] font-[400]">{t("name")}</p>
@@ -75,10 +78,10 @@ const ContactFeedback = () => {
         </div>
         <div className="flex text-white flex-col w-[100%] h-[100%]">
           <p className="text-[16px] font-[400]">{t("message")}</p>
-          <input
+          <textarea
             {...register("message", { required: true })}
-            className="w-[100%] h-[32px] px-2 text-[14px] text-[#383838] outline-none"
-            type="text"
+            className="w-[100%] h-[70px] px-2 py-1 text-[14px] text-[#383838] outline-none"
+            // type="text"
           />
         </div>
         <div className="flex text-white flex-col w-[100%] h-[100%]">
@@ -91,6 +94,33 @@ const ContactFeedback = () => {
           </button>
         </div>
       </form>
+      <div className="flex items-center justify-center flex-col gap-1 max-w-[350px] w-full  mt-[10px]">
+        <div className="flex text-white flex-col items-center text-center w-[100%] h-[100%]">
+          <h1 className="text-[17px] font-[600] text-white">{t("proposal")}</h1>
+        </div>
+        <div className="flex text-white flex-col w-[100%] h-[100%]">
+          <button
+            onClick={() => setModal(true)}
+            style={{ transition: "0.3s" }}
+            className="bg-[#c71212] text-[16px] px-[5px]  mt-2 w-full border-[1px] border-white hover:bg-white hover:text-[#c71212] text-[#fff] font-[600] h-[32px]"
+          >
+            {t("balls")}
+          </button>
+        </div>
+      </div>
+      {modal && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
+          onClick={() => setModal(false)}
+        >
+          <div
+            className="bg-[#c71212] p-10   rounded-lg w-full flex  justify-center md:w-[500px] relative"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <ContactRfc />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

@@ -46,7 +46,10 @@ const ContactRfc = () => {
   return (
     <div className="">
       <div className="flex flex-col items-center  gap-1   max-w-[350px] w-full">
-        <form onSubmit={handleSubmit(onSubmit)} className="form">
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="flex flex-col gap-[10px]"
+        >
           <h1 className="text-[22px] md:text-[22px] font-[600] text-white flex text-center">
             {t("proposal")}
           </h1>
@@ -80,10 +83,10 @@ const ContactRfc = () => {
           </div>
           <div className="flex text-white flex-col w-[100%] h-[100%]">
             <p className="text-[16px] font-[400]">{t("message")}</p>
-            <input
+            <textarea
               {...register("message", { required: true })}
-              className="w-[100%] h-[32px] px-2 text-[14px] text-[#383838] outline-none"
-              type="text"
+              className="w-[100%] h-[70px] py-1 px-2 text-[14px] text-[#383838] outline-none"
+              // type="text"
             />
           </div>
           <div className="flex text-white flex-col w-[100%] h-[100%]">
