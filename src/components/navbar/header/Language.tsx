@@ -27,13 +27,13 @@ const Language = () => {
           style={{
             transition: "0.1s",
           }}
-          className="bg-[#6b6b6b] rounded-[0px]  outline-none w-[40px] h-[20px] ml-[5px] text-[14px] hover:bg-white"
+          className="bg-[#6b6b6b] rounded-[0px]  outline-none w-[50px] h-[20px] ml-[5px] text-[14px] hover:bg-white"
           value={params.locale}
           onChange={LanguageChange}
         >
           <option value="ru">RU</option>
-          <option value="en">EN</option>
           <option value="kk">KZ</option>
+          <option value="en">EN</option>
         </select>
       </div>
     );
@@ -50,8 +50,8 @@ const Language = () => {
         onChange={LanguageChange}
       >
         <option value="ru">RU</option>
-        <option value="en">EN</option>
         <option value="kk">KZ</option>
+        <option value="en">EN</option>
       </select>
     </div>
   );

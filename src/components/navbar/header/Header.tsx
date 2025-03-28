@@ -45,11 +45,11 @@ const Header = () => {
   if (isHomePage || isProductsPage || isContactPage) {
     return (
       <div className="fixed z-10 w-full">
-        <div className="container">
+        <div className="px-[60px]">
           <div className="py-4">
             <h1 className="text-[40px] font-[800] text-[#ffffff8f]">
               <Link href={"/"}>
-                <Image className=" w-[180px]" src={logo} alt="logo" />
+                <Image className=" w-[260px]" src={logo} alt="logo" />
               </Link>
             </h1>
           </div>

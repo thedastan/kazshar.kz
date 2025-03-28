@@ -10,6 +10,7 @@ import {
 } from "@/constants/admin";
 import Language from "./Language";
 import { useTranslations } from "next-intl";
+import { IoMdClose } from "react-icons/io";
 
 const BurgerMenu = ({
   isOpen,
@@ -43,7 +44,7 @@ const BurgerMenu = ({
         }`}
       >
         <button className="self-end" onClick={() => setIsOpen(false)}>
-          {/* <X />  */}X
+          <IoMdClose />
         </button>
 
         <div className="flex flex-col gap-2 mt-8 text-center">
@@ -79,18 +80,6 @@ const BurgerMenu = ({
           >
             {/* <WhatsappSvg /> */}
             {WHATSAPP_NUMBER}
-          </Link>
-        </div>
-
-        <div className="w-full flex justify-center mt-4">
-          <Link href="/">
-            {/* <Image
-							className='w-[140px]'
-							onClick={() => setIsOpen(false)}
-							src={logo}
-							alt='logo'
-						/> */}
-            logo
           </Link>
         </div>
       </div>

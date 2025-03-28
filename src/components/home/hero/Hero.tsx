@@ -9,7 +9,6 @@ const Hero = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
   const [modal, setModal] = useState(false);
   const t = useTranslations("Hero");
-  // {t('title')}
 
   return (
     <>
@@ -70,7 +69,7 @@ const Hero = () => {
             onClick={() => setModal(false)}
           >
             <div
-              className=" bg-transparent md:bg-[#303030] p-0 md:p-6 rounded-lg w-full md:w-[1000px] relative"
+              className=" bg-transparent md:bg-[#303030] p-0 md:p-6 rounded-lg w-full md:w-[90%] h-[300px] md:h-[97vh] relative"
               onClick={(e) => e.stopPropagation()}
             >
               <button
@@ -82,7 +81,7 @@ const Hero = () => {
               <video
                 autoPlay
                 controls
-                className="w-full rounded-lg mt-10 md:mt-4"
+                className="w-full h-full rounded-lg mt-10 md:mt-4"
               >
                 <source src="/metal.mp4" type="video/mp4" />
                 {t("no_watching")}

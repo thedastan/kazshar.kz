@@ -1,4 +1,5 @@
 "use client";
+import ContactRfc from "@/components/contact/contact/ContactRfc";
 import { getLinksProducts } from "@/components/navbar/data";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
@@ -18,6 +19,7 @@ const Tabforged = () => {
   const language = useTranslations("HeroMenu");
   const t = useTranslations("Cast");
   const links = getLinksProducts(language);
+  const [modal, setModal] = useState(false);
 
   const data = [
     {
@@ -270,7 +272,17 @@ const Tabforged = () => {
           ))}
         </div>
       </div>
-      <div className="py-10 bg-[#1d1d1d]">
+
+      <div className="flex justify-center">
+        <button
+          onClick={() => setModal(true)}
+          className="bg-black text-white px-[20px] py-[10px]"
+        >
+          {t("zapros")}
+        </button>
+      </div>
+
+      <div className="py-10 bg-[#1d1d1d] mt-[70px]">
         <div className="container">
           <div className="flex flex-col md:flex-row md:h-[200px] h-full w-full gap-6">
             {links
@@ -298,6 +310,19 @@ const Tabforged = () => {
           </div>
         </div>
       </div>
+      {modal && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
+          onClick={() => setModal(false)}
+        >
+          <div
+            className="bg-[#c71212] p-10   rounded-lg w-full flex  justify-center md:w-[500px] relative"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <ContactRfc />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

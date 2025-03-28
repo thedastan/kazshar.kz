@@ -3,8 +3,8 @@
     "title": "hello world"
   },
   "Hero": {
-    "title": "The strength is defined by what is hidden behind it.",
-    "description": "And every structure is as reliable as its structure and foundation.",
+    "title": "Quality in every gram of metal.",
+    "description": "KazShar grinding balls are the benchmark of strength and wear resistance for your production.",
     "watching": "Watch full video",
     "no_watching": "Your browser does not support video."
   },
@@ -52,7 +52,7 @@
     "title": "High-Quality Metal Products Manufacturing",
     "production": "Production Process",
     "production_des": "Our factory utilizes advanced technologies to manufacture high-quality products. The process includes several key stages:",
-    "production_des2": "The process is focused on efficiency and high quality, allowing us to meet the demands of even the most demanding clients.",
+    "production_des2": "Our process ensures maximum efficiency and impeccable quality, meeting even the strictest standards.",
 
     "process": "Raw Material Preparation",
     "process_des": "Receiving and inspecting materials required for production.",
@@ -93,7 +93,7 @@
     "quality_des5": "We conduct regular audits and analyze control results to enhance processes and implement innovative methods."
   },
   "Contact": {
-    "contact_title": "Contact Us",
+    "contact_title": "Feedback Form",
     "btn": "Contact Form",
     "btn2": "Contact",
     "name": "Name",
@@ -132,7 +132,9 @@
     "tab2_des": "Surface hardness 50 - 68",
     "tab2_des2": "Impact toughness (J/cm2) ≥12",
 
-    "tab3": "Chemical Composition"
+    "tab3": "Chemical Composition",
+
+    "zapros": "Request a commercial offer"
   },
   "Cast": {
     "title": "Cast Grinding Balls",
@@ -154,7 +156,8 @@
     "tab3": "Chemical Composition",
     "tab3_des": "High-chromium cast iron",
     "tab3_des2": "Medium-chromium cast iron",
-    "tab3_des3": "Low-chromium cast iron"
+    "tab3_des3": "Low-chromium cast iron",
+    "zapros": "Request a commercial offer"
   },
   "Rolled": {
     "title": "Rolled Grinding Balls",
@@ -174,7 +177,8 @@
     "tab2_des": "Surface hardness 60-67",
     "tab2_des2": "Impact toughness (J/cm²) ≥12",
 
-    "tab3": "Chemical Composition"
+    "tab3": "Chemical Composition",
+    "zapros": "Request a commercial offer"
   },
   "News": {
     "title": "Latest Events in the Metallurgical Industry",
