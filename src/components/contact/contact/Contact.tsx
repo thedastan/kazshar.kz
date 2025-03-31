@@ -32,7 +32,7 @@ const Contact = () => {
         <div className="bg-[rgb(199,18,18)] flex flex-col md:flex-row">
           <div className="bg-[rgb(199,18,18)] h-[100%] md:h-[100vh] px-[50px] pt-14  w-[100%] md:w-[70%] flex flex-col items-center">
             <div className="w-[100%] flex justify-center mt-[100px] md:mt-[80px]">
-              <h1 className="text-[22px] md:text-[32px] font-[600] text-white">
+              <h1 className="text-[22px] md:text-[26px] font-[600] text-white">
                 {t("contact_title")}
               </h1>
             </div>
