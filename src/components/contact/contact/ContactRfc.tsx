@@ -32,9 +32,8 @@ const ContactRfc = () => {
 	const [deliveryMethod, setDeliveryMethod] = useState<string>("0");
 	const [isLoading, setIsLoading] = useState(false);
 
-
 	console.log(val);
-	
+
 	const onSubmit: SubmitHandler<IFormInput> = async (formData) => {
 		setIsLoading(true);
 		try {
@@ -56,9 +55,9 @@ const ContactRfc = () => {
 			reset();
 		} catch (e) {
 			// toast.error("Ошибка при отправке запроса");
-			console.log(e,"error");
-			
-			toast.success(t("errortoas"));
+			console.log(e, "error");
+
+			toast.error(t("errortoas"));
 		} finally {
 			setIsLoading(false);
 		}
@@ -101,8 +100,20 @@ const ContactRfc = () => {
 					</div>
 					<div className="flex text-white flex-col w-[100%] h-[100%]">
 						<p className="text-[16px] font-[400]">{t("email")}</p>
-						<input
+						{/* <input
 							{...register("email", { required: true })}
+							className="w-[100%] h-[32px] px-2 text-[14px] text-[#383838] outline-none"
+							type="text"
+						/> */}
+
+						<input
+							{...register("email", {
+								required: "Это поле обязательно",
+								pattern: {
+									value: /^[a-zA-Z0-9._%+-]+@gmail\.com$/,
+									message: "Введите корректный Gmail адрес",
+								},
+							})}
 							className="w-[100%] h-[32px] px-2 text-[14px] text-[#383838] outline-none"
 							type="text"
 						/>
@@ -123,9 +134,7 @@ const ContactRfc = () => {
 					</div>
 
 					<div className="flex text-white flex-col w-[100%] h-[100%]">
-						<p className="text-[16px] font-[400]">
-						{t("product")}
-						</p>
+						<p className="text-[16px] font-[400]">{t("product")}</p>
 						<select
 							className="w-[100%] h-[32px] px-2 text-[14px] text-[#383838] outline-none"
 							defaultValue="0"
