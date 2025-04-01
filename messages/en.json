@@ -111,7 +111,7 @@
 		"product": "Choose the method of receiving the product",
 		"organization_name": "Name of the organization",
 		"email": "Email Address",
-		"object": "Subject",
+		"object": "Event Type",
 		"message": "Message",
 		"option": "Forged grinding balls",
 		"option1": "Cast grinding balls",

@@ -9,23 +9,7 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 const Contact = () => {
-	// const [modal, setModal] = useState(false);
 	const t = useTranslations("Contact");
-
-	// <div className="flex flex-col md:flex-row  md:items-none h-full md:h-[100%] ">
-	//       <div className="bg-[rgb(199,18,18)] md:h-[95vh] px-[50px]  w-[100%] md:w-[70%] flex flex-col items-center">
-	//         <div className="w-[100%] flex justify-center mt-[100px] md:mt-[80px]">
-	//           <h1 className="text-[22px] md:text-[32px] font-[600] text-white">
-	//             {t("contact_title")}
-	//           </h1>
-	//         </div>
-
-	//         <div className="py-[10px]">
-	//           <div className="">
-	//             <ContactFeedback />
-	//           </div>
-	//         </div>
-	//       </div>
 
 	return (
 		<div>
@@ -45,8 +29,6 @@ const Contact = () => {
 						</div>
 					</div>
 
-					 
-
 					<div className="bg-[rgb(199,18,18)] md:max-w-[300px] max-w-[100%] flex flex-col items-center">
 						<div className="flex items-start justify-start flex-wrap gap-4 w-full">
 							<div className="flex gap-2 text-white">
@@ -65,8 +47,8 @@ const Contact = () => {
 									<FiPhone />
 								</h1>
 								<div>
-									<Link href="tel:+7716380820" target={"_blank"}>
-										<h1 className="text-[12px]">+7 716 380 820</h1>
+									<Link href="tel:+77712510703" target={"_blank"}>
+										<h1 className="text-[12px]">+7 771 251 0703</h1>
 									</Link>
 								</div>
 							</div>
@@ -78,21 +60,21 @@ const Contact = () => {
 								<div>
 									<Link
 										target={"_blank"}
-										href="https://wa.me/+7716380820"
+										href="https://wa.me/+77716380820"
 										passHref>
-										<h1 className="text-[12px]">+7 716 380 820</h1>
+										<h1 className="text-[12px]">+7 771 638 0820</h1>
 									</Link>
 								</div>
 							</div>
 
 							<div className="flex gap-2 text-white">
-									<h1 className="text-[18px]">
-										<FiMapPin />
-									</h1>
-									<div>
-										<h1 className="text-[12px]">{t("address")}</h1>
-									</div>
+								<h1 className="text-[18px]">
+									<FiMapPin />
+								</h1>
+								<div>
+									<h1 className="text-[12px]">{t("address")}</h1>
 								</div>
+							</div>
 						</div>
 					</div>
 				</div>

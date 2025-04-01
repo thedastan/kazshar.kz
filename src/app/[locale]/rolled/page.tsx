@@ -1,4 +1,7 @@
-import RolledComponent from "@/components/rolled/RolledComponent";
+import Used from "@/components/forged/used/Used";
+import AboutRolled from "@/components/rolled/about/AboutRolled";
+import HeroRolled from "@/components/rolled/hero/HeroRolled";
+import TabRolled from "@/components/rolled/tab/TabRolled";
 import { Metadata } from "next";
 import React from "react";
 
@@ -23,7 +26,10 @@ export const metadata: Metadata = {
 const RolledPage = () => {
   return (
     <div>
-      <RolledComponent />
+      <HeroRolled />
+			<AboutRolled />
+      <Used />
+			<TabRolled />
     </div>
   );
 };

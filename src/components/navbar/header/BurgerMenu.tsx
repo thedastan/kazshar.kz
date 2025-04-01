@@ -47,7 +47,7 @@ const BurgerMenu = ({
           <IoMdClose />
         </button>
 
-        <div className="flex flex-col gap-2 mt-8 text-center">
+        <div className="flex justify-center items-start flex-col gap-4 mt-8 text-start">
           <Language />
 
           {links.map((el, index) => (

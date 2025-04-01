@@ -34,7 +34,7 @@ const Heroforged = () => {
       </div>
 
       <div
-        className="w-[160px] h-full hover:bg-[#ff2828] hover:w-[200px] bg-[#000000cc] absolute flex justify-center items-center right-0 top-0"
+        className="w-[160px] h-full hover:bg-[#ff2828] hover:w-[200px] bg-[#000000cc] absolute hidden md:flex justify-center items-center right-0 top-0"
         style={{
           transition: "0.5s",
         }}

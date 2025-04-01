@@ -12,9 +12,9 @@ const LanguageDropdown = () => {
 	const menuRef = useRef<HTMLDivElement>(null);
 
 	const options = [
-		{ value: "ru", label: "🇷🇺 RU" },
-		{ value: "kk", label: "🇰🇿 KZ" },
-		{ value: "en", label: "🇬🇧 EN" },
+		{ value: "ru", label: "RU" },
+		{ value: "kk", label: "KZ" },
+		{ value: "en", label: "EN" },
 	];
 
 	const LanguageChange = (newLocale: string) => {
@@ -78,7 +78,7 @@ const LanguageDropdown = () => {
 		<div className="relative inline-block" ref={menuRef}>
 			{/* Кнопка для дропдауна */}
 			<button
-				className="flex items-center gap-2 w-[100px] px-3 py-2 bg-white border border-gray-300 rounded-lg shadow-sm text-sm font-medium hover:bg-gray-100 transition-all"
+				className="flex items-center gap-2 w-[70px] px-3 py-2 bg-white border border-gray-300 rounded-lg shadow-sm text-sm font-medium hover:bg-gray-100 transition-all"
 				onClick={() => setIsOpen(!isOpen)}>
 				{options.find((opt) => opt.value === locale)?.label}
 				<span className={`transition-transform ${isOpen ? "rotate-180" : ""}`}>
