@@ -32,20 +32,19 @@ const ContactFeedback = () => {
 				"https://kazshar.site/ru/api/kashgar/contact_us/",
 				formData
 			);
-			setVal((prev) => [...prev, data]);  
+			setVal((prev) => [...prev, data]);
 			toast.success(t("formSubmittedSuccessfully"));
 			reset();
 		} catch (e) {
 			console.error(e);
-			toast.success(t("errortoas"));
-		}
-		finally {
+			toast.error(t("errortoas"));
+		} finally {
 			setIsLoading(false);
 		}
 	};
 	return (
 		<div className="w-[100%] md:w-[300px] sm:w-[500px]">
-				<Toaster position="top-center" />
+			<Toaster position="top-center" />
 			<form
 				onSubmit={handleSubmit(onSubmit)}
 				className="flex items-start justify-start flex-col gap-1  w-full">
@@ -59,8 +58,20 @@ const ContactFeedback = () => {
 				</div>
 				<div className="flex text-white flex-col w-[100%] h-[100%]">
 					<p className="text-[16px] font-[400]">{t("email")}</p>
-					<input
+					{/* <input
 						{...register("email", { required: "Это поле обязательно" })}
+						className="w-[100%] h-[32px] px-2 text-[14px] text-[#383838] outline-none"
+						type="text"
+					/> */}
+
+					<input
+						{...register("email", {
+							required: "Это поле обязательно",
+							pattern: {
+								value: /^[a-zA-Z0-9._%+-]+@gmail\.com$/,
+								message: "Введите корректный Gmail адрес",
+							},
+						})}
 						className="w-[100%] h-[32px] px-2 text-[14px] text-[#383838] outline-none"
 						type="text"
 					/>
@@ -84,8 +95,7 @@ const ContactFeedback = () => {
 					<button
 						type="submit"
 						style={{ transition: "0.3s" }}
-						className="bg-[#c71212] mt-4 w-full border-[1px] border-white hover:bg-white hover:text-[#c71212] text-[#fff] font-[600] h-[32px]"
-						 >
+						className="bg-[#c71212] mt-4 w-full border-[1px] border-white hover:bg-white hover:text-[#c71212] text-[#fff] font-[600] h-[32px]">
 						{isLoading ? t("btn_loading") : t("btn3")}
 					</button>
 				</div>
