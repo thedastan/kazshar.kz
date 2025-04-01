@@ -1,4 +1,5 @@
 "use client";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
 import React from "react";
@@ -8,6 +9,8 @@ const Footer = () => {
   const pathname = usePathname();
 
   const { locale } = useParams();
+
+  const t = useTranslations("Footer");
 
   //   const productPath = locale ? `/${locale}/products` : "/products";
 
@@ -19,7 +22,7 @@ const Footer = () => {
     return (
       <div>
         <Link
-          href="https://wa.me/0708805080"
+          href="https://wa.me/7716380820"
           target="_blank"
           rel="noopener noreferrer"
           className="whatsapp-button2"
@@ -44,10 +47,10 @@ const Footer = () => {
       <div className="container">
         <div className="flex flex-col md:flex-row justify-between gap-3 py-4">
           <p className="text-[#b4b4b4] text-center text-[16px]">
-            © 2012 - 2025 Все права защищены.
+            {t("text1")}
           </p>
           <p className="text-[#b4b4b4] text-center text-[16px]">
-            Разработал Motion Web LLC
+          {t("text2")}
           </p>
         </div>
       </div>

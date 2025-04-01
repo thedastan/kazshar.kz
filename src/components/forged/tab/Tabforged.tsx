@@ -87,9 +87,11 @@ const Tabforged = () => {
             {t("haracter")}
           </h3>
 
+          <Link 	target={"_blank"} href={"/Доступные_размеры_и_механические_характеристики_мелющих_шаров.pdf"}> 
           <button className="bg-[#1d1d1d] flex items-center gap-2 rounded-[2px] text-white text-[16px] py-2  px-6 ">
             {t("pdf")} <IoDownloadOutline />
           </button>
+          </Link>
         </div>
       </div>
 
@@ -113,24 +115,27 @@ const Tabforged = () => {
               ))}
             </div>
 
-            <div className=" relative flex flex-col   w-full">
+            <div className=" relative flex  h-[400px]    flex-col w-full">
               {data.map((el, index) => (
                 <div
                   key={index}
-                  className="flex w-full relative justify-start items-center"
+                  className="flex w-full relative justify-start  items-center"
                   onMouseEnter={() => setHoveredIndex(index)}
                   onMouseLeave={() => setHoveredIndex(null)}
                 >
                   <div
-                    className="w-full absolute p-6 right-0 top-0 flex flex-col justify-start items-start px-20 transition-opacity duration-1000 ease-in-out transform"
+                    className="flex justify-center px-20 flex-col items-start    absolute top-0 h-[400px] transition-opacity duration-1000 ease-in-out transform "
                     style={{
                       opacity: hoveredIndex === index ? 1 : 0,
+                      fontSize: hoveredIndex === index ? "18px" : "0px",
+                      transition:
+												"0.5s",
                     }}
                   >
                     {el.descs.map((desc, idx) => (
                       <p
                         key={idx}
-                        className="text-[18px] font-[400] text-start"
+                        className="  font-[400]   text-start"
                       >
                         {desc.desc}
                       </p>
