@@ -81,8 +81,8 @@ const About = () => {
 
       <div className="bg-[#1d1d1d] py-20">
         <div className="container">
-          <div className="md:flex block gap-6 items-center">
-            <DownloadableImage src={img1} alt="today-image" />
+          <div data-aos="fade-up" className="md:flex  block gap-6 items-center">
+             
             <div className="w-full flex flex-col gap-4">
               <h1 className="md:text-[40px] mt-4 md:mt-0 text-[26px] font-[700] text-white">
                 {t("today")}
@@ -100,6 +100,8 @@ const About = () => {
                 {t("today_tonn")}
               </p>
             </div>
+
+            <DownloadableImage src={img1} alt="today-image" />
           </div>
         </div>
       </div>

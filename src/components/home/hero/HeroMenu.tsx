@@ -23,7 +23,7 @@ const HeroMenu = ({ isSidebarOpen }: HeroMenuProps) => {
 
   return (
     <div className="flex z-50 flex-col items-start h-full justify-between   ">
-      <div className="hidden md:flex z-50 px-2 flex-col w-full  pt-6 items-start justify-center gap-4">
+      <div className="hidden md:flex z-50 pl-14 flex-col w-full  pt-6 items-start justify-center gap-4">
         <Language />
 
         {links.map((el, index) => (
@@ -32,9 +32,9 @@ const HeroMenu = ({ isSidebarOpen }: HeroMenuProps) => {
               style={{
                 transition: "0.1s",
               }}
-              className="flex items-center group  p-2 w-full gap-4"
+              className="flex items-center group py-2  p-2 w-full gap-4"
             >
-              <div className="text-[#6b6b6b]  group-hover:text-white text-3xl">
+              <div className="text-[#6b6b6b]  group-hover:text-white text-[40px]">
                 {el.icon}
               </div>
               <div
@@ -42,10 +42,10 @@ const HeroMenu = ({ isSidebarOpen }: HeroMenuProps) => {
                   width: isSidebarOpen ? "100%" : "0",
                   transition: "1s",
                 }}
-                className=" overflow-hidden h-6"
+                className=" overflow-hidden h-10"
               >
                 <h2
-                  className="text-[#6b6b6b] group-hover:text-white"
+                  className="text-[#6b6b6b] text-[22px] group-hover:text-white"
                   style={{
                     marginTop: isSidebarOpen ? "0px" : "40px",
                     transition: "0.4s",

@@ -28,7 +28,7 @@ const Hero = () => {
           </video>
         </div>
 
-        <div className="flex px-[20px] sm:px-16 bg-[#000000b0] gap-[60px] absolute top-0 left-0 w-[100%] h-[700px] md:h-[100vh] justify-end items-start flex-col">
+        <div className="flex px-[20px] sm:px-16 bg-[#00000044] gap-[60px] absolute top-0 left-0 w-[100%] h-[700px] md:h-[100vh] justify-end items-start flex-col">
           <div className="">
             <h1 className="md:text-[54px] text-[26px] text-[#ffffff8f] font-[700]  w-full md:w-[760px] leading-[40px] sm:leading-[70px] text-start">
               {t("title")}
@@ -52,7 +52,7 @@ const Hero = () => {
 
         <div
           className={`absolute md:block hidden top-0 right-0  z-10 h-full bg-[#000000c0]   ${
-            isSidebarOpen ? "w-[300px]" : "w-20"
+            isSidebarOpen ? "w-[300px]" : "w-40"
           }`}
           style={{ transition: "1s" }}
           onMouseEnter={() => setSidebarOpen(true)}
@@ -69,11 +69,11 @@ const Hero = () => {
             onClick={() => setModal(false)}
           >
             <div
-              className=" bg-transparent md:bg-[#303030] p-0 md:p-6 rounded-lg w-full md:w-[90%] h-[300px] md:h-[97vh] relative"
+              className=" bg-transparent md:bg-[#303030]     w-full md:w-[100%] h-[300px] md:h-[100vh] relative"
               onClick={(e) => e.stopPropagation()}
             >
               <button
-                className="absolute top-3 right-3 text-white text-2xl"
+                className="absolute top-3 right-3 text-white z-50 text-2xl"
                 onClick={() => setModal(false)}
               >
                 <IoMdClose />
@@ -81,7 +81,7 @@ const Hero = () => {
               <video
                 autoPlay
                 controls
-                className="w-full h-full rounded-lg mt-10 md:mt-4"
+                className="w-full h-full rounded-lg mt-10 md:mt-0"
               >
                 <source src="/metal.mp4" type="video/mp4" />
                 {t("no_watching")}
