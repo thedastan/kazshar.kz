@@ -43,7 +43,7 @@ const Product = () => {
 								className="relative group   border-2 border-black text-white text-[50px] font-[700] md:w-[700px] w-[400px] h-full flex items-center justify-center transition-all duration-1000">
 								<div
 									style={{ transition: "1s" }}
-									className="absolute z-0 inset-0 bg-[#000000b0]  group-hover:bg-[#0000004f] transition-opacity duration-1000"></div>
+									className="absolute z-0 inset-0 bg-[#000000b0] hover:bg-none  md:group-hover:bg-[#0000004f] transition-opacity duration-1000"></div>
 								<div className=" relative z-20 flex flex-col items-center">
 									<h1 className=" border-black text-[#999999] text-[50px] font-[700]   md:w-[500px] w-[348px] text-start z-10 group-hover:text-[#ffffff] transition-colors duration-1000">
 										{el.title}

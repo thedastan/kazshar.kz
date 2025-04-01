@@ -93,7 +93,7 @@ const About = () => {
               <p className="text-[18px] font-[500] text-white">
                 {t("today_description2")}
               </p>
-              <p className="text-[18px] font-[500] text-white flex gap-[5px]">
+              <p className="text-[18px] font-[500] pb-6 text-white flex gap-[5px]">
                 <span className="text-[18px] font-[600]">
                   {t("today_span")}
                 </span>
