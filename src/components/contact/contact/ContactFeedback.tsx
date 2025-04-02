@@ -43,21 +43,21 @@ const ContactFeedback = () => {
 		}
 	};
 	return (
-		<div className="w-[100%] md:w-[300px] sm:w-[500px]">
+		<div className="w-[100%] md:w-[310px] sm:w-[500px]">
 			<Toaster position="top-center" />
 			<form
 				onSubmit={handleSubmit(onSubmit)}
 				className="flex items-start justify-start flex-col gap-1  w-full">
 				<div className="flex text-white flex-col w-[100%] h-[100%]">
-					<p className="text-[16px] font-[400]">{t("name")}</p>
+					<p className="text-[14px] font-[400]">{t("name")}</p>
 					<input
 						{...register("client_name", { required: "Это поле обязательно" })}
-						className="w-[100%] h-[32px] px-2 text-[14px] text-[#383838] outline-none"
+						className="w-[100%] h-[30px] px-2 text-[14px] text-[#383838] outline-none"
 						type="text"
 					/>
 				</div>
 				<div className="flex text-white flex-col w-[100%] h-[100%]">
-					<p className="text-[16px] font-[400]">{t("email")}</p>
+					<p className="text-[14px] font-[400]">{t("email")}</p>
 					{/* <input
 						{...register("email", { required: "Это поле обязательно" })}
 						className="w-[100%] h-[32px] px-2 text-[14px] text-[#383838] outline-none"
@@ -72,23 +72,23 @@ const ContactFeedback = () => {
 								message: "Введите корректный Gmail адрес",
 							},
 						})}
-						className="w-[100%] h-[32px] px-2 text-[14px] text-[#383838] outline-none"
+						className="w-[100%] h-[30px] px-2 text-[14px] text-[#383838] outline-none"
 						type="text"
 					/>
 				</div>
 				<div className="flex text-white flex-col w-[100%] h-[100%]">
-					<p className="text-[16px] font-[400]">{t("object")}</p>
+					<p className="text-[14px] font-[400]">{t("object2")}</p>
 					<input
 						{...register("object_us", { required: "Это поле обязательно" })}
-						className="w-[100%] h-[32px] px-2 text-[14px] text-[#383838] outline-none"
+						className="w-[100%] h-[30px] px-2 text-[14px] text-[#383838] outline-none"
 						type="text"
 					/>
 				</div>
 				<div className="flex text-white flex-col w-[100%] h-[100%]">
-					<p className="text-[16px] font-[400]">{t("message")}</p>
+					<p className="text-[14px] font-[400]">{t("message")}</p>
 					<textarea
 						{...register("message", { required: "Это поле обязательно" })}
-						className="w-[100%] h-[70px] px-2 py-1 text-[14px] text-[#383838] outline-none"
+						className="w-[100%] h-[60px] px-2 py-1 text-[14px] text-[#383838] outline-none"
 					/>
 				</div>
 				<div className="flex text-white flex-col w-[100%] h-[100%]">

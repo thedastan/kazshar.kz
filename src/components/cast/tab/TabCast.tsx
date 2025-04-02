@@ -7,7 +7,7 @@ import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import { IoDownloadOutline } from "react-icons/io5";
 
-const Tabforged = () => {
+const TabCast = () => {
 	const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
 	const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -319,4 +319,4 @@ const Tabforged = () => {
 	);
 };
 
-export default Tabforged;
+export default TabCast;

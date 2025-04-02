@@ -29,8 +29,8 @@ const Contact = () => {
 						</div>
 					</div>
 
-					<div className="bg-[rgb(199,18,18)] md:max-w-[300px] max-w-[100%] flex flex-col items-center">
-						<div className="flex items-start justify-start flex-wrap gap-4 w-full">
+					<div className="bg-[rgb(199,18,18)] md:max-w-[310px] max-w-[100%] flex flex-col items-center">
+						<div className="flex items-start justify-start flex-col gap-2 w-full">
 							<div className="flex gap-2 text-white">
 								<h1 className="text-[22px]">
 									<MdOutlineMailOutline />

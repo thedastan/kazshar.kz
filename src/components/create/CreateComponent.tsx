@@ -2,10 +2,10 @@
 import React from "react";
 import "aos/dist/aos.css"; // импортируем стили AOS
 import Aos from "aos";
-import Hero from "./hero/Hero";
 import Process from "./process/Process";
 import Equipment from "./equipment/Equipment";
 import Control from "./control/Control";
+import HeroCreate from "./hero/HeroCreate";
 
 const CreateComponent = () => {
   React.useEffect(() => {
@@ -17,7 +17,7 @@ const CreateComponent = () => {
 
   return (
     <div>
-      <Hero />
+      <HeroCreate />
       <Process />
       <Equipment />
       <Control />

@@ -20,7 +20,7 @@ const HeroNews = () => {
         </video>
       </div>
 
-      <div className="flex px-16 bg-[#000000b0] gap-20 absolute top-0 left-0 w-[100%] h-[500px] justify-center items-center flex-col">
+      <div className="flex md:px-16 px-6 bg-[#000000b0] gap-20 absolute top-0 left-0 w-[100%] h-[500px] justify-center items-center flex-col">
         <div className="flex flex-col justify-center items-center h-[500px] md:h-[600px]">
           <h1 className="font-[700] md:w-[1100px] w-full md:text-[60px] text-center text-[30px] text-white">
             {t("title")}
