@@ -22,7 +22,7 @@ const HeroAbout = () => {
 
       <div className="flex md:px-16 px-4 bg-[#000000b0] gap-20 absolute top-0 left-0 w-[100%] h-[500px] justify-center items-center flex-col">
         <div className="">
-          <h1 className="font-[700] md:text-[56px] text-[30px] text-white">
+          <h1 className="font-[700] text-center md:text-[56px] text-[30px] text-white">
             {t("title")}
           </h1>
         </div>

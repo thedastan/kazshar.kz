@@ -1,6 +1,6 @@
-import Tabforged from "@/components/cast/tab/TabCast";
 import Aboutforged from "@/components/forged/about/Aboutforged";
 import Heroforged from "@/components/forged/hero/Heroforged";
+import Tabforged from "@/components/forged/tab/Tabforged";
 import Used from "@/components/forged/used/Used";
 import { Metadata } from "next";
 import React from "react";
@@ -29,6 +29,7 @@ const ForgedPage = () => {
 			<Aboutforged />
 			<Used />
 			<Tabforged />
+			
 		</div>
 	);
 };
