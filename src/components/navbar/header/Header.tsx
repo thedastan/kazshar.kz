@@ -4,7 +4,6 @@ import { useParams, usePathname } from "next/navigation";
 import React, { useState, useEffect, useRef } from "react";
 import { getLinksNav } from "../data";
 import BurgerMenu from "./BurgerMenu";
-import { PHONE_NUMBER } from "@/constants/admin";
 import { CgMenuRight } from "react-icons/cg";
 import { FaPhoneAlt } from "react-icons/fa";
 
@@ -115,9 +114,9 @@ const Header = () => {
 
 							<div className="hidden sm:flex border-[2px] rounded-[10px] px-1 border-[#ff2828]">
 								<Link
-									href={`tel:${PHONE_NUMBER}`}
+									href={`tel:7 771 638 0820`}
 									className="w-[180px] flex gap-2 bg-white text-[16px] text-[#ff2828] font-normal h-full py-1 justify-center items-center rounded-[12px] border-1 border-black">
-									<FaPhoneAlt /> {PHONE_NUMBER}
+									<FaPhoneAlt /> +7 771 638 0820
 								</Link>
 							</div>
 						</div>
