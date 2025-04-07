@@ -5,7 +5,6 @@ import Aos from "aos";
 import HeroAbout from "./hero/HeroAbout";
 import About from "./about/About";
 import Gallery from "./gallery/Gallery";
-import Certificate from "./certificate/Certificate";
 const AboutComponent = () => {
 	React.useEffect(() => {
 		Aos.init({
