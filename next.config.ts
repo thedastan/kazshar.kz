@@ -3,9 +3,10 @@ import createNextIntlPlugin from "next-intl/plugin";
 
 const nextConfig: NextConfig = {
  images:{
-  domains:["www.kazshar.site"]
+  domains:["www.apibackendkz.space"]
  }
 };
 
 const withNextIntl = createNextIntlPlugin();
 export default withNextIntl(nextConfig);
+ 
