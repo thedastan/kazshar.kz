@@ -9,21 +9,15 @@ const HeroCats = () => {
   const t = useTranslations("Cast");
   const links = getLinksProducts(language);
   return (
-    <div className="relative w-[100%] h-[500px]">
-      <div className="w-full h-[500px]">
-        <video
-          autoPlay
-          loop
-          muted
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-          }}
-        >
-          <source src="/metal.mp4" type="video/mp4" />
-        </video>
-      </div>
+    <div className="relative w-[100%] h-[500px] overflow-hidden">
+     <div className="w-full h-[500px] overflow-hidden">
+				<iframe
+					className="absolute top-0 left-0 w-full h-full    md:scale-[1.2] scale-[4.9]"
+					style={{ objectFit: "cover" }}
+					src="https://kinescope.io/embed/8cEfSExVYPMjFiJ1YQiGX6"
+					allow="autoplay; muted"
+				/>
+			</div>
 
       <div className="flex px-[20px] md:px-16 bg-[#000000b0] gap-20 absolute top-0 left-0 w-[100%] h-[500px] justify-center items-center flex-col">
         <div className="">
