@@ -18,7 +18,7 @@ const Hero = () => {
 					{" "}
 					<iframe
 						key={bgVideoKey}
-						className="absolute top-0 left-0 w-full h-full    md:scale-[1.2] scale-[4.9]"
+						className="absolute top-0 left-0 w-full h-full    md:scale-[1.2] scale-[1.2]"
 						style={{ objectFit: "cover" }}
 						src="https://kinescope.io/embed/8cEfSExVYPMjFiJ1YQiGX6"
 						allow="autoplay; muted"
