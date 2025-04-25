@@ -12,7 +12,7 @@ const HeroRolled = () => {
     <div className="relative w-[100%] h-[500px] overflow-hidden">
       <div className="w-full h-[500px] overflow-hidden">
 				<iframe
-					className="absolute top-0 left-0 w-full h-full    md:scale-[1.2] scale-[4.9]"
+					className="absolute top-0 left-0 w-full h-full    md:scale-[1.2] scale-[1.2]"
 					style={{ objectFit: "cover" }}
 					src="https://kinescope.io/embed/8cEfSExVYPMjFiJ1YQiGX6"
 					allow="autoplay; muted"
