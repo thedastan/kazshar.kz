@@ -60,7 +60,7 @@ const Contact = () => {
 								<div>
 									<Link
 										target={"_blank"}
-										href="https://wa.me/+77716380820"
+										href="https://wa.me/77716380820"
 										passHref>
 										<h1 className="text-[12px]">+7 771 638 0820</h1>
 									</Link>
@@ -80,20 +80,19 @@ const Contact = () => {
 				</div>
 
 				<div className="w-[100%] hidden md:block h-[500px] md:h-[100vh]">
+					 
 					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2917.332719010521!2d74.73030952801088!3d43.01338348521646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDPCsDAwJzQ4LjAiTiA3NMKwNDMnNTAuOCJF!5e0!3m2!1sru!2skg!4v1745839805783!5m2!1sru!2skg"
 						className="w-[100%] h-[100%]"
-						src="/map.html"
-						frameBorder="0"
-						scrolling="no"
-						title="Map on 2GIS"></iframe>
+						loading="lazy"></iframe>
 				</div>
 				<div className="w-[100%] h-[500px] md:hidden block md:h-[100vh]">
+					 
+
 					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2917.332719010521!2d74.73030952801088!3d43.01338348521646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDPCsDAwJzQ4LjAiTiA3NMKwNDMnNTAuOCJF!5e0!3m2!1sru!2skg!4v1745839805783!5m2!1sru!2skg"
 						className="w-[100%] h-[100%]"
-						src="/mapmobile.html"
-						frameBorder="0"
-						scrolling="no"
-						title="Map on 2GIS"></iframe>
+						loading="lazy"></iframe>
 				</div>
 			</div>
 		</div>
