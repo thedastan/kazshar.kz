@@ -13,19 +13,19 @@ const Hero = () => {
 
 	return (
 		<>
-			<div className="relative w-full h-[700px] md:h-[100vh]">
-				<div className="relative w-full h-[700px] md:h-[100vh] overflow-hidden md:py-10">
+			<div className="relative w-full h-[600px] md:h-[100vh] bg-black">
+				<div className="relative w-full h-[600px] md:h-[100vh] overflow-hidden md:py-10">
 					{" "}
 					<iframe
 						key={bgVideoKey}
-						className="absolute top-0 left-0 w-full h-full    md:scale-[1.2] scale-[1.2]"
+						className="absolute top-0 left-0 w-full h-full    md:scale-[1.2] scale-[3.2]"
 						style={{ objectFit: "cover" }}
 						src="	https://kinescope.io/embed/hYvbnm42uzXVxqKM9xhwLY"
 						allow="autoplay; muted"
 					/>
 				</div>
 
-				<div className="flex px-[20px] sm:px-16 bg-[#00000044] gap-[60px] absolute top-0 left-0 w-full h-[700px] md:h-[100vh] justify-end items-start flex-col">
+				<div className="flex px-[20px] sm:px-16 bg-[#00000044] gap-[60px] absolute top-0 left-0 w-full h-[600px] md:h-[100vh] justify-end items-start flex-col">
 					<div>
 						<h1 className="md:text-[54px] text-[26px] text-[#ffffff8f] font-[700] w-full md:w-[760px] leading-[40px] sm:leading-[70px] text-start">
 							{t("title")}
