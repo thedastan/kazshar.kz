@@ -3,7 +3,6 @@ import React from "react";
 import "aos/dist/aos.css"; // импортируем стили AOS
 import Aos from "aos";
 import Process from "./process/Process";
-import Equipment from "./equipment/Equipment";
 import Control from "./control/Control";
 import HeroCreate from "./hero/HeroCreate";
 
@@ -19,7 +18,7 @@ const CreateComponent = () => {
     <div>
       <HeroCreate />
       <Process />
-      <Equipment />
+      {/* <Equipment /> */}
       <Control />
     </div>
   );

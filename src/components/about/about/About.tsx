@@ -1,8 +1,10 @@
 import Image, { StaticImageData } from "next/image";
 import { useTranslations } from "next-intl";
 
-import img1 from "@/assets/img1.jpg";
-import img2 from "@/assets/img2.jpg";
+import img1 from "@/assets/about1.jpg";
+import img2 from "@/assets/about4.jpg";
+import img3 from "@/assets/about3.jpg";
+
 import { FiDownload } from "react-icons/fi";
 
 const DownloadableImage = ({
@@ -101,7 +103,7 @@ const About = () => {
               </p>
             </div>
 
-            <DownloadableImage src={img1} alt="today-image" />
+            <DownloadableImage src={img3} alt="today-image" />
           </div>
         </div>
       </div>

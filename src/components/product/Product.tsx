@@ -1,7 +1,6 @@
 "use client";
 import React, { useRef } from "react";
 import { getLinksProducts } from "../navbar/data";
-import img from "@/assets/about.jpg";
 import Link from "next/link";
 import { CgArrowLongRight } from "react-icons/cg";
 import { useTranslations } from "next-intl";
@@ -39,8 +38,8 @@ const Product = () => {
 					{links.map((el, index) => (
 						<Link key={index} href={el.path}>
 							<div
-								style={{ backgroundImage: `url(${img.src})` }}
-								className="relative group   border-2 border-black text-white text-[50px] font-[700] md:w-[700px] w-[400px] h-full flex items-center justify-center transition-all duration-1000">
+							style={{ backgroundImage: `url(${el.image.src})` }}
+								className="relative group     border-2 border-black text-white text-[50px] font-[700] md:w-[700px] w-[400px] h-full flex items-center justify-center transition-all duration-1000">
 								<div
 									style={{ transition: "1s" }}
 									className="absolute z-0 inset-0 bg-[#000000b0] hover:bg-none  md:group-hover:bg-[#0000004f] transition-opacity duration-1000"></div>
