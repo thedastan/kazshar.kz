@@ -29,7 +29,7 @@ const ContactFeedback = () => {
 		setIsLoading(true);
 		try {
 			const { data } = await axios.post<FetchDataPro>(
-				"https://kazshar.site/ru/api/kashgar/contact_us/",
+				"https://apibackendkz.space/ru/api/kashgar/contact_us/",
 				formData
 			);
 			setVal((prev) => [...prev, data]);

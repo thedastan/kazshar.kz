@@ -22,7 +22,7 @@ const Footer = () => {
     return (
       <div>
         <Link
-          href="https://wa.me/7716380820"
+          href="https://wa.me/77716380820"
           target="_blank"
           rel="noopener noreferrer"
           className="whatsapp-button2"
@@ -36,7 +36,7 @@ const Footer = () => {
   return (
     <div className="bg-[#000000]">
       <Link
-        href="https://wa.me/0708805080"
+        href="https://wa.me/77716380820"
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-button"

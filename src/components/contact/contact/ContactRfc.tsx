@@ -38,7 +38,7 @@ const ContactRfc = () => {
 		setIsLoading(true);
 		try {
 			const { data } = await axios.post<FetchDataPro>(
-				"https://kazshar.site/ru/api/kashgar/rfc_proposal/",
+				"https://apibackendkz.space/ru/api/kashgar/rfc_proposal/",
 				JSON.stringify({
 					...formData,
 					object_choices: Number(formData.object_choices),

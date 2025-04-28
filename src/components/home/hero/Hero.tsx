@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl";
 const Hero = () => {
 	const [isSidebarOpen, setSidebarOpen] = useState(false);
 	const [modal, setModal] = useState(false);
-	const [bgVideoKey, setBgVideoKey] = useState(0);  
+	const [bgVideoKey, setBgVideoKey] = useState(0);
 	const t = useTranslations("Hero");
 
 	return (
@@ -20,12 +20,11 @@ const Hero = () => {
 						key={bgVideoKey}
 						className="absolute top-0 left-0 w-full h-full    md:scale-[1.2] scale-[1.2]"
 						style={{ objectFit: "cover" }}
-						src="https://kinescope.io/embed/8cEfSExVYPMjFiJ1YQiGX6"
+						src="	https://kinescope.io/embed/hYvbnm42uzXVxqKM9xhwLY"
 						allow="autoplay; muted"
 					/>
 				</div>
 
-			 
 				<div className="flex px-[20px] sm:px-16 bg-[#00000044] gap-[60px] absolute top-0 left-0 w-full h-[700px] md:h-[100vh] justify-end items-start flex-col">
 					<div>
 						<h1 className="md:text-[54px] text-[26px] text-[#ffffff8f] font-[700] w-full md:w-[760px] leading-[40px] sm:leading-[70px] text-start">
@@ -83,7 +82,7 @@ const Hero = () => {
 							<iframe
 								width="100%"
 								height="100%"
-								src="https://kinescope.io/embed/hYvbnm42uzXVxqKM9xhwLY"
+								src="https://kinescope.io/embed/8cEfSExVYPMjFiJ1YQiGX6"
 								allow="autoplay"></iframe>
 						</div>
 					</div>
