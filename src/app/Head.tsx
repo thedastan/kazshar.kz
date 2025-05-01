@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Script from "next/script";
 import {
   SEO_DESCRIPTION_RU,
@@ -7,10 +6,10 @@ import {
 } from "@/constants/seo/seo.constants";
 import { THEME_COLOR } from "@/config/_variables.config";
 
-const CustomHead = () => {
+const Head = () => {
   return (
     <>
-      <Head>
+      <head>
         <meta name="theme-color" content={THEME_COLOR} />
         <meta
           name="google-site-verification"
@@ -39,7 +38,7 @@ const CustomHead = () => {
         />
         <meta property="og:url" content="https://kazshar.kz" />
         <meta property="og:type" content="website" />
-      </Head>
+      </head>
 
       {/* Google Tag (gtag.js) */}
       <Script
@@ -78,4 +77,4 @@ const CustomHead = () => {
   );
 };
 
-export default CustomHead;
+export default Head;
