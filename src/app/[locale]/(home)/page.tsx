@@ -5,16 +5,16 @@ import React from "react";
 
 export const metadata: Metadata = {
   title:
-    "Сила определяется тем, что за ней скрывается. | The strength is defined by what is hidden behind it. | Күш оның артында не жасырылғанына байланысты анықталады. ",
+    "металлопродукция Бишкеке",
   description:
-    "И каждая конструкция надежна настолько, насколько надежны ее структура и фундамент. | And every structure is as reliable as its structure and foundation. | Әр құрылым оның құрылымы мен негізі қаншалықты сенімді болса, соншалықты сенімді. ",
+    "И каждая конструкция надежна настолько, насколько надежны ее структура и фундамент.",
   robots: "index, follow",
-  authors: [{ name: "" }],
+  authors: [{ name: "металлопродукция Бишкеке" }],
   openGraph: {
     title:
-      "Сила определяется тем, что за ней скрывается. | The strength is defined by what is hidden behind it. | Күш оның артында не жасырылғанына байланысты анықталады. ",
+      "металлопродукция Бишкеке",
     description:
-      "И каждая конструкция надежна настолько, насколько надежны ее структура и фундамент. | And every structure is as reliable as its structure and foundation. | Әр құрылым оның құрылымы мен негізі қаншалықты сенімді болса, соншалықты сенімді. ",
+      "И каждая конструкция надежна настолько, насколько надежны ее структура и фундамент.",
     url: "https://kzmc.kg/media/uploads/images/listovoi_prokat1.jpg",
     type: "website",
   },
@@ -25,7 +25,6 @@ const Home = () => {
     <>
       <Head>
         <link rel="canonical" href="https://metallomir.kg/" />
-        <meta name="author" content="ОсОО Металломир" />
 
         <meta
           property="og:image"

@@ -3,15 +3,15 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Связаться с KazShar | Contact KazShar | KazShar-мен байланысу",
+  title: "Связаться с Kazshar",
   description:
-    "Свяжитесь с нами — компания Казшар: ваш надежный партнер в сфере металлопродукции | Get in touch with us — KazShar company: your reliable partner in the metal products industry | Бізбен байланысыңыз — КазШар компаниясы: металл өнімдері саласындағы сенімді серіктесіңіз",
+    "Свяжитесь с нами — компания Казшар: ваш надежный партнер в сфере металлопродукции",
   robots: "index, follow",
-  authors: [{ name: "" }],
+  authors: [{ name: "Связаться с Kazshar" }],
   openGraph: {
-    title: "Связаться с KazShar | Contact KazShar | KazShar-мен байланысу",
+    title: "Связаться с Kazshar",
     description:
-      "Свяжитесь с нами — компания Казшар: ваш надежный партнер в сфере металлопродукции | Get in touch with us — KazShar company: your reliable partner in the metal products industry | Бізбен байланысыңыз — КазШар компаниясы: металл өнімдері саласындағы сенімді серіктесіңіз",
+      "Свяжитесь с нами — компания Казшар: ваш надежный партнер в сфере металлопродукции",
 
     url: "https://kzmc.kg/media/uploads/images/listovoi_prokat1.jpg",
     type: "website",
