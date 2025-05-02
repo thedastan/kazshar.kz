@@ -2,12 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "@/styles/globals.scss";
 import {
-	SEO_DESCRIPTION_EN,
-	SEO_DESCRIPTION_KZ,
 	SEO_DESCRIPTION_RU,
 	SEO_IMAGE,
-	SEO_KEY_WORDS_EN,
-	SEO_KEY_WORDS_KZ,
 	SEO_KEY_WORDS_RU,
 	SITE_NAME,
 } from "@/constants/seo/seo.constants";
@@ -29,15 +25,15 @@ const geistMono = localFont({
 });
 
 const manrope = Manrope({
-	variable: "--font-manrope", // Добавляем переменную для использования в CSS
+	variable: "--font-manrope",  
 	subsets: ["latin"],
-	weight: ["400", "500", "700"], // Выбираем нужные толщины (можно изменить)
+	weight: ["400", "500", "700"],  
 });
 
 export const metadata: Metadata = {
 	title: SITE_NAME,
-	description: SEO_DESCRIPTION_EN || SEO_DESCRIPTION_RU || SEO_DESCRIPTION_KZ,
-	keywords: SEO_KEY_WORDS_EN || SEO_KEY_WORDS_RU || SEO_KEY_WORDS_KZ,
+	description: SEO_DESCRIPTION_RU,
+	keywords: SEO_KEY_WORDS_RU,
 
 	openGraph: {
 		url: SEO_IMAGE,

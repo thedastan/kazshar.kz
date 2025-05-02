@@ -1,58 +1,43 @@
-'use client'
+"use client";
 
-import Image from 'next/image'
+import Image from "next/image";
+import { useEffect } from "react";
 
 const YandexMetrika = () => {
-	// useEffect(() => {
-	// 	// @ts-ignore
-	// 	;(function (
-	// 		m: any,
-	// 		e: Document,
-	// 		t: string,
-	// 		r: string,
-	// 		i: string,
-	// 		k: HTMLScriptElement | null,
-	// 		a: HTMLScriptElement | null
-	// 	) {
-	// 		m[i] =
-	// 			m[i] ||
-	// 			function () {
-	// 				;(m[i].a = m[i].a || []).push(arguments)
-	// 			}
-	// 		// @ts-ignore
-	// 		m[i].l = (1 * new Date()) as any
-	// 		for (let j = 0; j < e.scripts.length; j++) {
-	// 			if (e.scripts[j].src === r) {
-	// 				return
-	// 			}
-	// 		}
-	// 		k = e.createElement(t) as HTMLScriptElement
-	// 		a = e.getElementsByTagName(t)[0] as HTMLScriptElement
-	// 		// @ts-ignore
-	// 		k.async = 1
-	// 		k.src = r
-	// 		a.parentNode?.insertBefore(k, a)
-	// 	})(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym')
-	// 	;(window as any).ym(97951921, 'init', {
-	// 		clickmap: true,
-	// 		trackLinks: true,
-	// 		accurateTrackBounce: true,
-	// 		webvisor: true,
-	// 		ecommerce: 'dataLayer'
-	// 	})
-	// }, [])
+	useEffect(() => {
+		const script = document.createElement("script");
+		script.type = "text/javascript";
+		script.innerHTML = `
+      (function(m,e,t,r,i,k,a){
+         m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+         m[i].l=1*new Date();
+         for (var j = 0; j < document.scripts.length; j++) {
+           if (document.scripts[j].src === r) return;
+         }
+         k=e.createElement(t),a=e.getElementsByTagName(t)[0],
+         k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+       })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+       ym(101542905, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true
+       });
+    `;
+		document.head.appendChild(script);
+	}, []);
 
 	return (
 		<noscript>
 			<div>
 				<Image
-					src='https://mc.yandex.ru/watch/97951921'
-					style={{ position: 'absolute', left: '-9999px' }}
-					alt=''
+					src="https://mc.yandex.ru/watch/101542905"
+					style={{ position: "absolute", left: "-9999px" }}
+					alt=""
 				/>
 			</div>
 		</noscript>
-	)
-}
+	);
+};
 
-export default YandexMetrika
+export default YandexMetrika;
