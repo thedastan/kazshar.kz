@@ -7,221 +7,223 @@
 @tailwind utilities;
 
 .phone-input {
-  background: transparent !important;
-  margin-bottom: 12px;
-  border-radius: 32px !important;
-  border: 1px solid #1a1d201f !important;
-  background: rgb(221, 224, 224);
+	background: transparent !important;
+	margin-bottom: 12px;
+	border-radius: 32px !important;
+	border: 1px solid #1a1d201f !important;
+	background: rgb(221, 224, 224);
 
-  input {
-    width: 300px;
-    font-size: 16px !important;
-    line-height: 22px !important;
-    font-weight: 400 !important;
-    color: #232d37 !important;
-    background: rgb(221, 224, 224) !important;
-    height: 50px !important;
-    border: none !important;
-    border-top-right-radius: 32px !important;
-    border-bottom-right-radius: 32px !important;
-    overflow: hidden;
-    position: relative;
-  }
+	input {
+		width: 300px;
+		font-size: 16px !important;
+		line-height: 22px !important;
+		font-weight: 400 !important;
+		color: #232d37 !important;
+		background: rgb(221, 224, 224) !important;
+		height: 50px !important;
+		border: none !important;
+		border-top-right-radius: 32px !important;
+		border-bottom-right-radius: 32px !important;
+		overflow: hidden;
+		position: relative;
+	}
 
-  @media (max-width: 500px) {
-    input {
-      width: 250px;
-      font-size: 16px !important;
-      line-height: 22px !important;
-      font-weight: 400 !important;
-      color: #232d37 !important;
-      background: rgb(221, 224, 224) !important;
-      height: 50px !important;
-      border: none !important;
-      border-top-right-radius: 32px !important;
-      border-bottom-right-radius: 32px !important;
-      overflow: hidden;
-    }
-  }
-  .react-international-phone-country-selector {
-    button {
-      border-top-left-radius: 32px !important;
-      border-bottom-left-radius: 32px !important;
-      overflow: hidden;
-      height: 100%;
-      width: 59px;
-      background: rgb(221, 224, 224) !important;
-      border: none;
-      padding: 10px;
-    }
-  }
+	@media (max-width: 500px) {
+		input {
+			width: 250px;
+			font-size: 16px !important;
+			line-height: 22px !important;
+			font-weight: 400 !important;
+			color: #232d37 !important;
+			background: rgb(221, 224, 224) !important;
+			height: 50px !important;
+			border: none !important;
+			border-top-right-radius: 32px !important;
+			border-bottom-right-radius: 32px !important;
+			overflow: hidden;
+		}
+	}
+	.react-international-phone-country-selector {
+		button {
+			border-top-left-radius: 32px !important;
+			border-bottom-left-radius: 32px !important;
+			overflow: hidden;
+			height: 100%;
+			width: 59px;
+			background: rgb(221, 224, 224) !important;
+			border: none;
+			padding: 10px;
+		}
+	}
 }
 
 .full-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .pincode-input-container {
-  width: 100%;
-  display: flex !important;
-  flex-wrap: nowrap !important;
-  .pincode-input-text {
-    padding: 0 !important;
-    margin: 0 4px !important;
-    text-align: center;
-    border: 1px solid #ffffff !important;
-    background: transparent;
-    max-width: 63px !important;
-    width: 100% !important;
-    height: 72px !important;
-    border-radius: 15px;
-    font-size: 18px !important;
-    color: #ffffff !important;
-  }
-  .pincode-input-text:focus {
-    outline: none;
-    box-shadow: none;
-  }
+	width: 100%;
+	display: flex !important;
+	flex-wrap: nowrap !important;
+	.pincode-input-text {
+		padding: 0 !important;
+		margin: 0 4px !important;
+		text-align: center;
+		border: 1px solid #ffffff !important;
+		background: transparent;
+		max-width: 63px !important;
+		width: 100% !important;
+		height: 72px !important;
+		border-radius: 15px;
+		font-size: 18px !important;
+		color: #ffffff !important;
+	}
+	.pincode-input-text:focus {
+		outline: none;
+		box-shadow: none;
+	}
 }
 
 .home_news {
-  overflow-x: scroll;
+	overflow-x: scroll;
 
-  &::-webkit-scrollbar {
-    display: none;
-  }
+	&::-webkit-scrollbar {
+		display: none;
+	}
 
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 
-  // background: #bbbbbb;
+	// background: #bbbbbb;
 }
 
 .container {
-  width: 100%;
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 10px;
+	width: 100%;
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 0 10px;
 }
 
 .container2 {
-  width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
-  padding: 0 20px;
+	width: 100%;
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 0 20px;
 }
 
 #abouts {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../assets/about.jpg") no-repeat center/cover fixed;
-  max-width: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("../assets/about.jpg") no-repeat center/cover fixed;
+	max-width: 100%;
 }
 
 #text_bg {
-  background: url("../assets/about.jpg") no-repeat center/cover fixed;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+	background: url("../assets/about.jpg") no-repeat center/cover fixed;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 @keyframes ripple {
-  0% {
-    transform: scale(1);
-    opacity: 0.7;
-  }
-  100% {
-    transform: scale(2.5);
-    opacity: 0;
-  }
+	0% {
+		transform: scale(1);
+		opacity: 0.7;
+	}
+	100% {
+		transform: scale(2.5);
+		opacity: 0;
+	}
 }
 
 .whatsapp-button {
-  position: fixed;
-  bottom: 34px;
-  right: 34px;
-  z-index: 50;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  background-color: #25d366;
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s ease-in-out;
+	position: fixed;
+	bottom: 34px;
+	right: 34px;
+	z-index: 50;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	background-color: #25d366;
+	border-radius: 50%;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	transition: background-color 0.3s ease-in-out;
 
-  &:hover {
-    background-color: #1ebe57;
-  }
+	@media (max-width: 750px) {
+		bottom: 60px;
+	}
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: rgba(37, 211, 102, 0.5);
-    animation: ripple 1.5s infinite ease-out;
-  }
+	&:hover {
+		background-color: #1ebe57;
+	}
 
-  svg {
-    color: white;
-    font-size: 26px;
-  }
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		background-color: rgba(37, 211, 102, 0.5);
+		animation: ripple 1.5s infinite ease-out;
+	}
+
+	svg {
+		color: white;
+		font-size: 26px;
+	}
 }
 
 .whatsapp-button2 {
-  position: fixed;
-  bottom: 74px;
-  right: 54px;
-  z-index: 40;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  background-color: #25d366;
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s ease-in-out;
+	position: fixed;
+	bottom: 74px;
+	right: 54px;
+	z-index: 40;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+	background-color: #25d366;
+	border-radius: 50%;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	transition: background-color 0.3s ease-in-out;
 
-  &:hover {
-    background-color: #1ebe57;
-  }
+	&:hover {
+		background-color: #1ebe57;
+	}
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: rgba(37, 211, 102, 0.5);
-    animation: ripple 1.5s infinite ease-out;
-  }
+	&::before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		background-color: rgba(37, 211, 102, 0.5);
+		animation: ripple 1.5s infinite ease-out;
+	}
 
-  svg {
-    color: white;
-    font-size: 26px;
-  }
+	svg {
+		color: white;
+		font-size: 26px;
+	}
 }
 
 .map {
-  @media (max-width: 500px) {
-  }
+	@media (max-width: 500px) {
+	}
 
-  iframe {
-    width: 100%;
-    height: 100vh;
-    border-radius: 10px;
-    overflow: hidden;
-    border: none;
+	iframe {
+		width: 100%;
+		height: 100vh;
+		border-radius: 10px;
+		overflow: hidden;
+		border: none;
 
-    @media (max-width: 600px) {
-      height: 600px;
-      border-radius: 0px;
-    }
-  }
+		@media (max-width: 600px) {
+			height: 600px;
+			border-radius: 0px;
+		}
+	}
 }
-
-

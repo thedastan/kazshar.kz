@@ -189,13 +189,30 @@ const TabRolled = () => {
 				</div>
 			</div>
 
-			<div className="flex justify-center">
+			<div className="flex justify-center fixed z-50 left-[10px] bottom-[10px]">
 				<button
 					onClick={() => setModal(true)}
-					className="bg-black text-white px-[20px] py-[10px]">
+					style={{
+						backgroundColor: "black",
+						color: "white",
+						padding: "10px 20px",
+						borderRadius: "8px",
+						animation: "flashColor 1s infinite",
+						transition: "background-color 0.3s",
+					}}>
 					{t("zapros")}
 				</button>
+
+				<style>
+					{`
+			@keyframes flashColor {
+				0%, 100% { background-color: black; color: white; }
+				50% { background-color: yellow; color: black; }
+			}
+		`}
+				</style>
 			</div>
+
 
 			<div className="py-10 bg-[#1d1d1d] mt-[70px]">
 				<div className="container">

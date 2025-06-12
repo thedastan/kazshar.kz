@@ -161,7 +161,11 @@ const TabCast = () => {
 						{t("haracter")}
 					</h3>
 
-					<Link 	target={"_blank"} href={"/Доступные_размеры_и_механические_характеристики_мелющих_шаров.pdf"}>
+					<Link
+						target={"_blank"}
+						href={
+							"/Доступные_размеры_и_механические_характеристики_мелющих_шаров.pdf"
+						}>
 						<button className="bg-[#1d1d1d] flex items-center gap-2 rounded-[2px] text-white text-[16px] py-2  px-6 ">
 							{t("pdf")} <IoDownloadOutline />
 						</button>
@@ -269,12 +273,29 @@ const TabCast = () => {
 				</div>
 			</div>
 
-			<div className="flex justify-center">
+			<div className="flex justify-center fixed z-50 left-[10px] bottom-[10px]">
 				<button
 					onClick={() => setModal(true)}
-					className="bg-black text-white px-[20px] py-[10px]">
+					style={{
+						width:"100%",
+						backgroundColor: "black",
+						color: "white",
+						padding: "10px 20px",
+						borderRadius: "8px",
+						animation: "flashColor 1s infinite",
+						transition: "background-color 0.3s",
+					}}>
 					{t("zapros")}
 				</button>
+
+				<style>
+					{`
+			@keyframes flashColor {
+				0%, 100% { background-color: black; color: white; }
+				50% { background-color: yellow; color: black; }
+			}
+		`}
+				</style>
 			</div>
 
 			<div className="py-10 bg-[#1d1d1d] mt-[70px]">
