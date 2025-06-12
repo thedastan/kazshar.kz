@@ -118,7 +118,7 @@
 		"option1": "Cast grinding balls",
 		"option2": "Rolled grinding balls",
 		"btn3": "Send",
-    "btn_loading": "Sending...",
+		"btn_loading": "Sending...",
 		"proposal": "Request for a Commercial Proposal",
 		"balls": "Request for Grinding Balls",
 		"address": "Republic of Kazakhstan, Zhambyl Region, Korday District, Korday Village, Beriktas Street, Building 5"
@@ -204,5 +204,9 @@
 	"Footer": {
 		"text1": "© 2012 - 2025 All rights reserved.",
 		"text2": "Developed by: Motion Web LLC"
+	},
+	"NotFound": {
+		"title": "Oops! Page not found",
+		"btn": "Return to home page"
 	}
 }
