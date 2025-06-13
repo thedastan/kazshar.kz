@@ -90,7 +90,7 @@ const TabRolled = () => {
 					</h3>
 
 					<Link
-					target={"_blank"}
+						target={"_blank"}
 						href={
 							"/Доступные_размеры_и_механические_характеристики_мелющих_шаров.pdf"
 						}>
@@ -189,9 +189,12 @@ const TabRolled = () => {
 				</div>
 			</div>
 
-			<div className="flex justify-center fixed z-50 left-[10px] bottom-[10px]">
+			<div
+				className="fixed bottom-[10px] left-1/2 z-50 "
+				style={{ transform: "translateX(-50%)" }}>
 				<button
 					onClick={() => setModal(true)}
+					className="text-nowrap"
 					style={{
 						backgroundColor: "black",
 						color: "white",
@@ -212,7 +215,6 @@ const TabRolled = () => {
 		`}
 				</style>
 			</div>
-
 
 			<div className="py-10 bg-[#1d1d1d] mt-[70px]">
 				<div className="container">
