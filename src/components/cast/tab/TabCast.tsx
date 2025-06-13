@@ -273,11 +273,13 @@ const TabCast = () => {
 				</div>
 			</div>
 
-			<div className="flex justify-center fixed z-50 left-[10px] bottom-[10px]">
+			<div
+				className="fixed bottom-[10px] left-1/2 z-50 "
+				style={{ transform: "translateX(-50%)" }}>
 				<button
 					onClick={() => setModal(true)}
+					className="text-nowrap"
 					style={{
-						width:"100%",
 						backgroundColor: "black",
 						color: "white",
 						padding: "10px 20px",
