@@ -29,16 +29,28 @@
 	},
 
 	"About": {
-		"title": "About KazShar",
-		"histori": "History of our factory",
-		"histori_description": "Our factory was founded in 2024 with the goal of producing high-quality products for the metallurgical and mining industries. We started as a small enterprise, but thanks to the implementation of modern technologies and the professionalism of our team, we have become one of the leading producers of grinding balls in Kazakhstan.",
-		"task": "About our task",
-		"task_description": "From the very beginning, we set the task of providing the market with high-quality products that meet international standards. During the development process, we significantly expanded production capacities, introduced innovative solutions in casting and forging, and also ensured a full production cycle — from raw material arrival to the packaging of finished products.",
-		"today": "Today",
-		"today_description": "Today, our factory is equipped with modern equipment and high-tech production lines. We are proud of our reputation as a reliable partner for companies both in Kazakhstan and abroad. Our products are in demand in various markets, and we continue to strive for constant improvement to meet the requirements of the most demanding customers.",
-		"today_description2": "We are confident that the future of our factory is innovation, quality, and long-term partnerships.",
-		"today_span": "Production capacity:",
-		"today_tonn": "Up to 80,000 tons per year",
+		"title": "About KazShar Company",
+		"histori": "About Us",
+		"histori_description": "We are a modern metallurgical company specializing in the production of high-quality grinding balls for the mining and cement industries. Our team has over 15 years of experience, which has helped us build a reliable production and management system focused on quality, efficiency, and long-term partnerships.",
+		"task": "Who We Are",
+		"task_description": "Our story began with a simple idea — to create a company capable of producing products that meet international quality standards and satisfy the growing demand for durable, wear-resistant solutions. Today, we are a recognized player in the Kazakhstani market and are actively expanding our export operations.\n\nWe work for those who value stability, precision, and professionalism.",
+		"today_description": "Our goal is not just to produce grinding balls. We strive to be part of your production success by supplying products you can rely on. With us, you get stability, technology, and a partnership you can count on.",
+
+		"text": "What We Produce",
+		"desc": "Our main product is grinding balls of various diameters designed for use in ball mills. We produce:\n• Forged grinding balls\n• Cast grinding balls\n• Balls with varying hardness levels tailored to specific operating conditions\nOur products undergo multi-stage quality control and fully comply with industry standards.",
+
+		"text1": "Production Capacity",
+		"desc1": "We operate a full production cycle — from raw material intake to packaging and shipment of finished products. This allows us to control quality at every stage and respond promptly to customer needs.\n• Production capacity: up to 60,000 tons per year\n• Modern equipment: induction furnaces, automatic presses, heat treatment lines, spectrometric and mechanical testing\n• Quality control: every stage is monitored by our laboratory — chemical composition, hardness, structure, and wear resistance",
+
+		"text2": "Technology and Approach",
+		"desc2": "We constantly invest in innovation, automation, and digital solutions that allow us to monitor production parameters in real-time. Our approach emphasizes:\n• Process standardization\n• Flexible customization to customer requirements\n• Individual technical recommendations for selecting balls based on specific mill conditions",
+
+		"text3": "Delivery Geography",
+		"desc3": "We supply products to enterprises across Kazakhstan and are actively developing international trade. Our grinding balls are used in gold, copper, cement, and coal industries throughout Central Asia and neighboring countries.\nWe operate under DAP, CPT, FCA, CIF terms — depending on our partners’ needs.",
+
+		"text4": "Why Choose Us",
+		"desc4": "\n• 15+ years of experience — systematic approach and solid expertise\n• In-house production — full control over quality and lead times\n• Flexibility — from trial batches to contracts of tens of thousands of tons\n• Support — we don’t just deliver products, we support our clients at every step\n• Continuous improvement — we seek solutions that truly improve client outcomes",
+
 		"gallery": "Our Gallery",
 		"sertificat": "Certificates and Licenses"
 	},
@@ -49,48 +61,49 @@
 		"about_btn": "Learn More"
 	},
 	"Create": {
-		"title": "Production of high-quality grinding balls",
+		"title": "High-Quality Grinding Ball Production",
+
 		"production": "Production Process",
-		"production_des": "Our factory utilizes advanced technologies to manufacture high-quality products. The process includes several key stages:",
-		"production_des2": "Our process ensures maximum efficiency and impeccable quality, meeting even the strictest standards.",
+		"production_des": "Our plant uses advanced technologies to manufacture high-quality products. The process includes several key stages:",
+		"production_des2": "Our process ensures maximum efficiency and impeccable quality, meeting even the most stringent standards.",
 
 		"process": "Raw Material Preparation",
-		"process_des": "Receiving and inspecting materials required for production.",
+		"process_des": "At this stage, all incoming materials are received, identified, and inspected: rolled metal, alloying additives, molding mixtures, and other components.\nEach batch undergoes incoming quality control for chemical composition, physical and mechanical properties, and compliance with technical specifications. Only verified raw materials are allowed for further production.",
 
 		"process2": "Casting and Forging",
-		"process_des2": "Manufacturing key components such as grinding balls, excavator parts, and crusher cones.",
+		"process_des2": "Main blanks and components are formed here:\n• forged and cast grinding balls,\n• crusher cones,\n• excavator teeth,\n• other parts for mining and construction equipment.\nThe process includes induction or arc heating, forging on presses, or pouring molten metal into sand or chill molds followed by cooling. Both automatic lines and manual molding are used for complex parts.",
 
-		"process3": "Processing",
-		"process_des3": "Parts undergo machining, including milling, turning, and grinding.",
+		"process3": "Machining",
+		"process_des3": "After thermal stabilization, the parts undergo processing, including:\n• turning and milling,\n• grinding and boring,\n• heat treatment (hardening, normalization),\n• removal of sprues and burrs.\nPrecise geometry, fits, threads, and working surfaces are shaped at this stage.",
 
-		"process4": "Assembly",
-		"process_des4": "Final assembly of all components into finished products.",
+		"process4": "Assembly and Product Preparation",
+		"process_des4": "Finished components are assembled into units or supplied separately according to the order.\nIf necessary, welding, installation of fastening elements, painting, or application of protective coatings is performed.\nAll equipment undergoes final inspection before packaging.",
 
 		"process5": "Quality Control",
-		"process_des5": "Strict quality control is carried out at every stage to ensure high product standards.",
+		"process_des5": "Multi-level control is implemented at every production stage:\n• visual inspection,\n• dimensional checks and tolerances,\n• non-destructive testing (ultrasound, magnetic-particle inspection),\n• tests for hardness, strength, impact toughness, and wear resistance.\nProducts comply with GOST, ISO, and internal company standards.",
 
-		"process6": "Packaging and Shipping",
-		"process_des6": "Finished products are packaged and prepared for delivery to customers.",
+		"process6": "Packaging and Shipment",
+		"process_des6": "Finished products are labeled and packed into big bags, metal barrels, pallets, or containers depending on customer requirements.\nAccompanying documents, quality passports, and certificates are prepared.\nWe deliver across the CIS, Asia, and Europe by road and rail.",
 
 		"gallery": "Equipment Used",
 
 		"controll": "Quality Control",
-		"controll_des": "Our specialists use modern equipment and high-precision technology to ensure strict compliance with quality standards at every stage.",
+		"controll_des": "Our specialists use modern equipment and high-precision tools to ensure strict compliance with quality standards at each stage.",
 
 		"quality": "Raw Material Inspection",
-		"quality_des": "All materials undergo preliminary testing to meet standards.",
+		"quality_des": "Each batch of incoming raw materials (including rolled metal and alloying components) undergoes mandatory laboratory testing for compliance with chemical composition and standards.\nThe 'Iskraline-100' spectrometer is used to precisely determine carbon, manganese, silicon, and other elements in alloys. This prevents deviations from the formula and ensures consistent product quality from the start.",
 
 		"quality2": "Casting and Forging Control",
-		"quality_des2": "Each batch of products is checked for defects, including shape, density, and strength verification.",
+		"quality_des2": "During casting and forging, each batch undergoes visual and instrumental control. Assessed are:\n• shape integrity,\n• absence of cracks and cavities,\n• metal density and structure.\nSelected items are also hardness tested at an early stage to identify any heat treatment discrepancies before machining.",
 
-		"quality3": "Mechanical Processing",
-		"quality_des3": "Products undergo control measurements to ensure accuracy and compliance with drawings.",
+		"quality3": "Machining and Measurements",
+		"quality_des3": "After receiving blanks, high-precision turning, milling, or grinding is performed.\nEach item is checked against technical documentation and drawings using micrometric tools and control gauges. Special attention is paid to fit sizes, concentricity, and surface roughness.",
 
-		"quality4": "Final Inspection",
-		"quality_des4": "Before packaging, each product undergoes final testing for compliance with technical specifications, as well as wear resistance and durability tests.",
+		"quality4": "Final Inspection and Testing",
+		"quality_des4": "Before packaging, products undergo final checks:\n• Brinell or Rockwell hardness testing using the 'TEMP-2' device,\n• wear resistance and impact strength tests (if required),\n• visual inspection and comparison with quality passports.\nAll data is logged and stored in the database to track the history of each batch.",
 
-		"quality5": "Analysis and Improvement",
-		"quality_des5": "We conduct regular audits and analyze control results to enhance processes and implement innovative methods."
+		"quality5": "Quality Analysis and Improvement",
+		"quality_des5": "To continuously improve reliability and durability, our laboratory conducts:\n• regular internal audits of production processes,\n• analysis of defect and deviation statistics,\n• implementation of new control and improvement methods based on test results.\nAdditionally, we work with raw material suppliers and modernize production equipment based on quality analytics."
 	},
 	"Contact": {
 		"contact_title": "Feedback Form",
