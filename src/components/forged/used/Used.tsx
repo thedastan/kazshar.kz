@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import React from "react";
 import { FaMountainCity } from "react-icons/fa6";
-import { GiChemicalTank, GiConcreteBag, GiMetalPlate } from "react-icons/gi";
+import { GiConcreteBag, GiMetalPlate } from "react-icons/gi";
 import { PiLightningAFill } from "react-icons/pi";
 
 const Used = () => {
@@ -23,11 +23,11 @@ const Used = () => {
       icon: <PiLightningAFill />,
       title: t("card3"),
     },
-    {
-      num: "4",
-      icon: <GiChemicalTank />,
-      title: t("card4"),
-    },
+    // {
+    //   num: "4",
+    //   icon: <GiChemicalTank />,
+    //   title: t("card4"),
+    // },
     {
       num: "5",
       icon: <GiMetalPlate />,

@@ -66,7 +66,7 @@ const Process = () => {
                 <h2 className="text-[30px]  group-hover:text-white font-[700] text-[#ff2828]">
                   {el.title}
                 </h2>
-                <p className="text-gray-500 group-hover:text-white text-[18px]">
+                <p className="text-gray-500 group-hover:text-white text-[18px]"  style={{ whiteSpace: "pre-line" }}>
                   {el.desc}
                 </p>
               </div>

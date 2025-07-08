@@ -18,6 +18,7 @@ const AboutComponent = () => {
 			<About />
 			<Gallery />
 			{/* <Certificate /> */}
+			 
 		</div>
 	);
 };
