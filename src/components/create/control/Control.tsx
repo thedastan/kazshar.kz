@@ -54,7 +54,7 @@ const Control = () => {
                 <h2 className="md:text-[30px] text-[22px] group-hover:text-white leading-[34px] font-[700] text-[#ff2828]">
                   {el.title}
                 </h2>
-                <p className="text-gray-500 mt-2 group-hover:text-white text-[18px]">
+                <p className="text-gray-500 mt-2 group-hover:text-white text-[18px]" style={{ whiteSpace: "pre-line" }}>
                   {el.desc}
                 </p>
               </div>
