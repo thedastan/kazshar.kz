@@ -11,9 +11,6 @@ import img6 from "@/assets/photo2.webp";
 import img7 from "@/assets/photo14.webp";
 import img8 from "@/assets/photo8.webp";
 
-
-
-
 import { FiDownload } from "react-icons/fi";
 
 const DownloadableImage = ({
@@ -61,8 +58,9 @@ const About = () => {
 									{t("histori")}
 								</h1>
 								<div className="flex items-center mt-4 gap-4">
-									<div className="w-4 md:h-[220px] md:flex hidden h-[320px] bg-[#ff2828]" />
-									<p className="text-[18px] text-[#575757] font-[400]">
+									<p
+										className="text-[18px] border-[3px] border-transparent px-4 border-l-[#ff2828] text-[#575757] font-[400]"
+										style={{ whiteSpace: "pre-line" }}>
 										{t("histori_description")}
 									</p>
 								</div>
@@ -70,6 +68,7 @@ const About = () => {
 						</div>
 						<DownloadableImage src={img1} alt="history-image" />
 					</div>
+
 					<div data-aos="fade-up" className="flex md:flex-row flex-col-reverse">
 						<DownloadableImage src={img2} alt="task-image" />
 						<div className="w-full flex justify-center items-center h-[500px]">
@@ -78,8 +77,9 @@ const About = () => {
 									{t("task")}
 								</h1>
 								<div className="flex items-center mt-4 gap-4">
-									<div className="w-4 md:flex hidden md:h-[220px] h-[220px] bg-[#ff2828]" />
-									<p className="text-[18px] text-[#575757] font-[400]">
+									<p
+										className="text-[18px] border-[3px] border-transparent px-4 border-l-[#ff2828] text-[#575757] font-[400]"
+										style={{ whiteSpace: "pre-line" }}>
 										{t("task_description")}
 									</p>
 								</div>
@@ -94,8 +94,9 @@ const About = () => {
 									{t("text")}
 								</h1>
 								<div className="flex items-center mt-4 gap-4">
-									<div className="w-4 md:h-[220px] md:flex hidden h-[320px] bg-[#ff2828]" />
-									<p className="text-[18px] text-[#575757] font-[400]">
+									<p
+										className="text-[18px] border-[3px] border-transparent px-4 border-l-[#ff2828] text-[#575757] font-[400]"
+										style={{ whiteSpace: "pre-line" }}>
 										{t("desc")}
 									</p>
 								</div>
@@ -104,16 +105,17 @@ const About = () => {
 						<DownloadableImage src={img4} alt="history-image" />
 					</div>
 
-					<div data-aos="fade-up" className="flex md:flex-row   flex-col-reverse">
+					<div data-aos="fade-up" className="flex md:flex-row items-center justify-center   flex-col-reverse">
 						<DownloadableImage src={img5} alt="history-image" />
-						<div className="w-full flex justify-center items-center md:h-[500px] h-[550px]">
-							<div className="md:p-14 p-0 h-full">
-								<h1 className="md:text-[30px] text-[20px] font-[700]">
+						<div className="w-full flex justify-center items-center md:h-[500px] h-[650px]">
+							<div className="md:p-12 p-0 h-full">
+								<h1 className="md:text-[30px] md:mt-0 mt-5 text-[20px] font-[700]">
 									{t("text1")}
 								</h1>
-								<div className="flex items-center mt-4 gap-4">
-									<div className="w-4 md:h-[220px] md:flex hidden h-[320px] bg-[#ff2828]" />
-									<p className="text-[18px] text-[#575757] font-[400]">
+								<div className="flex mt-2 items-center gap-4">
+									<p
+										className="text-[18px] border-[3px] h-full border-transparent px-4 border-l-[#ff2828] text-[#575757] font-[400]"
+										style={{ whiteSpace: "pre-line" }}>
 										{t("desc1")}
 									</p>
 								</div>
@@ -128,8 +130,9 @@ const About = () => {
 									{t("text2")}
 								</h1>
 								<div className="flex items-center mt-4 gap-4">
-									<div className="w-4 md:h-[220px] md:flex hidden h-[320px] bg-[#ff2828]" />
-									<p className="text-[18px] text-[#575757] font-[400]">
+									<p
+										className="text-[18px] border-[3px] border-transparent px-4 border-l-[#ff2828] text-[#575757] font-[400]"
+										style={{ whiteSpace: "pre-line" }}>
 										{t("desc2")}
 									</p>
 								</div>
@@ -146,8 +149,9 @@ const About = () => {
 									{t("text3")}
 								</h1>
 								<div className="flex items-center mt-4 gap-4">
-									<div className="w-4 md:h-[220px] md:flex hidden h-[320px] bg-[#ff2828]" />
-									<p className="text-[18px] text-[#575757] font-[400]">
+									<p
+										className="text-[18px] border-[3px] border-transparent px-4 border-l-[#ff2828] text-[#575757] font-[400]"
+										style={{ whiteSpace: "pre-line" }}>
 										{t("desc3")}
 									</p>
 								</div>
@@ -161,9 +165,10 @@ const About = () => {
 								<h1 className="md:text-[30px] text-[20px] font-[700]">
 									{t("text4")}
 								</h1>
-								<div className="flex items-center mt-4 gap-4">
-									<div className="w-4 md:h-[220px] md:flex hidden h-[320px] bg-[#ff2828]" />
-									<p className="text-[18px] text-[#575757] font-[400]">
+								<div className="flex justify-center items-center mt-4 gap-4">
+									<p
+										className="text-[18px] border-[3px] border-transparent px-4 border-l-[#ff2828] text-[#575757] font-[400]"
+										style={{ whiteSpace: "pre-line" }}>
 										{t("desc4")}
 									</p>
 								</div>
@@ -179,11 +184,12 @@ const About = () => {
 					<div data-aos="fade-up" className="md:flex  block gap-6 items-center">
 						<DownloadableImage src={img3} alt="today-image" />
 						<div className="w-full flex flex-col gap-4">
-							<h4 className="text-[18px] font-[500] text-white">
+							<h4
+								className="text-[18px] font-[500] text-white"
+								style={{ whiteSpace: "pre-line" }}>
 								{t("today_description")}
 							</h4>
 						</div>
-
 					</div>
 				</div>
 			</div>
