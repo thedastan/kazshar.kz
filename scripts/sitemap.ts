@@ -5,14 +5,16 @@ import { Readable } from "stream";
 export default async (req: NextApiRequest, res: NextApiResponse) => {
 	const links = [
 		{ url: "/", changefreq: "daily", priority: 1.0 },
-		{ url: "/about", changefreq: "daily", priority: 0.8 },
-		{ url: "/products", changefreq: "monthly", priority: 0.6 },
-		{ url: "/forged", changefreq: "daily", priority: 0.8 },
-		{ url: "/cast", changefreq: "daily", priority: 0.8 },
-		{ url: "/rolled", changefreq: "daily", priority: 0.8 },
-		{ url: "/create", changefreq: "daily", priority: 0.8 },
-		{ url: "/news", changefreq: "daily", priority: 0.9 },
+		{ url: "/#about", changefreq: "daily", priority: 0.8 },
+		{ url: "/forclient", changefreq: "monthly", priority: 0.6 },
+		{ url: "/news", changefreq: "daily", priority: 0.8 },
 		{ url: "/contact", changefreq: "daily", priority: 0.8 },
+		{ url: "/certificate", changefreq: "daily", priority: 0.8 },
+		{ url: "/gallery", changefreq: "daily", priority: 0.8 },
+		{ url: "/kovanye-meleyshie-shary", changefreq: "daily", priority: 0.9 },
+		{ url: "/litye-meleyshie-shary", changefreq: "daily", priority: 0.8 },
+		{ url: "/katanye-meleyshie-shary", changefreq: "daily", priority: 0.8 },
+
 
 	];
 

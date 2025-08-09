@@ -4,6 +4,9 @@ import axios from "axios";
 import { useTranslations } from "next-intl";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { toast, Toaster } from "sonner";
+import { TextareaComponent } from "@/components/ui/input/TextareaComponent";
+import { InputComponent } from "@/components/ui/input/InputComponent";
+import { Button } from "@/components/ui/button/Button";
 
 interface IFormInput {
 	client_name: string;
@@ -43,62 +46,43 @@ const ContactFeedback = () => {
 		}
 	};
 	return (
-		<div className="w-[100%] md:w-[310px] sm:w-[500px]">
+		<div className="w-[100%]">
 			<Toaster position="top-center" />
 			<form
 				onSubmit={handleSubmit(onSubmit)}
-				className="flex items-start justify-start flex-col gap-1  w-full">
-				<div className="flex text-white flex-col w-[100%] h-[100%]">
-					<p className="text-[14px] font-[400]">{t("name")}</p>
-					<input
-						{...register("client_name", { required: "Это поле обязательно" })}
-						className="w-[100%] h-[30px] px-2 text-[14px] text-[#383838] outline-none"
-						type="text"
-					/>
-				</div>
-				<div className="flex text-white flex-col w-[100%] h-[100%]">
-					<p className="text-[14px] font-[400]">{t("email")}</p>
-					{/* <input
-						{...register("email", { required: "Это поле обязательно" })}
-						className="w-[100%] h-[32px] px-2 text-[14px] text-[#383838] outline-none"
-						type="text"
-					/> */}
-
-					<input
-						{...register("email", {
-							required: "Это поле обязательно",
-							pattern: {
-								value: /^[a-zA-Z0-9._%+-]+@gmail\.com$/,
-								message: "Введите корректный Gmail адрес",
-							},
-						})}
-						className="w-[100%] h-[30px] px-2 text-[14px] text-[#383838] outline-none"
-						type="text"
-					/>
-				</div>
-				<div className="flex text-white flex-col w-[100%] h-[100%]">
-					<p className="text-[14px] font-[400]">{t("object2")}</p>
-					<input
-						{...register("object_us", { required: "Это поле обязательно" })}
-						className="w-[100%] h-[30px] px-2 text-[14px] text-[#383838] outline-none"
-						type="text"
-					/>
-				</div>
-				<div className="flex text-white flex-col w-[100%] h-[100%]">
-					<p className="text-[14px] font-[400]">{t("message")}</p>
-					<textarea
-						{...register("message", { required: "Это поле обязательно" })}
-						className="w-[100%] h-[60px] px-2 py-1 text-[14px] text-[#383838] outline-none"
-					/>
-				</div>
-				<div className="flex text-white flex-col w-[100%] h-[100%]">
-					<button
-						type="submit"
-						style={{ transition: "0.3s" }}
-						className="bg-[#c71212] mt-4 w-full border-[1px] border-white hover:bg-white hover:text-[#c71212] text-[#fff] font-[600] h-[32px]">
-						{isLoading ? t("btn_loading") : t("btn3")}
-					</button>
-				</div>
+				className="flex items-center justify-center flex-col gap-2 text-white w-full">
+				<InputComponent
+					className="border-white"
+					placeholder={t("name")}
+					{...register("client_name", { required: "Это поле обязательно" })}
+					type="text"
+				/>
+				<InputComponent
+					className="border-white"
+					placeholder={t("email")}
+					{...register("email", {
+						required: "Это поле обязательно",
+						pattern: {
+							value: /^[a-zA-Z0-9._%+-]+@gmail\.com$/,
+							message: "Введите корректный Gmail адрес",
+						},
+					})}
+					type="text"
+				/>
+				<InputComponent
+					className="border-white"
+					placeholder={t("object2")}
+					{...register("object_us", { required: "Это поле обязательно" })}
+					type="text"
+				/>
+				<TextareaComponent
+					className="border-white"
+					placeholder={t("message")}
+					{...register("message", { required: "Это поле обязательно" })}
+				/>
+				<Button className="w-full bg-white text-[#29648A] rounded-sm hover:text-white" type="submit">
+					{isLoading ? t("btn_loading") : t("btn3")}
+				</Button>
 			</form>
 		</div>
 	);

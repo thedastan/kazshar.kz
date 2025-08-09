@@ -1,25 +1,22 @@
 "use client";
 
-import Footer from "@/components/navbar/footer/Footer";
-import Header from "@/components/navbar/header/Header";
+import LayoutPage from "@/components/layout/LayputPage";
 import { store } from "@/redux/store";
 import { FC, ReactNode } from "react";
 import { Provider } from "react-redux";
 
 interface LayoutPageProps {
-  children: ReactNode;
+	children: ReactNode;
 }
 
 const Providers: FC<LayoutPageProps> = ({ children }) => {
-  return (
-    <div>
-      <Provider store={store}>
-        <Header />
-        {children}
-        <Footer />
-      </Provider>
-    </div>
-  );
+	return (
+		<div>
+			<Provider store={store}>
+				<LayoutPage>{children}</LayoutPage>
+			</Provider>
+		</div>
+	);
 };
 
 export default Providers;

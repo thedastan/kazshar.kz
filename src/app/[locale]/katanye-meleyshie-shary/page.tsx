@@ -1,7 +1,7 @@
-import Used from "@/components/forged/used/Used";
-import AboutRolled from "@/components/rolled/about/AboutRolled";
-import HeroRolled from "@/components/rolled/hero/HeroRolled";
-import TabRolled from "@/components/rolled/tab/TabRolled";
+import Used from "@/components/kovanye-meleyshie-shary/used/Used";
+import AboutRolled from "@/components/katanye-meleyshie-shary/about/AboutRolled";
+import HeroRolled from "@/components/katanye-meleyshie-shary/hero/HeroRolled";
+import TabRolled from "@/components/katanye-meleyshie-shary/tab/TabRolled";
 import { Metadata } from "next";
 import React from "react";
 
