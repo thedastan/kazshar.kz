@@ -1,3 +1,5 @@
+'use client'
+import { Button } from "@/components/ui/button/Button";
 import axios from "axios";
 import { useTranslations } from "next-intl";
 import React, { useState } from "react";
@@ -81,16 +83,16 @@ const ContactRfc = () => {
 	};
 
 	return (
-		<div className="">
+		<div className="w-full">
 			<Toaster position="top-center" />
-			<div className="flex flex-col items-center gap-1 max-w-[350px] w-full">
+			<div className="flex flex-col items-center gap-1 w-full">
 				<form
 					onSubmit={handleSubmit(onSubmit)}
-					className="flex flex-col gap-[10px]">
-					<h1 className="text-[22px] md:text-[22px] font-[600] text-white flex text-center">
+					className="flex w-full flex-col gap-[10px]">
+					<h1 className="text-[22px] md:text-[22px] font-[600] text-black flex text-center">
 						{t("proposal")}
 					</h1>
-					<div className="flex text-white flex-col w-[100%] h-[100%]">
+					<div className="flex text-black flex-col w-[100%] h-[100%]">
 						<p className="text-[16px] font-[400]">{t("organization_name")}</p>
 						<input
 							{...register("name_company", { required: true })}
@@ -98,7 +100,7 @@ const ContactRfc = () => {
 							type="text"
 						/>
 					</div>
-					<div className="flex text-white flex-col w-[100%] h-[100%]">
+					<div className="flex text-black flex-col w-[100%] h-[100%]">
 						<p className="text-[16px] font-[400]">{t("email")}</p>
 						{/* <input
 							{...register("email", { required: true })}
@@ -118,7 +120,7 @@ const ContactRfc = () => {
 							type="text"
 						/>
 					</div>
-					<div className="flex text-white flex-col w-[100%] h-[100%]">
+					<div className="flex text-black flex-col w-[100%] h-[100%]">
 						<p className="text-[16px] font-[400]">{t("object")}</p>
 						<select
 							{...register("object_choices", {
@@ -133,10 +135,10 @@ const ContactRfc = () => {
 						</select>
 					</div>
 
-					<div className="flex text-white flex-col w-[100%] h-[100%]">
+					<div className="flex text-black flex-col w-[100%] h-[100%]">
 						<p className="text-[16px] font-[400]">{t("product")}</p>
 						<select
-							className="w-[100%] h-[32px] px-2 text-[14px] text-[#383838] outline-none"
+							className="w-[100%] h-[32px] px-2 text-[14px] bg-white text-[#383838] outline-none"
 							defaultValue="0"
 							onChange={handleDeliveryChange}>
 							<option value="Самовывоз">{t("Pickup")}</option>
@@ -146,7 +148,7 @@ const ContactRfc = () => {
 
 					{deliveryMethod === "Доставка" && (
 						<div className="flex gap-2">
-							<div className="flex text-white flex-col w-[100%] h-[100%]">
+							<div className="flex text-black flex-col w-[100%] h-[100%]">
 								<p className="text-[16px] font-[400]">{t("city")}</p>
 								<input
 									{...register("city", {
@@ -156,7 +158,7 @@ const ContactRfc = () => {
 									type="text"
 								/>
 							</div>
-							<div className="flex text-white flex-col w-[100%] h-[100%]">
+							<div className="flex text-black flex-col w-[100%] h-[100%]">
 								<p className="text-[16px] font-[400]">{t("country")}</p>
 								<input
 									{...register("country", {
@@ -170,7 +172,7 @@ const ContactRfc = () => {
 					)}
 
 					<div className="flex gap-2">
-						<div className="flex text-white flex-col w-[100%] h-[100%]">
+						<div className="flex text-black flex-col w-[100%] h-[100%]">
 							<p className="text-[16px] font-[400]">{t("Volume")}</p>
 							<input
 								{...register("volume_tons", { required: true })}
@@ -178,7 +180,7 @@ const ContactRfc = () => {
 								type="number"
 							/>
 						</div>
-						<div className="flex text-white flex-col w-[100%] h-[100%]">
+						<div className="flex text-black flex-col w-[100%] h-[100%]">
 							<p className="text-[16px] font-[400]">{t("Hardness")}</p>
 							<input
 								{...register("hardness", {
@@ -198,13 +200,13 @@ const ContactRfc = () => {
 						</div>
 					</div>
 
-					<div className="flex text-white flex-col w-[100%] h-[100%]">
-						<button
+					<div className="flex text-black flex-col w-[100%] h-[100%]">
+						<Button
 							type="submit"
 							style={{ transition: "0.3s" }}
-							className="bg-[#c71212] mt-4 w-full border-[1px] border-white hover:bg-white hover:text-[#c71212] text-[#fff] font-[600] h-[32px]">
+							className=" bg-[#4D6D9A] rounded-sm mt-4 w-full border-[1px] border-white hover:bg-[#5d86be]   text-[#fff] ">
 							{isLoading ? t("btn_loading") : t("btn3")}
-						</button>
+						</Button>
 					</div>
 				</form>
 			</div>

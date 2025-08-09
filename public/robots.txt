@@ -1,16 +1,5 @@
 User-agent: *
 Allow: /
-Allow: /about
-Allow: /products
-Allow: /forged
-Allow: /cast
-Allow: /rolled
-Allow: /create
-Allow: /news
-Allow: /contact
-
-
-
 
 Sitemap: https://kashar.kz/sitemap.xml
 

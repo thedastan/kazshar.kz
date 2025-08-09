@@ -1,110 +1,4 @@
 {
-	"HomePage": {
-		"title": "hello world"
-	},
-	"Hero": {
-		"title": "Quality in every gram of metal.",
-		"description": "KazShar grinding balls are the benchmark of strength and wear resistance for your production.",
-		"watching": "Watch full video",
-		"no_watching": "Your browser does not support video."
-	},
-	"HeroMenu": {
-		"home": "Home",
-		"about": "About the company",
-		"products": "Products",
-		"create": "Production",
-		"news": "News",
-		"contact": "Contact",
-
-		"products_title": "Forged Grinding Balls",
-		"products_des": "Forged balls are made from steel billets using a forging hammer.",
-
-		"products_title2": "Cast Grinding Balls",
-		"products_des2": "Cast grinding balls are made from high-chromium, medium-chromium, and low-chromium cast iron.",
-
-		"products_title3": "Rolled Grinding Balls",
-		"products_des3": "Rolled grinding balls are made from steel rods on a ball-rolling mill.",
-
-		"learn": "Еxplore the product range"
-	},
-
-	"About": {
-		"title": "About KazShar Company",
-		"histori": "About Us",
-		"histori_description": "We are a modern metallurgical company specializing in the production of high-quality grinding balls for the mining and cement industries. Our team has over 15 years of experience, which has helped us build a reliable production and management system focused on quality, efficiency, and long-term partnerships.",
-		"task": "Who We Are",
-		"task_description": "Our story began with a simple idea — to create a company capable of producing products that meet international quality standards and satisfy the growing demand for durable, wear-resistant solutions. Today, we are a recognized player in the Kazakhstani market and are actively expanding our export operations.\n\nWe work for those who value stability, precision, and professionalism.",
-		"today_description": "Our goal is not just to produce grinding balls. We strive to be part of your production success by supplying products you can rely on. With us, you get stability, technology, and a partnership you can count on.",
-
-		"text": "What We Produce",
-		"desc": "Our main product is grinding balls of various diameters designed for use in ball mills. We produce:\n• Forged grinding balls\n• Cast grinding balls\n• Balls with varying hardness levels tailored to specific operating conditions\nOur products undergo multi-stage quality control and fully comply with industry standards.",
-
-		"text1": "Production Capacity",
-		"desc1": "We operate a full production cycle — from raw material intake to packaging and shipment of finished products. This allows us to control quality at every stage and respond promptly to customer needs.\n• Production capacity: up to 60,000 tons per year\n• Modern equipment: induction furnaces, automatic presses, heat treatment lines, spectrometric and mechanical testing\n• Quality control: every stage is monitored by our laboratory — chemical composition, hardness, structure, and wear resistance",
-
-		"text2": "Technology and Approach",
-		"desc2": "We constantly invest in innovation, automation, and digital solutions that allow us to monitor production parameters in real-time. Our approach emphasizes:\n• Process standardization\n• Flexible customization to customer requirements\n• Individual technical recommendations for selecting balls based on specific mill conditions",
-
-		"text3": "Delivery Geography",
-		"desc3": "We supply products to enterprises across Kazakhstan and are actively developing international trade. Our grinding balls are used in gold, copper, cement, and coal industries throughout Central Asia and neighboring countries.\nWe operate under DAP, CPT, FCA, CIF terms — depending on our partners’ needs.",
-
-		"text4": "Why Choose Us",
-		"desc4": "\n• 15+ years of experience — systematic approach and solid expertise\n• In-house production — full control over quality and lead times\n• Flexibility — from trial batches to contracts of tens of thousands of tons\n• Support — we don’t just deliver products, we support our clients at every step\n• Continuous improvement — we seek solutions that truly improve client outcomes",
-
-		"gallery": "Our Gallery",
-		"sertificat": "Certificates and Licenses"
-	},
-	"Product": {
-		"asorti": "Product Assortment",
-		"about": "About Us",
-		"about_des": "History of Our Factory",
-		"about_btn": "Learn More"
-	},
-	"Create": {
-		"title": "High-Quality Grinding Ball Production",
-
-		"production": "Production Process",
-		"production_des": "Our plant uses advanced technologies to manufacture high-quality products. The process includes several key stages:",
-		"production_des2": "Our process ensures maximum efficiency and impeccable quality, meeting even the most stringent standards.",
-
-		"process": "Raw Material Preparation",
-		"process_des": "At this stage, all incoming materials are received, identified, and inspected: rolled metal, alloying additives, molding mixtures, and other components.\nEach batch undergoes incoming quality control for chemical composition, physical and mechanical properties, and compliance with technical specifications. Only verified raw materials are allowed for further production.",
-
-		"process2": "Casting and Forging",
-		"process_des2": "Main blanks and components are formed here:\n• forged and cast grinding balls,\n• crusher cones,\n• excavator teeth,\n• other parts for mining and construction equipment.\nThe process includes induction or arc heating, forging on presses, or pouring molten metal into sand or chill molds followed by cooling. Both automatic lines and manual molding are used for complex parts.",
-
-		"process3": "Machining",
-		"process_des3": "After thermal stabilization, the parts undergo processing, including:\n• turning and milling,\n• grinding and boring,\n• heat treatment (hardening, normalization),\n• removal of sprues and burrs.\nPrecise geometry, fits, threads, and working surfaces are shaped at this stage.",
-
-		"process4": "Assembly and Product Preparation",
-		"process_des4": "Finished components are assembled into units or supplied separately according to the order.\nIf necessary, welding, installation of fastening elements, painting, or application of protective coatings is performed.\nAll equipment undergoes final inspection before packaging.",
-
-		"process5": "Quality Control",
-		"process_des5": "Multi-level control is implemented at every production stage:\n• visual inspection,\n• dimensional checks and tolerances,\n• non-destructive testing (ultrasound, magnetic-particle inspection),\n• tests for hardness, strength, impact toughness, and wear resistance.\nProducts comply with GOST, ISO, and internal company standards.",
-
-		"process6": "Packaging and Shipment",
-		"process_des6": "Finished products are labeled and packed into big bags, metal barrels, pallets, or containers depending on customer requirements.\nAccompanying documents, quality passports, and certificates are prepared.\nWe deliver across the CIS, Asia, and Europe by road and rail.",
-
-		"gallery": "Equipment Used",
-
-		"controll": "Quality Control",
-		"controll_des": "Our specialists use modern equipment and high-precision tools to ensure strict compliance with quality standards at each stage.",
-
-		"quality": "Raw Material Inspection",
-		"quality_des": "Each batch of incoming raw materials (including rolled metal and alloying components) undergoes mandatory laboratory testing for compliance with chemical composition and standards.\nThe 'Iskraline-100' spectrometer is used to precisely determine carbon, manganese, silicon, and other elements in alloys. This prevents deviations from the formula and ensures consistent product quality from the start.",
-
-		"quality2": "Casting and Forging Control",
-		"quality_des2": "During casting and forging, each batch undergoes visual and instrumental control. Assessed are:\n• shape integrity,\n• absence of cracks and cavities,\n• metal density and structure.\nSelected items are also hardness tested at an early stage to identify any heat treatment discrepancies before machining.",
-
-		"quality3": "Machining and Measurements",
-		"quality_des3": "After receiving blanks, high-precision turning, milling, or grinding is performed.\nEach item is checked against technical documentation and drawings using micrometric tools and control gauges. Special attention is paid to fit sizes, concentricity, and surface roughness.",
-
-		"quality4": "Final Inspection and Testing",
-		"quality_des4": "Before packaging, products undergo final checks:\n• Brinell or Rockwell hardness testing using the 'TEMP-2' device,\n• wear resistance and impact strength tests (if required),\n• visual inspection and comparison with quality passports.\nAll data is logged and stored in the database to track the history of each batch.",
-
-		"quality5": "Quality Analysis and Improvement",
-		"quality_des5": "To continuously improve reliability and durability, our laboratory conducts:\n• regular internal audits of production processes,\n• analysis of defect and deviation statistics,\n• implementation of new control and improvement methods based on test results.\nAdditionally, we work with raw material suppliers and modernize production equipment based on quality analytics."
-	},
 	"Contact": {
 		"contact_title": "Feedback Form",
 		"btn": "Contact Form",
@@ -208,18 +102,90 @@
 		"tab3": "Chemical Composition",
 		"zapros": "Request a commercial offer"
 	},
-	"News": {
-		"title": "Latest Events in the Metallurgical Industry",
-		"des": "Latest news on production, prices, and innovations in the metal products sector.",
-		"btn": "Learn more",
-		"btn2": "Close"
-	},
-	"Footer": {
-		"text1": "© 2012 - 2025 All rights reserved.",
-		"text2": "Developed by: Motion Web LLC"
-	},
+
 	"NotFound": {
 		"title": "Oops! Page not found",
 		"btn": "Return to home page"
+	},
+	"HeroNews": {
+		"title": "What's New at KazShar?",
+		"desc": "Stay updated on the latest events, achievements, and company updates from KazShar. We share important news, talk about new projects, and announce upcoming events."
+	},
+	"HeroGallery": {
+		"title": "KazShar Photo Gallery",
+		"desc": "Explore the bright moments from the life of KazShar. Here you will find photos from events, projects, and other significant occasions that reflect our dynamic and creative atmosphere."
+	},
+	"Hero": {
+		"title": "KazShar Grinding Balls – the Standard of Strength and Wear Resistance for Your Production.",
+		"btn": "Watch Video Presentation"
+	},
+	"About": {
+		"title": "About Our Company",
+		"desc": "Our enterprise specializes in the production of high-quality forged and cast grinding balls that meet international standards. For over 15 years, we have been supplying reliable products for enrichment and cement production, ensuring maximum grinding efficiency for our clients.",
+		"key": "Key Advantages:",
+		"desc1": "✔ Modern Equipment – the plant is equipped with high-tech production lines and laboratories for monitoring chemical composition, hardness, and wear resistance.",
+		"desc2": "✔ Full Production Cycle – from raw materials to finished products with guaranteed stable quality.",
+		"desc3": "✔ Capacity up to 60,000 tons per year – prompt execution of large orders and custom projects.",
+		"desc4": "✔ Parameter Flexibility – we produce balls of various diameters and hardness levels tailored to specific operating conditions.",
+		"geo": "Delivery Geography:",
+		"desc5": "Kazakhstan, Central Asia, and neighboring countries. We operate under Incoterms, adapting to customer requirements.",
+		"desc6": "We ensure the durability and cost-effectiveness of your processes – trust a proven manufacturer!"
+	},
+	"Products": {
+		"title": "Our Products",
+		"desc": "We are chosen for stable quality, a flexible approach to customer requirements, and reliability proven by over 15 years of experience in the industry.",
+
+		"title2": "Forged Balls",
+		"desc2": "Our forged balls are made from high-quality steel ingots using the hot forging method, ensuring exceptional strength and durability.",
+
+		"title3": "Cast Balls",
+		"desc3": "Cast grinding balls are made from high-chromium, medium-chromium, and low-chromium cast iron, achieving an optimal balance between hardness, wear resistance, and impact toughness.",
+
+		"title4": "Rolled Balls",
+		"desc4": "Rolled balls are produced by hot rolling high-quality steel rods on ball-rolling mills, ensuring high strength and uniform structure.",
+
+		"btn": "Request a Commercial Proposal",
+		"desc5": "Want to know the price and delivery terms? Click the button and receive a personalized commercial proposal.",
+		"btn2": "Proposal Button"
+	},
+	"WhyUs": {
+		"title": "Why Choose Us?",
+		"desc1": "In-house full-cycle production We control quality at every stage – from raw materials to finished product shipment.",
+		"desc2": "15+ years of industry experience Accumulated knowledge and refined processes allow us to offer reliable and proven solutions.",
+		"desc3": "Adaptation to customer needs We select balls based on hardness, diameter, and specific mill operating conditions.",
+		"desc4": "Modern equipment and laboratories Induction furnaces, thermal lines, presses, and quality control according to international standards.",
+		"desc5": "Guaranteed supply stability We provide both trial volumes and regular large batches – delivered on time.",
+		"desc6": "Flexible cooperation terms We operate under Incoterms, supporting clients at every stage – from selection to logistics."
+	},
+	"ContactHome": {
+		"title": "Contact Us",
+		"desc": "Submit your request, and we will contact you shortly.",
+		"btn": "Submit Request",
+		"location": "📍 Address: Republic of Kazakhstan, Zhambyl Region, Korday District, Korday Village, Beriktas St., Building 5.",
+
+		"name": "Name",
+		"email": "Email Address",
+		"phone": "Phone",
+		"message": "Message"
+	},
+	"Footer": {
+		"text1": "© 2012 - 2025 All Rights Reserved.",
+		"text2": "Developed by IE Mukeev Dastan Rakhymovich"
+	},
+	"Header": {
+		"about": "About Us",
+		"client": "For Clients",
+		"news": "News",
+		"contact": "Contacts",
+		"aboutCompany": "About the Company",
+		"certificates": "Certificates, Licenses, and Standards",
+		"kovanye": "Forged Balls",
+		"litye": "Cast Balls",
+		"katanye": "Rolled Balls",
+		"gallery": "Photo Gallery"
+	},
+	"SerHero": {
+		"title": "Certificates, Licenses, and Standards",
+		"text": "We adhere to high standards of quality and safety. Explore our official certificates, licenses, and compliance with national and international standards."
 	}
 }

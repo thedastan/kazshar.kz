@@ -1,29 +1,22 @@
-import NewsComponent from "@/components/news/NewsComponent";
-import { Metadata } from "next";
-import React from "react";
+import NewsComponents from '@/components/news/NewsComponents';
+import { Metadata } from 'next';
+import React from 'react';
 
 export const metadata: Metadata = {
-	title: "Новости kazshar",
-	description:
-		"Свежие новости о производстве, ценах и инновациях в сфере металлопродукции.",
-	robots: "index, follow",
-	authors: [{ name: "Новости kazshar" }],
-	openGraph: {
-		title: "Новости kazshar",
-		description:
-			"Свежие новости о производстве, ценах и инновациях в сфере металлопродукции.",
+  title: "О компании Kazshar",
+  description:
+    "Наш завод был основан в 2024 году с целью создания высококачественной продукции для металлургической и горнодобывающей отраслей. Мы начали свой путь как небольшое предприятие, но благодаря внедрению современных технологий и профессионализму нашей команды, смогли стать одним из ведущих производителей мелющих шаров в Казахстане.",
+  robots: "index, follow",
+  authors: [{ name: "О компании Kazshar" }],
+  openGraph: {
+    title: "О компании Kazshar ",
+    description:
+      "Наш завод был основан в 2024 году с целью создания высококачественной продукции для металлургической и горнодобывающей отраслей. Мы начали свой путь как небольшое предприятие, но благодаря внедрению современных технологий и профессионализму нашей команды, смогли стать одним из ведущих производителей мелющих шаров в Казахстане.",
 
-		url: "https://kzmc.kg/media/uploads/images/listovoi_prokat1.jpg",
-		type: "website",
-	},
+    url: "https://kzmc.kg/media/uploads/images/listovoi_prokat1.jpg",
+    type: "website",
+  },
 };
 
-const NewsPage = () => {
-	return (
-		<div>
-			<NewsComponent />
-		</div>
-	);
-};
-
+const NewsPage = () =>  <NewsComponents/>
 export default NewsPage;

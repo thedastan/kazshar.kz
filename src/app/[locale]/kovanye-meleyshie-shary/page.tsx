@@ -1,7 +1,7 @@
-import Aboutforged from "@/components/forged/about/Aboutforged";
-import Heroforged from "@/components/forged/hero/Heroforged";
-import Tabforged from "@/components/forged/tab/Tabforged";
-import Used from "@/components/forged/used/Used";
+import Aboutforged from "@/components/kovanye-meleyshie-shary/about/Aboutforged";
+import Heroforged from "@/components/kovanye-meleyshie-shary/hero/Heroforged";
+import Tabforged from "@/components/kovanye-meleyshie-shary/tab/Tabforged";
+import Used from "@/components/kovanye-meleyshie-shary/used/Used";
 import { Metadata } from "next";
 import React from "react";
 
