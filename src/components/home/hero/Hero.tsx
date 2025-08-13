@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button/Button";
 import { TitleComponent } from "@/components/ui/text/TitleComponent";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import React from "react";
 import { SlArrowDown } from "react-icons/sl";
+
+import img from "@/assets/Кованые.jpg"
 
 const Hero = () => {
 	const t = useTranslations("Hero");
@@ -10,12 +13,14 @@ const Hero = () => {
 		<section className=" relative">
 			<div className="relative w-full h-[100vh] overflow-hidden py-10">
 				{" "}
-				<iframe
+				{/* <iframe
 					className="absolute top-0 left-0 w-full h-full    md:scale-[1.2] scale-[3.2]"
 					style={{ objectFit: "cover" }}
 					src="	https://kinescope.io/embed/hYvbnm42uzXVxqKM9xhwLY"
 					allow="autoplay; muted"
-				/>
+				/> */}
+
+				<Image fill objectFit="cover"  src={img} alt="img" />
 			</div>
 
 			<div className="bg-[#000000b2] w-full h-[100vh] absolute top-0 left-0">

@@ -72,14 +72,6 @@ const Products = () => {
 					</div>
 				</div>
 
-				<div className="w-full flex justify-center items-center">
-					<Button
-						onClick={() => setModal(true)}
-						className="  bg-[#eeff00] hover:bg-[#ffd900] text-[#14184d] flex item-center  gap-2">
-						<BsHandIndexThumb size={20} /> {""} {t("btn")}
-					</Button>
-				</div>
-
 				{modal && (
 					<div
 						className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
@@ -99,11 +91,11 @@ const Products = () => {
 
 				<div className="w-full flex justify-center items-center">
 					<div className="w-full max-w-[1000px] flex justify-center gap-4 md:text-start text-center md:flex-row flex-col items-center mt-14">
-						<Description>
-							 {t("desc5")}
-						</Description>
-						<Button className=" w-full max-w-[300px] rounded-sm">
-							 {t("btn2")}
+						<Description>{t("desc5")}</Description>
+						<Button
+							onClick={() => setModal(true)}
+							className="  bg-[#eeff00] hover:bg-[#ffd900] text-[#14184d] w-full max-w-[400px] flex justify-center item-center  gap-2">
+							<BsHandIndexThumb size={20} /> {""} {t("btn")}
 						</Button>
 					</div>
 				</div>

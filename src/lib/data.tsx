@@ -7,15 +7,15 @@ import { useTranslations } from "next-intl";
 export const useSocialNetworks = () => [
 	{
 		icon: <IoLogoWhatsapp size={24} />,
-		path: "https://wa.me/your-number",
+		path: "https://wa.me/77716380820",
 	},
 	{
 		icon: <BsTelegram size={24} />,
-		path: "https://t.me/your-username",
+		path: "https://t.me/",
 	},
 	{
 		icon: <RiInstagramFill size={24} />,
-		path: "https://instagram.com/your-profile",
+		path: "https://instagram.com/",
 	},
 ];
 
