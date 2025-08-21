@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import Hero from "./hero/Hero";
 import About from "./about/About";
@@ -8,16 +8,16 @@ import Contact from "./contact/Contact";
 import useAos from "@/hooks/useAos";
 
 const HomeComponents = () => {
-	useAos();
-	return (
-		<section>
-			<Hero />
-			<About />
-			<Products />
-			<WhyUs />
-			<Contact />
-		</section>
-	);
+  useAos();
+  return (
+    <section>
+      <Hero />
+      <About />
+      <Products />
+      <WhyUs />
+      <Contact />
+    </section>
+  );
 };
 
 export default HomeComponents;
