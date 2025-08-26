@@ -207,9 +207,13 @@ const TabCast = () => {
 										<div className="flex gap-2">
 											{el.description.map((item, idx) => (
 												<div key={idx} className="flex flex-col gap-2">
-													<h1 className="font-[600] pb-2 ">{item.name}</h1>
+													<h1 className="font-[600] pb-2 text-white">
+														{item.name}
+													</h1>
 													{item.descs.map((desc, idx) => (
-														<p key={idx} className=" font-[400] text-white text-start">
+														<p
+															key={idx}
+															className=" font-[400] text-white text-start">
 															{desc.desc}
 														</p>
 													))}
@@ -257,7 +261,9 @@ const TabCast = () => {
 								<div className="mt-2 gap-2">
 									{el.description.map((item, idx) => (
 										<div key={idx} className="flex flex-col">
-											<p className="font-[600] pb-4 mt-4">{item.name}</p>
+											<p className="font-[600] pb-4 text-white mt-4">
+												{item.name}
+											</p>
 											{item.descs.map((desc, idx) => (
 												<p key={idx} className="text-sm text-white">
 													{desc.desc}
@@ -275,28 +281,7 @@ const TabCast = () => {
 			<div
 				className="fixed bottom-[10px] left-1/2 z-50 "
 				style={{ transform: "translateX(-50%)" }}>
-				<button
-					onClick={() => setModal(true)}
-					className="text-nowrap"
-					style={{
-						backgroundColor: "black",
-						color: "white",
-						padding: "10px 20px",
-						borderRadius: "8px",
-						animation: "flashColor 1s infinite",
-						transition: "background-color 0.3s",
-					}}>
-					{t("zapros")}
-				</button>
-
-				<style>
-					{`
-			@keyframes flashColor {
-				0%, 100% { background-color: black; color: white; }
-				50% { background-color: yellow; color: black; }
-			}
-		`}
-				</style>
+				<button className="btn-request">{t("zapros")}</button>
 			</div>
 
 			{modal && (
@@ -306,7 +291,9 @@ const TabCast = () => {
 					<div
 						className="bg-[#dee4e9] md:p-10 p-4  rounded-lg w-full flex  flex-col justify-center md:w-[500px] relative"
 						onClick={(e) => e.stopPropagation()}>
-						<div onClick={() => setModal(false)} className="w-full flex justify-end items-end text-end">
+						<div
+							onClick={() => setModal(false)}
+							className="w-full flex justify-end items-end text-end">
 							<IoMdClose size={24} />
 						</div>
 						<ContactRfc />

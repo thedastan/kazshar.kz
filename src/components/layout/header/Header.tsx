@@ -67,7 +67,7 @@ const Header = () => {
 					className="flex items-center justify-between relative py-2">
 					<nav className="md:flex hidden items-center gap-6 flex-1">
 						{menuItems.main.map((item, idx) =>
-							item.key === "contact" ? (
+							item.key === "contact" || item.key === "home" ? (
 								<Link
 									key={idx}
 									href={item.path!}

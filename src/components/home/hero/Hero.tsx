@@ -5,7 +5,7 @@ import Image from "next/image";
 import React from "react";
 import { SlArrowDown } from "react-icons/sl";
 
-import img from "@/assets/Кованые.jpg"
+import img from "@/assets/img5.jpeg"
 
 const Hero = () => {
 	const t = useTranslations("Hero");

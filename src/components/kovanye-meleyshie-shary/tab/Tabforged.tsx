@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
-import {  IoMdClose } from "react-icons/io";
+import { IoMdClose } from "react-icons/io";
 import { IoDownloadOutline } from "react-icons/io5";
 
 const Tabforged = () => {
@@ -132,7 +132,9 @@ const Tabforged = () => {
 											transition: "0.5s",
 										}}>
 										{el.descs.map((desc, idx) => (
-											<p key={idx} className="  font-[400] text-white  text-start">
+											<p
+												key={idx}
+												className="  font-[400] text-white  text-start">
 												{desc.desc}
 											</p>
 										))}
@@ -190,28 +192,7 @@ const Tabforged = () => {
 			<div
 				className="fixed bottom-[10px] left-1/2 z-50 "
 				style={{ transform: "translateX(-50%)" }}>
-				<button
-					onClick={() => setModal(true)}
-					className="text-nowrap"
-					style={{
-						backgroundColor: "black",
-						color: "white",
-						padding: "10px 20px",
-						borderRadius: "8px",
-						animation: "flashColor 1s infinite",
-						transition: "background-color 0.3s",
-					}}>
-					{t("zapros")}
-				</button>
-
-				<style>
-					{`
-			@keyframes flashColor {
-				0%, 100% { background-color: black; color: white; }
-				50% { background-color: yellow; color: black; }
-			}
-		`}
-				</style>
+				<button className="btn-request">{t("zapros")}</button>
 			</div>
 
 			{modal && (
@@ -221,7 +202,9 @@ const Tabforged = () => {
 					<div
 						className="bg-[#dee4e9] md:p-10 p-4  rounded-lg w-full flex  flex-col justify-center md:w-[500px] relative"
 						onClick={(e) => e.stopPropagation()}>
-						<div onClick={() => setModal(false)} className="w-full flex justify-end items-end text-end">
+						<div
+							onClick={() => setModal(false)}
+							className="w-full flex justify-end items-end text-end">
 							<IoMdClose size={24} />
 						</div>
 						<ContactRfc />
