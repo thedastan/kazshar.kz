@@ -1,196 +1,197 @@
 {
-  "Contact": {
-    "contact_title": "Feedback Form",
-    "btn": "Contact Form",
-    "btn2": "Contact",
-    "name": "Name",
-    "country": "country",
-    "city": "city",
-    "Pickup": "Pickup",
-    "Delivery": "Delivery",
+	"Contact": {
+		"contact_title": "Feedback Form",
+		"btn": "Contact Form",
+		"btn2": "Contact",
+		"name": "Name",
+		"country": "country",
+		"city": "city",
+		"Pickup": "Pickup",
+		"Delivery": "Delivery",
 
-    "Hardness": "Hardness from 1 to 5",
-    "Volume": "Volume in tons",
+		"Hardness": "Hardness from 1 to 5",
+		"Volume": "Volume in tons",
 
-    "formSubmittedSuccessfully": "The form was successfully submitted!",
-    "errortoas": "Error while sending the request",
+		"formSubmittedSuccessfully": "The form was successfully submitted!",
+		"errortoas": "Error while sending the request",
 
-    "product": "Choose the method of receiving the product",
-    "organization_name": "Name of the organization",
-    "email": "Email Address",
-    "object": "Event type",
-    "object2": "Subject of the appeal",
-    "message": "Message",
-    "option": "Forged grinding balls",
-    "option1": "Cast grinding balls",
-    "option2": "Rolled grinding balls",
-    "btn3": "Send",
-    "btn_loading": "Sending...",
-    "proposal": "Request for a Commercial Proposal",
-    "balls": "Request for Grinding Balls",
-    "address": "Republic of Kazakhstan, Zhambyl Region, Korday District, Korday Village, Beriktas Street, Building 5"
-  },
-  "Forget": {
-    "title": "Forged Grinding Balls",
-    "des": "Our forged balls are produced from high-quality steel billets using hot forging, ensuring exceptional strength and durability.",
-    "des2": "Due to their high hardness and wear resistance, they withstand extreme loads, minimizing wear and improving grinding efficiency. The optimal metal structure guarantees stable operational performance, making them a reliable choice for various industries – from mining to cement production.",
-    "btn": "Next",
+		"product": "Choose the method of receiving the product",
+		"organization_name": "Name of the organization",
+		"email": "Email Address",
+		"object": "Event type",
+		"object2": "Subject of the appeal",
+		"message": "Message",
+		"option": "Forged grinding balls",
+		"option1": "Cast grinding balls",
+		"option2": "Rolled grinding balls",
+		"btn3": "Send",
+		"btn_loading": "Sending...",
+		"proposal": "Request for a Commercial Proposal",
+		"balls": "Request for Grinding Balls",
+		"address": "Republic of Kazakhstan, Zhambyl Region, Korday District, Korday Village, Beriktas Street, Building 5"
+	},
+	"Forget": {
+		"title": "Forged Grinding Balls",
+		"des": "Our forged balls are produced from high-quality steel billets using hot forging, ensuring exceptional strength and durability.",
+		"des2": "Due to their high hardness and wear resistance, they withstand extreme loads, minimizing wear and improving grinding efficiency. The optimal metal structure guarantees stable operational performance, making them a reliable choice for various industries – from mining to cement production.",
+		"btn": "Next",
 
-    "used": "Used in:",
-    "card": "Mining Industry",
-    "card2": "Cement Industry",
-    "card3": "Energy",
-    "card4": "Chemical Industry",
-    "card5": "Metallurgy",
+		"used": "Used in:",
+		"card": "Mining Industry",
+		"card2": "Cement Industry",
+		"card3": "Energy",
+		"card4": "Chemical Industry",
+		"card5": "Metallurgy",
 
-    "haracter": "Main Characteristics of the Balls",
-    "pdf": " Download PDF",
+		"haracter": "Main Characteristics of the Balls",
+		"pdf": " Download PDF",
 
-    "tab": "Available Sizes",
-    "tab_des": "Nominal diameter 80 - 150 mm",
-    "tab_des2": "Diameter tolerance +4, -3",
+		"tab": "Available Sizes",
+		"tab_des": "Nominal diameter 80 - 150 mm",
+		"tab_des2": "Diameter tolerance +4, -3",
 
-    "tab2": "Mechanical Properties",
-    "tab2_des": "Surface hardness 50 - 68",
-    "tab2_des2": "Impact toughness (J/cm2) ≥12",
+		"tab2": "Mechanical Properties",
+		"tab2_des": "Surface hardness 50 - 68",
+		"tab2_des2": "Impact toughness (J/cm2) ≥12",
 
-    "tab3": "Chemical Composition",
+		"tab3": "Chemical Composition",
 
-    "zapros": "Request a commercial offer"
-  },
-  "Cast": {
-    "title": "Cast Grinding Balls",
-    "des": "Our cast grinding balls are made from high-chromium, medium-chromium, and low-chromium cast iron, providing an optimal balance between hardness, wear resistance, and impact toughness.",
-    "des2": "The high chromium content ensures resistance to abrasive wear, extending the service life of the balls even in the most aggressive operating conditions. Precise heat treatment guarantees a homogeneous structure and stable properties, making them a reliable choice for the mining, cement, and energy industries.",
-    "btn": "Next",
+		"zapros": "Request a commercial offer"
+	},
+	"Cast": {
+		"title": "Cast Grinding Balls",
+		"des": "Our cast grinding balls are made from high-chromium, medium-chromium, and low-chromium cast iron, providing an optimal balance between hardness, wear resistance, and impact toughness.",
+		"des2": "The high chromium content ensures resistance to abrasive wear, extending the service life of the balls even in the most aggressive operating conditions. Precise heat treatment guarantees a homogeneous structure and stable properties, making them a reliable choice for the mining, cement, and energy industries.",
+		"btn": "Next",
 
-    "haracter": "Main Characteristics of the Balls",
-    "pdf": " Download PDF",
+		"haracter": "Main Characteristics of the Balls",
+		"pdf": " Download PDF",
 
-    "tab": "Available Sizes",
-    "tab_des": "Nominal diameter 20 - 70 mm",
-    "tab_des2": "Diameter tolerance +3, -3",
+		"tab": "Available Sizes",
+		"tab_des": "Nominal diameter 20 - 70 mm",
+		"tab_des2": "Diameter tolerance +3, -3",
 
-    "tab2": "Mechanical Properties",
-    "tab2_des": "Surface hardness 45 - 58",
-    "tab2_des2": "Impact toughness (J/cm²) ≥12",
+		"tab2": "Mechanical Properties",
+		"tab2_des": "Surface hardness 45 - 58",
+		"tab2_des2": "Impact toughness (J/cm²) ≥12",
 
-    "tab3": "Chemical Composition",
-    "tab3_des": "High-chromium cast iron",
-    "tab3_des2": "Medium-chromium cast iron",
-    "tab3_des3": "Low-chromium cast iron",
-    "zapros": "Request a commercial offer"
-  },
-  "Rolled": {
-    "title": "Rolled Grinding Balls",
-    "des": "Rolled balls are made using the hot rolling method from high-quality steel bars on ball-rolling mills, ensuring their high strength and uniform structure.",
-    "des2": "With an optimal combination of hardness and impact toughness, they demonstrate excellent wear resistance and a long service life. This type of ball is perfect for intense operating conditions, providing efficient grinding in mills across various industries.",
+		"tab3": "Chemical Composition",
+		"tab3_des": "High-chromium cast iron",
+		"tab3_des2": "Medium-chromium cast iron",
+		"tab3_des3": "Low-chromium cast iron",
+		"zapros": "Request a commercial offer"
+	},
+	"Rolled": {
+		"title": "Rolled Grinding Balls",
+		"des": "Rolled balls are made using the hot rolling method from high-quality steel bars on ball-rolling mills, ensuring their high strength and uniform structure.",
+		"des2": "With an optimal combination of hardness and impact toughness, they demonstrate excellent wear resistance and a long service life. This type of ball is perfect for intense operating conditions, providing efficient grinding in mills across various industries.",
 
-    "btn": "Next",
+		"btn": "Next",
 
-    "haracter": "Main Characteristics of the Balls",
-    "pdf": " Download PDF",
+		"haracter": "Main Characteristics of the Balls",
+		"pdf": " Download PDF",
 
-    "tab": "Available Sizes",
-    "tab_des": "Nominal diameter 20 - 40 mm",
-    "tab_des2": "Diameter tolerance +2, -1",
+		"tab": "Available Sizes",
+		"tab_des": "Nominal diameter 20 - 40 mm",
+		"tab_des2": "Diameter tolerance +2, -1",
 
-    "tab2": "Mechanical Properties",
-    "tab2_des": "Surface hardness 60-67",
-    "tab2_des2": "Impact toughness (J/cm²) ≥12",
+		"tab2": "Mechanical Properties",
+		"tab2_des": "Surface hardness 60-67",
+		"tab2_des2": "Impact toughness (J/cm²) ≥12",
 
-    "tab3": "Chemical Composition",
-    "zapros": "Request a commercial offer"
-  },
+		"tab3": "Chemical Composition",
+		"zapros": "Request a commercial offer"
+	},
 
-  "NotFound": {
-    "title": "Oops! Page not found",
-    "btn": "Return to home page"
-  },
-  "HeroNews": {
-    "title": "What's New at KazShar?",
-    "desc": "Stay updated on the latest events, achievements, and company updates from KazShar. We share important news, talk about new projects, and announce upcoming events.",
-    "button": "more details"
-  },
-  "HeroGallery": {
-    "title": "KazShar Photo Gallery",
-    "desc": "Explore the bright moments from the life of KazShar. Here you will find photos from events, projects, and other significant occasions that reflect our dynamic and creative atmosphere."
-  },
-  "Hero": {
-    "title": "KazShar Grinding Balls – the Standard of Strength and Wear Resistance for Your Production.",
-    "btn": "Watch Video Presentation"
-  },
-  "About": {
-    "title": "About Our Company",
-    "desc": "Our enterprise specializes in the production of high-quality forged and cast grinding balls that meet international standards. For over 15 years, we have been supplying reliable products for enrichment and cement production, ensuring maximum grinding efficiency for our clients.",
-    "key": "Key Advantages:",
-    "desc1": "✔ Modern Equipment – the plant is equipped with high-tech production lines and laboratories for monitoring chemical composition, hardness, and wear resistance.",
-    "desc2": "✔ Full Production Cycle – from raw materials to finished products with guaranteed stable quality.",
-    "desc3": "✔ Capacity up to 60,000 tons per year – prompt execution of large orders and custom projects.",
-    "desc4": "✔ Parameter Flexibility – we produce balls of various diameters and hardness levels tailored to specific operating conditions.",
-    "geo": "Delivery Geography:",
-    "desc5": "Kazakhstan, Central Asia, and neighboring countries. We operate under Incoterms, adapting to customer requirements.",
-    "desc6": "We ensure the durability and cost-effectiveness of your processes – trust a proven manufacturer!",
-    "riding": "Read more",
-    "close": "Close"
-  },
-  "Products": {
-    "title": "Our Products",
-    "desc": "We are chosen for stable quality, a flexible approach to customer requirements, and reliability proven by over 15 years of experience in the industry.",
+	"NotFound": {
+		"title": "Oops! Page not found",
+		"btn": "Return to home page"
+	},
+	"HeroNews": {
+		"title": "What's New at KazShar?",
+		"desc": "Stay updated on the latest events, achievements, and company updates from KazShar. We share important news, talk about new projects, and announce upcoming events.",
+		"button": "more details"
+	},
+	"HeroGallery": {
+		"title": "KazShar Photo Gallery",
+		"desc": "Explore the bright moments from the life of KazShar. Here you will find photos from events, projects, and other significant occasions that reflect our dynamic and creative atmosphere."
+	},
+	"Hero": {
+		"title": "KazShar Grinding Balls – the Standard of Strength and Wear Resistance for Your Production.",
+		"btn": "Watch Video Presentation"
+	},
+	"About": {
+		"title": "About Our Company",
+		"desc": "Our enterprise specializes in the production of high-quality forged and cast grinding balls that meet international standards. For over 15 years, we have been supplying reliable products for enrichment and cement production, ensuring maximum grinding efficiency for our clients.",
+		"key": "Key Advantages:",
+		"desc1": "✔ Modern Equipment – the plant is equipped with high-tech production lines and laboratories for monitoring chemical composition, hardness, and wear resistance.",
+		"desc2": "✔ Full Production Cycle – from raw materials to finished products with guaranteed stable quality.",
+		"desc3": "✔ Capacity up to 60,000 tons per year – prompt execution of large orders and custom projects.",
+		"desc4": "✔ Parameter Flexibility – we produce balls of various diameters and hardness levels tailored to specific operating conditions.",
+		"geo": "Delivery Geography:",
+		"desc5": "Kazakhstan, Central Asia, and neighboring countries. We operate under Incoterms, adapting to customer requirements.",
+		"desc6": "We ensure the durability and cost-effectiveness of your processes – trust a proven manufacturer!",
+		"riding": "Read more",
+		"close": "Close"
+	},
+	"Products": {
+		"title": "Our Products",
+		"desc": "We are chosen for stable quality, a flexible approach to customer requirements, and reliability proven by over 15 years of experience in the industry.",
 
-    "title2": "Forged Balls",
-    "desc2": "Our forged balls are made from high-quality steel ingots using the hot forging method, ensuring exceptional strength and durability.",
+		"title2": "Forged Balls",
+		"desc2": "Our forged balls are made from high-quality steel ingots using the hot forging method, ensuring exceptional strength and durability.",
 
-    "title3": "Cast Balls",
-    "desc3": "Cast grinding balls are made from high-chromium, medium-chromium, and low-chromium cast iron, achieving an optimal balance between hardness, wear resistance, and impact toughness.",
+		"title3": "Cast Balls",
+		"desc3": "Cast grinding balls are made from high-chromium, medium-chromium, and low-chromium cast iron, achieving an optimal balance between hardness, wear resistance, and impact toughness.",
 
-    "title4": "Rolled Balls",
-    "desc4": "Rolled balls are produced by hot rolling high-quality steel rods on ball-rolling mills, ensuring high strength and uniform structure.",
+		"title4": "Rolled Balls",
+		"desc4": "Rolled balls are produced by hot rolling high-quality steel rods on ball-rolling mills, ensuring high strength and uniform structure.",
 
-    "btn": "Request a commercial offer",
-    "desc5": "Want to know the price and delivery terms? Click the button and receive a personalized commercial proposal.",
-    "btn2": "Proposal Button"
-  },
-  "WhyUs": {
-    "title": "Why Choose Us?",
-    "desc1": "In-house full-cycle production We control quality at every stage – from raw materials to finished product shipment.",
-    "desc2": "15+ years of industry experience Accumulated knowledge and refined processes allow us to offer reliable and proven solutions.",
-    "desc3": "Adaptation to customer needs We select balls based on hardness, diameter, and specific mill operating conditions.",
-    "desc4": "Modern equipment and laboratories Induction furnaces, thermal lines, presses, and quality control according to international standards.",
-    "desc5": "Guaranteed supply stability We provide both trial volumes and regular large batches – delivered on time.",
-    "desc6": "Flexible cooperation terms We operate under Incoterms, supporting clients at every stage – from selection to logistics."
-  },
-  "ContactHome": {
-    "formSubmittedSuccessfully": "The form was successfully submitted!",
-    "title": "Contact Us",
-    "desc": "Submit your request, and we will contact you shortly.",
-    "btn": "Submit Request",
-    "location": "📍 Address: Republic of Kazakhstan, Zhambyl Region, Korday District, Korday Village, Beriktas St., Building 5.",
+		"btn": "Request a commercial offer",
+		"desc5": "Want to know the price and delivery terms? Click the button and receive a personalized commercial proposal.",
+		"btn2": "Proposal Button"
+	},
+	"WhyUs": {
+		"title": "Why Choose Us?",
+		"desc1": "In-house full-cycle production We control quality at every stage – from raw materials to finished product shipment.",
+		"desc2": "15+ years of industry experience Accumulated knowledge and refined processes allow us to offer reliable and proven solutions.",
+		"desc3": "Adaptation to customer needs We select balls based on hardness, diameter, and specific mill operating conditions.",
+		"desc4": "Modern equipment and laboratories Induction furnaces, thermal lines, presses, and quality control according to international standards.",
+		"desc5": "Guaranteed supply stability We provide both trial volumes and regular large batches – delivered on time.",
+		"desc6": "Flexible cooperation terms We operate under Incoterms, supporting clients at every stage – from selection to logistics."
+	},
+	"ContactHome": {
+		"formSubmittedSuccessfully": "The form was successfully submitted!",
+		"title": "Contact Us",
+		"desc": "Submit your request, and we will contact you shortly.",
+		"btn": "Submit Request",
+		"location": "📍 Address: Republic of Kazakhstan, Zhambyl Region, Korday District, Korday Village, Beriktas St., Building 5.",
 
-    "name": "Name",
-    "email": "Email Address",
-    "phone": "Phone",
-    "message": "Message"
-  },
-  "Footer": {
-    "text1": "© 2012 - 2025 All Rights Reserved.",
-    "text2": "Developed by IE Mukeev Dastan Rakhymovich"
-  },
-  "Header": {
-    "home": "Home",
-    "about": "About Us",
-    "client": "For Clients",
-    "news": "News",
-    "contact": "Contacts",
-    "aboutCompany": "About the Company",
-    "certificates": "Certificates, Licenses, and Standards",
-    "kovanye": "Forged Balls",
-    "litye": "Cast Balls",
-    "katanye": "Rolled Balls",
-    "gallery": "Photo Gallery"
-  },
-  "SerHero": {
-    "title": "Certificates, Licenses, and Standards",
-    "text": "We adhere to high standards of quality and safety. Explore our official certificates, licenses, and compliance with national and international standards."
-  }
+		"name": "Name",
+		"email": "Email Address",
+		"phone": "Phone",
+		"message": "Message"
+	},
+	"Footer": {
+		"text1": "© 2012 - 2025 All Rights Reserved.",
+		"text2": "Developed by IE Mukeev Dastan Rakhymovich"
+	},
+	"Header": {
+		"home": "Home",
+		"about": "About Us",
+		"client": "For Clients",
+		"news": "News",
+		"contact": "Contacts",
+		"aboutCompany": "About the Company",
+		"certificates": "Certificates, Licenses, and Standards",
+		"kovanye": "Forged Balls",
+		"litye": "Cast Balls",
+		"katanye": "Rolled Balls",
+		"gallery": "Photo Gallery"
+	},
+	"SerHero": {
+		"title": "Certificates, Licenses, and Standards",
+		"text": "We adhere to high standards of quality and safety. Explore our official certificates, licenses, and compliance with national and international standards.",
+		"pdf": " Download PDF"
+	}
 }

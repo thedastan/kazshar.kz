@@ -131,9 +131,9 @@ const ContactRfc = () => {
               defaultValue={4}
               className="w-[100%] h-[32px] px-2 text-[14px] bg-white text-[#383838] outline-none"
             >
-              <option value={4}>{t("option2")}</option>
+              <option value={4}>{t("option")}</option>
               <option value={5}>{t("option1")}</option>
-              <option value={6}>{t("option")}</option>
+              <option value={6}>{t("option2")}</option>
             </select>
           </div>
 
