@@ -81,10 +81,10 @@ const TabRolled = () => {
 	];
 
 	return (
-		<div className="pt-20 bg-[#86B3D1]">
+		<div className="pt-20 bg-[#fff]">
 			<div className="container">
 				<div className="flex flex-col pb-6  justify-center items-center">
-					<h3 className="text-2xl text-center text-white   font-semibold mb-4">
+					<h3 className="text-2xl text-center text-[#555555]   font-semibold mb-4">
 						{t("haracter")}
 					</h3>
 
@@ -102,7 +102,7 @@ const TabRolled = () => {
 			<div className="md:flex hidden  gap-6 justify-between">
 				<div className="py-20 w-full">
 					<div className="w-full flex  relative">
-						<div className="bg-[#4D6D9A] w-full py-20 px-10">
+						<div className="bg-[#d1d5db] w-full py-20 px-10">
 							{data.map((el, index) => (
 								<div
 									key={index}
@@ -110,7 +110,7 @@ const TabRolled = () => {
 									onMouseEnter={() => setHoveredIndex(index)}
 									onMouseLeave={() => setHoveredIndex(null)}>
 									<div className="cursor-pointer  text-center p-4 h-[60px] group-hover:text-black w-[500px] text-[#727272] font-[500] text-[18px]">
-										<h1 className="text-[22px] text-white  font-[700] text-start">
+										<h1 className="text-[22px] text-[#555555]  font-[700] text-start">
 											{el.title}
 										</h1>
 									</div>
@@ -135,7 +135,7 @@ const TabRolled = () => {
 										{el.descs.map((desc, idx) => (
 											<p
 												key={idx}
-												className=" font-[400] text-white  text-start">
+												className=" font-[400] text-[#555555]  text-start">
 												{desc.desc}
 											</p>
 										))}
@@ -152,18 +152,18 @@ const TabRolled = () => {
 					{data.map((el, index) => (
 						<div
 							key={index}
-							className="py-4 px-6 transition-all duration-300 bg-[#4D6D9A] ">
+							className="py-4 px-6 transition-all duration-300 bg-[#d1d5db] ">
 							<div
 								className="flex justify-between items-center cursor-pointer"
 								onClick={() => handleClick(index)}>
 								<h1
 									className={`text-lg font-bold ${
-										activeIndex === index ? "text-white" : "text-white"
+										activeIndex === index ? "text-[#555555]" : "text-[#555555]"
 									}`}>
 									{el.title}
 								</h1>
 								<FaChevronDown
-									className={`transition-transform text-white duration-300 ${
+									className={`transition-transform text-[#555555] duration-300 ${
 										activeIndex === index ? "rotate-180" : "rotate-0"
 									}`}
 								/>
@@ -179,7 +179,7 @@ const TabRolled = () => {
 								}}>
 								<div className="mt-2">
 									{el.descs.map((desc, idx) => (
-										<p key={idx} className="text-sm text-white">
+										<p key={idx} className="text-sm text-[#555555]">
 											{desc.desc}
 										</p>
 									))}
@@ -193,7 +193,7 @@ const TabRolled = () => {
 			<div
 				className="fixed bottom-[10px] left-1/2 z-50 "
 				style={{ transform: "translateX(-50%)" }}>
-				<button className="btn-request">{t("zapros")}</button>
+				<button onClick={() => setModal(true)} className="btn-request">{t("zapros")}</button>
 			</div>
 
 			{modal && (

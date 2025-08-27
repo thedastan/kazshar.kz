@@ -6,13 +6,13 @@ const AboutRolled = () => {
   const t = useTranslations("Rolled");
 
   return (
-    <div className="bg-[#5F6366]">
+    <div className="bg-[#fff]">
       <div className="md:w-full w-[320px] flex ">
-        <div className="bg-[#4D6D9A] flex flex-col items-start md:py-10 px-2 md:px-20 mt-[-40px] justify-start relative w-full">
-          <h1 className="text-[18px] flex justify-end   text-[#ffffff] font-[700] w-full md:w-[600px] p-6 leading-[26px] text-start">
+        <div className="bg-[#d1d5db] flex flex-col items-start md:py-10 px-2 md:px-20 mt-[-40px] justify-start relative w-full">
+          <h1 className="text-[18px] flex justify-end   text-[#000000] font-[700] w-full md:w-[600px] p-6 leading-[26px] text-start">
             {t("des")}
           </h1>
-          <p className="text-[16px] flex justify-start pb-6  text-[#d4d4d4] font-[500] w-full md:w-[500px] px-6 leading-[26px] text-start">
+          <p className="text-[16px] flex justify-start pb-6  text-[#555555] font-[500] w-full md:w-[500px] px-6 leading-[26px] text-start">
             {t("des2")}
           </p>
         </div>
