@@ -1,5 +1,5 @@
 import Image from "next/image";
-import certificate from "@/assets/Certificate.webp";
+ 
 import certificate1 from "@/assets/Сертификаты1.png"
 import certificate2 from "@/assets/Сертификаты2.png"
 
