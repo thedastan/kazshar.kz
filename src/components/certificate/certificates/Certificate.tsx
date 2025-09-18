@@ -8,14 +8,7 @@ const Certificate = () => {
 	return (
 		<div className="w-full  bg-[#dee4e9] py-16">
 			<div className="container">
-				<div className="md:flex block gap-4">
-					<div className=" relative w-full md:h-[360px] h-[200px] overflow-hidden rounded-[4px]">
-						<Image fill objectFit="cover" src={certificate} alt="img" />
-					</div>
-					<div className=" relative w-full md:h-[360px] h-[200px] overflow-hidden md:mt-0 mt-4 rounded-[4px]">
-						<Image fill objectFit="cover" src={certificate} alt="img" />
-					</div>
-				</div>
+				 
 
 				<div className="md:flex block gap-4 mt-8">
 				<div className=" relative md:w-[350px] w-full md:h-[500px] h-[600px] overflow-hidden md:mt-0 mt-4 rounded-[4px]">
