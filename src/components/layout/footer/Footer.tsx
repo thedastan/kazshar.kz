@@ -55,7 +55,7 @@ const Footer = () => {
 			</div>
 			<div className="flex md:flex-row flex-col text-center justify-between container text-white">
 				<Description>{t("text1")}</Description>
-				<Link href="https://bir.kg" target="_blank">
+				<Link href="https://www.instagram.com/dastan.mukeev/" target="_blank" rel="noopener noreferrer">
 					<Description>{t("text2")}</Description>
 				</Link>
 			</div>
